@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier -c . && prettier -w .",
+    "prettier": "prettier -w . && prettier -c .",
     "prepare": "husky install"
   },
   "dependencies": {
