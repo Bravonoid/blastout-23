@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperClass from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,6 +12,7 @@ import "swiper/css";
 
 function Testimoni() {
   const swiperRef = useRef<SwiperClass>();
+  const [swiperIndex, setSwiperIndex] = useState<number>(0);
 
   const data = [
     {
@@ -34,10 +35,10 @@ function Testimoni() {
   ];
 
   return (
-    <section className="h-screen flex items-center">
-      <div className="max-w-8xl mx-auto h-3/5 flex flex-col items-center justify-center">
+    <section className="h-screen pt-12 flex items-start sm:items-center">
+      <div className="container sm:max-w-8xl mx-auto sm:h-3/5 flex flex-col items-center justify-center">
         <h1 className="text-5xl font-bold">TESTIMONI</h1>
-        <div className="flex justify-center items-center w-5/6 h-full mt-8">
+        <div className="flex justify-center items-center w-full px-2 sm:px-0 sm:w-5/6 h-full mt-8">
           <Button
             onClick={() => swiperRef.current?.slidePrev()}
             icon={faCaretLeft}
@@ -45,6 +46,8 @@ function Testimoni() {
           <Swiper
             onBeforeInit={(swiper) => (swiperRef.current = swiper)}
             loop={true}
+            grabCursor={true}
+            onSlideChange={(swiper) => setSwiperIndex(swiper.realIndex)}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             className="w-full h-full"
           >
@@ -58,6 +61,13 @@ function Testimoni() {
             onClick={() => swiperRef.current?.slideNext()}
             icon={faCaretRight}
           />
+        </div>
+        <div className="relative mx-10 pt-12 sm:hidden">
+          <h2
+            className={`font-medium text-justify text-xl before:content-['“'] before:-scale-x-100 before:absolute before:-mt-2 before:-ml-5 after:content-['“'] after:absolute after:-right-5 after:-bottom-5 after:text-3xl after:font-bold before:text-3xl before:font-bold`}
+          >
+            {data[swiperIndex].testimony}
+          </h2>
         </div>
       </div>
     </section>
@@ -75,7 +85,7 @@ const Button = ({ onClick, icon }: ButtonProps) => {
   return (
     <FontAwesomeIcon
       onClick={() => onClick()}
-      className="w-20 h-20 cursor-pointer"
+      className="w-12 h-12 sm:w-20 sm:h-20 cursor-pointer"
       icon={icon}
     />
   );
@@ -90,14 +100,14 @@ type CardCarouselProps = {
 const CardCarousel = ({ name, title, testimony }: CardCarouselProps) => {
   return (
     <div className="flex bg-gray-300 w-full h-full justify-center items-center">
-      <div className="flex flex-col w-4/12 h-full bg-gray-400 p-12">
+      <div className="flex flex-col w-full sm:w-4/12 h-full bg-gray-400 p-12">
         <div className="bg-gray-500 aspect-square">INI FOTO GAN</div>
         <div className="mt-auto">
           <h1 className="font-bold text-3xl">{name}</h1>
           <p className="font-semibold text-xl">{title}</p>
         </div>
       </div>
-      <div className="flex justify-center items-center w-8/12 p-12">
+      <div className="hidden sm:flex justify-center items-center w-8/12 p-12">
         <div className="relative">
           <p
             className={`font-medium text-justify text-xl before:content-['“'] before:-scale-x-100 before:absolute before:-mt-2 before:-ml-5 after:content-['“'] after:absolute after:-right-5 after:-bottom-5 after:text-3xl after:font-bold before:text-3xl before:font-bold`}
