@@ -90,10 +90,12 @@ type CardCarouselProps = {
 const CardCarousel = ({ name, title, testimony }: CardCarouselProps) => {
   return (
     <div className="flex bg-gray-300 w-full h-full justify-center items-center">
-      <div className="flex flex-col items-start justify-end w-4/12 h-full bg-gray-400 p-12">
+      <div className="flex flex-col w-4/12 h-full bg-gray-400 p-12">
         <div className="bg-gray-500 aspect-square">INI FOTO GAN</div>
-        <h1 className="font-bold text-3xl">{name}</h1>
-        <p className="font-semibold text-xl">{title}</p>
+        <div className="mt-auto">
+          <h1 className="font-bold text-3xl">{name}</h1>
+          <p className="font-semibold text-xl">{title}</p>
+        </div>
       </div>
       <div className="flex justify-center items-center w-8/12 p-12">
         <div className="relative">
