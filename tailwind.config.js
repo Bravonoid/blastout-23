@@ -11,6 +11,9 @@ module.exports = {
         Universal: ["Universal"],
         Times: ["Times"],
       },
+      colors: {
+        blastoutpurple: "#8338ED"
+      },
     },
   },
   plugins: [],

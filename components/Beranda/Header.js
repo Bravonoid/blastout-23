@@ -8,9 +8,9 @@ import Link from "next/link";
 const Header = () => {
     return(
         <>
-            <div class="h-screen  overflow-hidden bg-white">
+            <div class="h-screen  overflow-hidden bg-blastoutpurple">
                 <div class="block my-auto relative">
-                    <Link href="./Penjelasan">
+                    <Link href="/">
                         <Image src={block1} alt="block" class="relative top-0 pl-5 pt-5"/>
                         <div class="flex justify-center items-center flex-col my-[225px]">
                             <h1 class="font-bold text-6xl font-Inter text-center items-center">BLASTOUT 2023</h1>
