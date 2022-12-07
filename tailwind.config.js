@@ -12,7 +12,7 @@ module.exports = {
         Times: ["Times"],
       },
       colors: {
-        blastoutpurple: "#8338ED"
+        blastoutpurple: "#8338ED",
       },
     },
   },
