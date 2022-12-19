@@ -11,6 +11,9 @@ module.exports = {
         Universal: ["Universal"],
         Times: ["Times"],
       },
+      maxWidth: {
+        "8xl": "90rem",
+      },
       colors: {
         blastoutpurple: "#8338ED",
       },
