@@ -14,6 +14,9 @@ module.exports = {
       maxWidth: {
         "8xl": "90rem",
       },
+      colors: {
+        blastoutpurple: "#8338ED",
+      },
     },
   },
   plugins: [],
