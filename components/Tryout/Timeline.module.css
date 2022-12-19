@@ -1,0 +1,100 @@
+.stepperWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.stepperItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  font-weight: 500;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.stepperItem::before {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #d9d9d9;
+  width: 100%;
+  top: 50%;
+  left: -50%;
+  z-index: 2;
+}
+
+.stepperItem::after {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #d9d9d9;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+}
+
+.stepCounter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #0f0b36;
+  border: 8px solid #d9d9d9;
+  color: #d9d9d9;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.stepperItemActive {
+  font-weight: 700;
+}
+
+.stepCounterActive {
+  border: double 8px transparent;
+  border-radius: 100%;
+  background-image: linear-gradient(#0f0b36, #0f0b36),
+    linear-gradient(180deg, #ff0070 0%, #8338ed 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.stepCounterTextActive {
+  font-weight: 700;
+  background: -webkit-linear-gradient(270deg, #ff0070 0%, #8338ed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stepCounterCompleted {
+  background-image: linear-gradient(180deg, #ff0070 0%, #8338ed 100%),
+    linear-gradient(180deg, #ff0070 0%, #8338ed 100%);
+  border: double 3px transparent;
+  border-radius: 100%;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: rgb(255, 255, 255);
+}
+
+.stepperItemCompleted::after {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #bf1db1;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepperItem:first-child::before {
+  content: none;
+}
+.stepperItem:last-child::after {
+  content: none;
+}
