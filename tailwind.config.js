@@ -10,6 +10,8 @@ module.exports = {
         Inter: ["Inter"],
         Universal: ["Universal"],
         Times: ["Times"],
+        Poppins: ["Poppins"],
+        TransAmerica: ["Trans-America Bold Italic"],
       },
       colors: {
         blastoutpurple: "#8338ED",

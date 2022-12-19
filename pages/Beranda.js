@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../components/Beranda/Header";
 import Sekilas from "../components/Beranda/Sekilas";
 import Acara from "../components/Beranda/Acara";
+import Link from "next/link";
 const Beranda = () => {
   return (
     <>
