@@ -65,7 +65,13 @@ function Timeline() {
                     active ? styles.stepCounterActive : ""
                   } ${completed ? styles.stepCounterCompleted : ""}`}
                 >
-                  <p className="text-4xl font-bold">{id}</p>
+                  <p
+                    className={`text-4xl font-bold ${
+                      active ? styles.stepCounterTextActive : ""
+                    }`}
+                  >
+                    {id}
+                  </p>
                 </button>
                 <div
                   className={`text-4xl font-bold ${
