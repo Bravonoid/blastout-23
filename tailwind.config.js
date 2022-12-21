@@ -8,10 +8,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)", ...fontFamily.sans],
+        poppins: ["var(--font-poppins)", ...fontFamily.sans],
+        montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
+      },
+      maxWidth: {
+        "8xl": "90rem",
+      },
+      animation: {
+        "spin-slow": "spin 10s linear infinite",
+      },
       colors: {
-        ungu: "#0F0B36",
-        putih: "#F0F0F0",
-        emas: "#FFBD0C",
+        blastoutpurple: "#8338ED",
       },
     },
   },
