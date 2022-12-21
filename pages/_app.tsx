@@ -12,5 +12,5 @@ export default function App({ Component, pageProps }: AppProps) {
     // <main className={`${inter.variable} font-sans`}>
     <Component {...pageProps} />
     // </main>
-  )
+  );
 }
