@@ -1,0 +1,278 @@
+@media (min-width: 1024px) {
+  .stepCounter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #0f0b36;
+    border: 8px solid #d9d9d9;
+    color: #d9d9d9;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .stepCounterActive {
+    border: double 8px transparent;
+    border-radius: 100%;
+    background-image: linear-gradient(#0f0b36, #0f0b36),
+      linear-gradient(180deg, #ff0070 0%, #8338ed 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .stepperItem::after {
+    position: absolute;
+    content: "";
+    border-bottom: 8px solid #d9d9d9;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+  }
+
+  .stepperItemCompleted::after {
+    position: absolute;
+    content: "";
+    border-bottom: 8px solid #bf1db1;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .stepCounter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #0f0b36;
+    border: 4px solid #d9d9d9;
+    color: #d9d9d9;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .stepCounterActive {
+    border: double 4px transparent;
+    border-radius: 100%;
+    background-image: linear-gradient(#0f0b36, #0f0b36),
+      linear-gradient(180deg, #ff0070 0%, #8338ed 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .stepperItem::after {
+    position: absolute;
+    content: "";
+    border-bottom: 4px solid #d9d9d9;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+  }
+
+  .stepperItemCompleted::after {
+    position: absolute;
+    content: "";
+    border-bottom: 4px solid #bf1db1;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+  }
+}
+
+@media (min-width: 640px) {
+  .stepperWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .stepperItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    font-weight: 500;
+  }
+
+  .stepperItem::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #d9d9d9;
+    width: 100%;
+    top: 50%;
+    left: -50%;
+    z-index: 2;
+  }
+
+  .stepperItemActive {
+    font-weight: 700;
+  }
+
+  .stepCounterTextActive {
+    font-weight: 700;
+    background: -webkit-linear-gradient(270deg, #ff0070 0%, #8338ed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .stepCounterCompleted {
+    background-image: linear-gradient(180deg, #ff0070 0%, #8338ed 100%),
+      linear-gradient(180deg, #ff0070 0%, #8338ed 100%);
+    border: double 3px transparent;
+    border-radius: 100%;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    color: rgb(255, 255, 255);
+  }
+}
+
+@media (max-width: 639px) {
+  .stepperWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+
+  .stepperItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 20%;
+  }
+
+  .stepCounter {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #0f0b36;
+    border: 4px solid #d9d9d9;
+    color: #d9d9d9;
+  }
+
+  .stepperItemActive {
+    font-weight: 700;
+  }
+
+  .stepCounterActive {
+    border: double 4px transparent;
+    border-radius: 100%;
+    background-image: linear-gradient(#0f0b36, #0f0b36),
+      linear-gradient(90deg, #ff0070 0%, #8338ed 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .stepCounterTextActive {
+    font-weight: 700;
+    background: -webkit-linear-gradient(0deg, #ff0070 0%, #8338ed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .textActive {
+    background: linear-gradient(90deg, #ff0070 0.37%, #8338ed 100.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .stepCounterCompleted {
+    /* background-image: linear-gradient(180deg, #ff0070 0%, #8338ed 100%),
+      linear-gradient(180deg, #ff0070 0%, #8338ed 100%); */
+    border: double 3px #ff0070;
+    background-color: #ff0070;
+    border-radius: 100%;
+    /* background-origin: border-box;
+    background-clip: padding-box, border-box; */
+    color: rgb(255, 255, 255);
+  }
+
+  .stepperItem::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #d9d9d9;
+    height: 100%;
+    top: 50%;
+    left: -50%;
+    z-index: 2;
+  }
+
+  /* .textWrapper {
+    width: 100%;
+  } */
+
+  .stepperItem::after {
+    position: absolute;
+    content: "";
+    border-left: 4px solid #d9d9d9;
+    height: 300%;
+    top: 90%;
+    left: calc(50.52% - 4px);
+    z-index: 2;
+  }
+
+  .stepperItemCompleted::after {
+    position: absolute;
+    content: "";
+    border-left: 4px solid #ff0070;
+    height: 300%;
+    top: 90%;
+    left: calc(50.52% - 4px);
+    z-index: 3;
+  }
+}
+@media (max-width: 425px) {
+  .stepperItem::after {
+    position: absolute;
+    content: "";
+    border-left: 4px solid #d9d9d9;
+    height: 225%;
+    top: 90%;
+    left: calc(50.52% - 4px);
+    z-index: 2;
+  }
+
+  .stepperItemCompleted::after {
+    position: absolute;
+    content: "";
+    border-left: 4px solid #ff0070;
+    height: 225%;
+    top: 90%;
+    left: calc(50.52% - 4px);
+    z-index: 3;
+  }
+}
+.stepperItem:first-child::before {
+  content: none;
+}
+.stepperItem:last-child::after {
+  content: none;
+}
