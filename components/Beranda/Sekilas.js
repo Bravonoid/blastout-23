@@ -12,7 +12,7 @@ const Sekilas = () => {
         <div className="relative flex flex-col gap-y-12">
           <h1 className="font-bold text-4xl font-TransAmerica text-center">
             BLASTOUT 
-            <Link href="Tentang"><span className="animate-pulse text-red-500">{"      "}&#x3e;</span></Link>
+            <Link href="./Tentang"><span className="animate-pulse text-red-500">{"      "}&#x3e;</span></Link>
           </h1>
           <Image src={Line} alt="line" className="block mx-auto pt-5" />
           <p className="text-center px-20 font-Poppins text-[36px]">
