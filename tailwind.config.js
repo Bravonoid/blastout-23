@@ -1,3 +1,5 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,12 +9,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Inter: ["Inter"],
-        Universal: ["Universal"],
-        Times: ["Times"],
+        inter: ["var(--font-inter)", ...fontFamily.sans],
+        poppins: ["var(--font-poppins)", ...fontFamily.sans],
+        montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
       },
       maxWidth: {
         "8xl": "90rem",
+      },
+      animation: {
+        "spin-slow": "spin 10s linear infinite",
       },
       colors: {
         blastoutpurple: "#8338ED",
