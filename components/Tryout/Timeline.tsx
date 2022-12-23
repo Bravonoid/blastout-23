@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Timeline.module.css";
 
 function Timeline() {
@@ -30,8 +31,44 @@ function Timeline() {
   ];
 
   return (
-    <section className="bg-[#0F0B36] font-inter">
-      <div className="max-w-8xl h-screen mx-auto flex flex-col justify-center items-center text-[#F0F0F0]">
+    <section className="bg-[#0F0B36] font-inter relative overflow-hidden">
+      <div className="h-full absolute left-0">
+        <div className="relative h-full">
+          <Image
+            src="/tryout/timeline/ornamen.svg"
+            height={1070}
+            width={1350}
+            alt=""
+            className="hidden lg:block lg:-ml-[50%] xl:-ml-[47%]"
+          />
+          <div
+            style={{
+              background:
+                "linear-gradient(0deg, #0F0B36 9.72%, rgba(15, 11, 54, 0) 67.78%)",
+            }}
+            className="absolute top-0 w-full h-full"
+          ></div>
+        </div>
+      </div>
+      <div className="h-full absolute right-0">
+        <div className="relative h-full">
+          <Image
+            src="/tryout/timeline/ornamen.svg"
+            height={1070}
+            width={1350}
+            alt=""
+            className="hidden lg:block lg:ml-[50%] xl:ml-[47%]"
+          />
+          <div
+            style={{
+              background:
+                "linear-gradient(0deg, #0F0B36 9.72%, rgba(15, 11, 54, 0) 67.78%)",
+            }}
+            className="absolute top-0 w-full h-full"
+          ></div>
+        </div>
+      </div>
+      <div className="z-50 relative max-w-8xl h-screen mx-auto flex flex-col justify-center items-center text-[#F0F0F0]">
         <h1
           style={{
             textShadow:
