@@ -23,7 +23,7 @@ function WhatsInside() {
   return (
     <div className="flex flex-col justify-center items-center relative">
       <h2 className="uppercase text-blastoutwhite text-glow text-5xl font-bold mb-12">
-        What's Inside
+        What&apos;s Inside
       </h2>
       <div className="grid grid-cols-2 gap-24">
         {events.map(({ title, desc }, i) => (
