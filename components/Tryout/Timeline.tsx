@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Timeline.module.css";
 
 function Timeline() {
@@ -30,8 +31,44 @@ function Timeline() {
   ];
 
   return (
-    <section className="bg-[#0F0B36]">
-      <div className="max-w-8xl h-screen mx-auto flex flex-col justify-center items-center text-[#F0F0F0]">
+    <section className="bg-[#0F0B36] font-inter relative overflow-hidden">
+      <div className="h-full absolute left-0">
+        <div className="relative h-full">
+          <Image
+            src="/tryout/timeline/ornamen.svg"
+            height={1070}
+            width={1350}
+            alt=""
+            className="hidden lg:block lg:-ml-[50%] xl:-ml-[47%]"
+          />
+          <div
+            style={{
+              background:
+                "linear-gradient(0deg, #0F0B36 9.72%, rgba(15, 11, 54, 0) 67.78%)",
+            }}
+            className="absolute top-0 w-full h-full"
+          ></div>
+        </div>
+      </div>
+      <div className="h-full absolute right-0">
+        <div className="relative h-full">
+          <Image
+            src="/tryout/timeline/ornamen.svg"
+            height={1070}
+            width={1350}
+            alt=""
+            className="hidden lg:block lg:ml-[50%] xl:ml-[47%]"
+          />
+          <div
+            style={{
+              background:
+                "linear-gradient(0deg, #0F0B36 9.72%, rgba(15, 11, 54, 0) 67.78%)",
+            }}
+            className="absolute top-0 w-full h-full"
+          ></div>
+        </div>
+      </div>
+      <div className="z-50 relative max-w-8xl h-screen mx-auto flex flex-col justify-center items-center text-[#F0F0F0]">
         <h1
           style={{
             textShadow:
@@ -56,16 +93,16 @@ function Timeline() {
               >
                 <div
                   className={`${styles.textWrapper} ${
-                    odd ? "mr-[45%]" : "ml-[45%]"
-                  } sm:ml-0`}
+                    odd ? "mr-auto ml-[12.5%]" : "ml-auto mr-[12.5%]"
+                  } sm:ml-0 sm:mr-0 ${active ? styles.textActive : ""}`}
                 >
                   <div
-                    className={`text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold sm:mb-5 ${
+                    className={`text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold sm:mb-6 ${
                       active
-                        ? `${styles.textActive} sm:text-[#ff0070]`
+                        ? `${false && styles.textActive}`
                         : completed
                         ? "text-[#ff0070]"
-                        : "text-[#d9d9d9]"
+                        : "text-[#8338ED]"
                     }`}
                   >
                     {date}
@@ -73,10 +110,10 @@ function Timeline() {
                   <div
                     className={`text-base xl:text-4xl font-bold sm:hidden block ${
                       active
-                        ? `${styles.textActive} sm:text-[#ff0070]`
+                        ? `${false && styles.textActive}`
                         : completed
                         ? "text-[#ff0070]"
-                        : "text-[#d9d9d9]"
+                        : "text-[#8338ED]"
                     }`}
                   >
                     {desc}
@@ -96,8 +133,12 @@ function Timeline() {
                   </p>
                 </button>
                 <div
-                  className={`text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold hidden sm:block ${
-                    active || completed ? "text-[#8438ED]" : "text-[#d9d9d9]"
+                  className={`text-xl mt-3 md:text-2xl lg:text-3xl xl:text-4xl font-bold hidden sm:block ${
+                    active
+                      ? `${styles.textActive}`
+                      : completed
+                      ? "text-[#ff0070]"
+                      : "text-[#8338ED]"
                   }`}
                 >
                   {desc}
