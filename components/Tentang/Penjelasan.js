@@ -1,13 +1,14 @@
 import React from "react";
+import Link from "next/link";
 
 const Penjelasan = () => {
   return (
     <>
-      <div className="h-screen  overflow-hidden bg-slate-100 py-20">
+      <div className="h-screen  overflow-hidden bg-slate-100 py-40">
         <div className="flex flex-row gap-x-12 px-40">
           <div className="h-[200px] w-[600px] bg-slate-500" />
           <div className="flex flex-col gap-y-12">
-            <h1 className="text-6xl font-bold font-Inter">BLASTOUT</h1>
+            <h1 className="text-6xl font-bold font-TransAmerica">BLASTOUT</h1>
             <p className="text-justify font-Universal">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae
               imperdiet quam. Pellentesque volutpat fringilla ultricies. Donec

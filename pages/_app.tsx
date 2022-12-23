@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <main
       className={`${inter.variable} ${poppins.variable} ${montserrat.variable}`}
     >
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </main>
   );
 }
