@@ -21,20 +21,22 @@ function WhatsInside() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center relative">
-      <h2 className="uppercase text-blastoutwhite text-glow text-5xl font-bold mb-12">
+    <div className="min-h-screen font-inter flex flex-col justify-center items-center relative mt-24">
+      <h2 className="uppercase text-blastoutwhite text-glow text-2xl lg:text-5xl font-bold mb-12">
         What's Inside
       </h2>
-      <div className="grid grid-cols-2 gap-24">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-24 px-16 lg:px-0">
         {events.map(({ title, desc }, i) => (
           <article
             key={i}
-            className="bg-neutral-400 w-80 h-[22rem] p-10 flex flex-col justify-between"
+            className="bg-neutral-400 lg:w-80 h-[240px] lg:h-[22rem] px-4 py-5 lg:p-10 flex flex-col justify-between z-10"
           >
             <div className="h-[4rem] w-fit aspect-square bg-neutral-600 rounded-full" />
             <div>
-              <h4 className="text-4xl text-bold mb-5">{title}</h4>
-              <p className="leading-none">{desc}</p>
+              <h4 className="text-[16px] lg:text-[40px] font-bold mb-2 lg:mb-5">
+                {title}
+              </h4>
+              <p className="text-[14px] lg:text-[18px] leading-none">{desc}</p>
             </div>
           </article>
         ))}
@@ -45,7 +47,7 @@ function WhatsInside() {
         alt="whats inside blastout"
         width={1000}
         height={1000}
-        className="w-[624px] absolute left-0 top-24"
+        className="w-[224px] lg:w-[624px] absolute left-0 top-24"
       />
       {/* blastout kiri bawah */}
       <Image
@@ -53,7 +55,7 @@ function WhatsInside() {
         alt="whats inside blastout"
         width={1000}
         height={1000}
-        className="w-[466px] absolute -left-32 -bottom-96"
+        className="w-[150px] lg:w-[466px] absolute -left-8 lg:-left-32 -bottom-96"
       />
       {/* bg kanan bawah */}
       <Image
@@ -61,7 +63,7 @@ function WhatsInside() {
         alt="whats inside blastout"
         width={1000}
         height={1000}
-        className="w-[50vw] absolute right-0 -bottom-96"
+        className="w-[60vw] lg:w-[50vw] absolute right-0 -bottom-96"
       />
     </div>
   );

@@ -9,13 +9,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-<<<<<<< HEAD
-        Inter: ["Inter"],
-        Universal: ["Universal"],
-        Times: ["Times"],
-        Poppins: ["Poppins"],
-        TransAmerica: ["Trans-America Bold Italic"],
-=======
         inter: ["var(--font-inter)", ...fontFamily.sans],
         poppins: ["var(--font-poppins)", ...fontFamily.sans],
         montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
@@ -25,7 +18,6 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
->>>>>>> refs/remotes/origin/master
       },
       colors: {
         blastoutpurple: "#8338ED",
