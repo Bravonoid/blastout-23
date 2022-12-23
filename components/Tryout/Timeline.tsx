@@ -30,7 +30,7 @@ function Timeline() {
   ];
 
   return (
-    <section className="bg-[#0F0B36]">
+    <section className="bg-[#0F0B36] font-inter">
       <div className="max-w-8xl h-screen mx-auto flex flex-col justify-center items-center text-[#F0F0F0]">
         <h1
           style={{
@@ -56,16 +56,16 @@ function Timeline() {
               >
                 <div
                   className={`${styles.textWrapper} ${
-                    odd ? "mr-[45%]" : "ml-[45%]"
-                  } sm:ml-0`}
+                    odd ? "mr-auto ml-[12.5%]" : "ml-auto mr-[12.5%]"
+                  } sm:ml-0 sm:mr-0 ${active ? styles.textActive : ""}`}
                 >
                   <div
-                    className={`text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold sm:mb-5 ${
+                    className={`text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold sm:mb-6 ${
                       active
-                        ? `${styles.textActive} sm:text-[#ff0070]`
+                        ? `${false && styles.textActive}`
                         : completed
                         ? "text-[#ff0070]"
-                        : "text-[#d9d9d9]"
+                        : "text-[#8338ED]"
                     }`}
                   >
                     {date}
@@ -73,10 +73,10 @@ function Timeline() {
                   <div
                     className={`text-base xl:text-4xl font-bold sm:hidden block ${
                       active
-                        ? `${styles.textActive} sm:text-[#ff0070]`
+                        ? `${false && styles.textActive}`
                         : completed
                         ? "text-[#ff0070]"
-                        : "text-[#d9d9d9]"
+                        : "text-[#8338ED]"
                     }`}
                   >
                     {desc}
@@ -96,8 +96,12 @@ function Timeline() {
                   </p>
                 </button>
                 <div
-                  className={`text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold hidden sm:block ${
-                    active || completed ? "text-[#8438ED]" : "text-[#d9d9d9]"
+                  className={`text-xl mt-3 md:text-2xl lg:text-3xl xl:text-4xl font-bold hidden sm:block ${
+                    active
+                      ? `${styles.textActive}`
+                      : completed
+                      ? "text-[#ff0070]"
+                      : "text-[#8338ED]"
                   }`}
                 >
                   {desc}
