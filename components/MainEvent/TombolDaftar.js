@@ -2,13 +2,11 @@ import React from "react";
 const TombolDaftar = () => {
   return (
     <>
-      <div className="flex justify-center">
-        <div className="my-10">
-          <a href="#" className="px-5 py-3 font-bold bg-[#D9D9D9]">
-            DAFTAR
-          </a>
+      <div className="container flex mx-auto">
+        <div className="my-20 mx-auto">
+            <a href="#" className="inline-block px-3 py-2 font-bold bg-gradient-to-l to-pink-600 from-purple-600 text-[#240724] uppercase tracking-wider text-2xl hover:text-white hover:shadow-pink-300 hover:shadow-lg">DAFTAR</a>
         </div>
-      </div>
+    </div>
     </>
   );
 };
