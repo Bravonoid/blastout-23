@@ -104,8 +104,8 @@ const Acara = () => {
 
   return (
     <>
-      <div className="font-bold w-[37.5vh] text-[50px] w-full flex justify-center m-[20px]">
-        Rangkaian Acara
+      <div className="flex justify-center font-bold w-[37.5vh] text-[50px] w-full m-[20px]">
+        <div>Rangkaian Acara</div>
       </div>
       <div className="flex justify-evenly mb-[200px] px-[50px]">
         {rangkaian &&
