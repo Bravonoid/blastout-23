@@ -13,7 +13,7 @@ const MainEvent = () => {
       <Navbar />
       <TombolDaftar />
       <Footer />
-      <ComingSoon/>
+      <ComingSoon />
     </>
   );
 };
