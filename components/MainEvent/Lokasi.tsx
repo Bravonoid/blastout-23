@@ -10,7 +10,13 @@ function Lokasi() {
       </h2>
       <div className="relative h-full w-full">
         <Map />
-        <Image src="/mainevent/lokasi-pins.svg" alt="pins" height={1000} width={1000} className="absolute w-[1455px] top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none" />
+        <Image
+          src="/mainevent/lokasi-pins.svg"
+          alt="pins"
+          height={1000}
+          width={1000}
+          className="absolute w-[1455px] top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none"
+        />
         {/* <Image src="/mainevent/lokasi-pin.svg" alt="pin" height={1000} width={1000} className="absolute w-fit left-1/2 -translate-x-1/2 -translate-y-1/2 z-30" /> */}
       </div>
     </div>
@@ -42,11 +48,13 @@ function Map() {
         <MapLayout>
           <div className="h-full grid place-content-center">
             {/* <div className="w-4 h-16 bg-blastoutmustard rounded-full animate-spin-slow" /> */}
-            <span className="font-bold text-4xl text-blastoutmustard">Loading...</span>
+            <span className="font-bold text-4xl text-blastoutmustard">
+              Loading...
+            </span>
           </div>
         </MapLayout>
       </div>
-    )
+    );
   }
 
   return (
@@ -70,7 +78,13 @@ function MapLayout({ children }) {
     <>
       {children}
       {/* logo blastout bulet */}
-      <Image src="/mainevent/lokasi-blastout.png" alt="blastout logo" height={1000} width={1000} className="absolute w-72 -top-36 -left-28 -rotate-[20deg] z-20" />
+      <Image
+        src="/mainevent/lokasi-blastout.png"
+        alt="blastout logo"
+        height={1000}
+        width={1000}
+        className="absolute w-72 -top-36 -left-28 -rotate-[20deg] z-20"
+      />
       {/* detail kiri bawah */}
       <div className="h-[356px] w-[564px] absolute -bottom-48 -left-32 flex flex-col justify-center px-28 z-20 bg-[url(/mainevent/lokasi-paper.svg)] bg-contain bg-no-repeat font-inter">
         <h4 className="text-3xl">Sabtu, 7 Januari 2023</h4>
@@ -79,7 +93,13 @@ function MapLayout({ children }) {
       </div>
       {/* foto + bg orange */}
       <div className="absolute w-[32%] aspect-square bg-blastoutmustard -bottom-[20%] -right-[14%]" />
-      <Image src="/mainevent/lokasi-foto.png" alt="foto" height={1000} width={1000} className="absolute w-[48%] top-[48%] -translate-y-1/2 -right-36 border-[16px]  z-0" />
+      <Image
+        src="/mainevent/lokasi-foto.png"
+        alt="foto"
+        height={1000}
+        width={1000}
+        className="absolute w-[48%] top-[48%] -translate-y-1/2 -right-36 border-[16px]  z-0"
+      />
     </>
-  )
+  );
 }

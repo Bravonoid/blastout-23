@@ -18,42 +18,42 @@ const Acara = () => {
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
       no: 0,
-      bg: "./rangkaianAcara/briefing.png"
+      bg: "./rangkaianAcara/briefing.png",
     },
     {
       title: "Try Out",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
       no: 1,
-      bg: "./rangkaianAcara/tryout.png"
+      bg: "./rangkaianAcara/tryout.png",
     },
     {
       title: "Talk Show",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
       no: 2,
-      bg: "./rangkaianAcara/talkshow.png"
+      bg: "./rangkaianAcara/talkshow.png",
     },
     {
       title: "Faculty Fair",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
       no: 3,
-      bg: "./rangkaianAcara/facfair.png"
+      bg: "./rangkaianAcara/facfair.png",
     },
     {
       title: "Campus Fair",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
       no: 4,
-      bg: "./rangkaianAcara/camfair.png"
+      bg: "./rangkaianAcara/camfair.png",
     },
     {
       title: "Entertainment",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
       no: 5,
-      bg: "./rangkaianAcara/entertainment.png"
+      bg: "./rangkaianAcara/entertainment.png",
     },
   ];
 
@@ -80,7 +80,7 @@ const Acara = () => {
     setState([...temp]);
     const interval = setInterval(() => {
       setK(k + 1);
-    }, 3000);  
+    }, 3000);
     return () => clearInterval(interval);
   }, [k]);
 
@@ -100,7 +100,7 @@ const Acara = () => {
     let x = key % 6;
     setK(x);
     // console.log(x);
-  }
+  };
 
   return (
     <>
@@ -113,15 +113,19 @@ const Acara = () => {
             const width = state[i] ? active.w : normal.w;
             const disp = state[i] ? active.disp : normal.disp;
             const rot = state[i] ? active.rot : normal.rot;
-            const trans = state[i] ? active.trans : normal.trans
+            const trans = state[i] ? active.trans : normal.trans;
             const fontSize = state[i] ? active.titleSize : normal.titleSize;
             return (
               <div
                 key={item.no}
                 className="relative overflow-hidden h-[50vh] flex flex-col transition-all duration-500 justify-end p-[2.5vh] text-white"
-                style={{ width: width, background: "linear-gradient(179.91deg, rgba(37, 37, 37, 0) 28.25%, rgba(0, 0, 0, 0.8) 110.91%)" }}
-                onMouseOver={e => enterHandler(e, i)}
-                onMouseLeave={e => leaveHandler(e, i)}
+                style={{
+                  width: width,
+                  background:
+                    "linear-gradient(179.91deg, rgba(37, 37, 37, 0) 28.25%, rgba(0, 0, 0, 0.8) 110.91%)",
+                }}
+                onMouseOver={(e) => enterHandler(e, i)}
+                onMouseLeave={(e) => leaveHandler(e, i)}
               >
                 <div
                   className="font-bold w-[37.5vh] flex justify-start"
@@ -132,15 +136,30 @@ const Acara = () => {
                   }}
                   key={item.no + 6}
                 >
-                  <p className="bg-[#8338ED] rounded-[25px] px-[20px] py-[5px] text-2xl font-retrolight" style={{background: "linear-gradient(111.14deg, #8338ED 23.71%, #FF0070 102.48%)"}}>{item.title}</p>
+                  <p
+                    className="bg-[#8338ED] rounded-[25px] px-[20px] py-[5px] text-2xl font-retrolight"
+                    style={{
+                      background:
+                        "linear-gradient(111.14deg, #8338ED 23.71%, #FF0070 102.48%)",
+                    }}
+                  >
+                    {item.title}
+                  </p>
                 </div>
-                <div className="font-bold" style={{ display: disp }} key={item.no + 12}>
+                <div
+                  className="font-bold"
+                  style={{ display: disp }}
+                  key={item.no + 12}
+                >
                   {item.desc}
                 </div>
-                <img src={item.bg} className="absolute -z-[10] left-0 bottom-0 w-full h-full"></img>
+                <img
+                  src={item.bg}
+                  className="absolute -z-[10] left-0 bottom-0 w-full h-full"
+                ></img>
               </div>
-            )}
-          )}
+            );
+          })}
       </div>
     </>
   );
