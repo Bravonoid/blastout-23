@@ -10,10 +10,10 @@ const MainEvent = () => {
       <Head>
         <title>MainEvent . Blastout 2023</title>
       </Head>
-      <Navbar />
+      <Navbar/>
       <TombolDaftar />
       <Footer />
-      <ComingSoon />
+      <ComingSoon/>
     </>
   );
 };
