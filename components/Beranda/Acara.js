@@ -78,20 +78,20 @@ const Acara = () => {
 
   return (
     <>
-      <div className="font-bold w-[37.5vh] text-[50px] w-full flex justify-center m-[20px]">
+      <div class="font-bold w-[37.5vh] text-[50px] w-full flex justify-center m-[20px]">
         Rangkaian Acara
       </div>
-      <div className="flex justify-evenly mb-[200px] px-[50px]">
+      <div class="flex justify-evenly mb-[200px] px-[50px]">
         {rangkaian &&
           rangkaian.map((item, i) =>
             state[i] ? (
               <div
                 key={i}
-                className="w-[15%] overflow-hidden h-[50vh] flex flex-col transition-all duration-500 justify-end border-2 border-black p-[2.5vh]"
+                class="w-[15%] overflow-hidden h-[50vh] flex flex-col transition-all duration-500 justify-end border-2 border-black p-[2.5vh]"
                 style={{ width: active.w + "%" }}
               >
                 <div
-                  className="font-bold w-[37.5vh]"
+                  class="font-bold w-[37.5vh]"
                   style={{
                     fontSize: active.titleSize + "px",
                     rotate: active.rot + "deg",
@@ -100,18 +100,18 @@ const Acara = () => {
                 >
                   {item.title}
                 </div>
-                <div className="font-bold" style={{ display: active.disp }}>
+                <div class="font-bold" style={{ display: active.disp }}>
                   {item.desc}
                 </div>
               </div>
             ) : (
               <div
                 key={i}
-                className="w-[15%] overflow-hidden h-[50vh] flex flex-col transition-all duration-500 justify-end border-2 border-black p-[2.5vh]"
+                class="w-[15%] overflow-hidden h-[50vh] flex flex-col transition-all duration-500 justify-end border-2 border-black p-[2.5vh]"
                 style={{ width: normal.w + "%" }}
               >
                 <div
-                  className="font-bold w-[37.5vh]"
+                  class="font-bold w-[37.5vh]"
                   style={{
                     fontSize: normal.titleSize + "px",
                     rotate: normal.rot + "deg",
@@ -120,7 +120,7 @@ const Acara = () => {
                 >
                   {item.title}
                 </div>
-                <div className="font-bold" style={{ display: normal.disp }}>
+                <div class="font-bold" style={{ display: normal.disp }}>
                   {item.desc}
                 </div>
               </div>

@@ -21,7 +21,7 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main
-      className={`${inter.variable} ${poppins.variable} ${montserrat.variable}`}
+      class={`${inter.variable} ${poppins.variable} ${montserrat.variable}`}
     >
       <Component {...pageProps} />
     </main>
