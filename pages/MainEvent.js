@@ -11,7 +11,7 @@ const MainEvent = () => {
         <title>MainEvent . Blastout 2023</title>
       </Head>
       <Navbar />
-      <TombolDaftar/>
+      <TombolDaftar />
       <Footer />
       <ComingSoon />
     </>
