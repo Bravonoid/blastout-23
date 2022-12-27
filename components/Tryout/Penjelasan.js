@@ -27,7 +27,7 @@ const Penjelasan = () => {
               placerat commodo. Suspendisse consectetur non nunc egestas aliquam.
             </p>
           </div>
-          <Image src={rounded} alt="cloud" class="absolute w-1/6 right-40 top-[25%] animate-spin" />
+          <Image src={rounded} alt="cloud" class="absolute w-1/4 right-[100px] top-[17.5%] animate-spin-medium" />
           <Image src={round} alt="cloud" class="absolute w-1/6 right-40 top-[25%]" />
         </div>
         <Image src={cloud1} alt="cloud1" class="absolute w-[35%] right-0 bottom-0"/>

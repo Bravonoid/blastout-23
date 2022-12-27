@@ -26,6 +26,7 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
+        "spin-medium": "spin 4s linear infinite",
       },
       colors: {
         blastoutpurple: "#240724",
