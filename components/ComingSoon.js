@@ -3,7 +3,7 @@ const ComingSoon = () => {
   return (
     <>
       <div className="flex flex-col justify-center items-center w-[100vw] relative">
-        <img src="./Coming Soon.svg" className="w-full" alt=""></img>
+        <img src="./Coming Soon bg.svg" className="w-full" alt=""></img>
         <div className="absolute justify-between">
           <img src="./Line 12.svg" className="z-[10] w-3/4" alt=""></img>
           <div

@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.burger-aktif > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.burger-aktif > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.burger-aktif > span:nth-child(3) {
+    @apply -rotate-45;
+}
