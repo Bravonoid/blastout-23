@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import TombolDaftar from "../components/MainEvent/TombolDaftar";
 import Footer from "../components/Footer";
+import ComingSoon from "../components/ComingSoon";
 const MainEvent = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const MainEvent = () => {
       <Navbar />
       <TombolDaftar />
       <Footer />
+      <ComingSoon />
     </>
   );
 };
