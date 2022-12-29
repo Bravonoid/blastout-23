@@ -32,14 +32,64 @@ function Timeline() {
 
   return (
     <section className="bg-[#0F0B36] font-inter relative overflow-hidden">
-      <div className="h-full absolute left-0">
+      <div className="block lg:hidden w-full absolute left-0 -mt-[48%]">
+        <div className="relative w-1/2">
+          <Image
+            src="/tryout/timeline/ornamenMobile.svg"
+            height={159}
+            width={308.03}
+            alt=""
+            className="-ml-[2%] rotate-180"
+          />
+        </div>
+      </div>
+      <div className="block w-full lg:hidden absolute right-0 -mt-[48%]">
+        <div className="relative w-1/2 ml-auto">
+          <Image
+            src="/tryout/timeline/ornamenMobile.svg"
+            height={159}
+            width={308.03}
+            alt=""
+            className="ml-[2%]"
+          />
+        </div>
+      </div>
+      <div className="flex w-full h-1/2 bottom-0 lg:hidden absolute">
+        <div className="relative w-1/2 -mb-[165%]">
+          <Image
+            src="/tryout/timeline/ornamenMobile.svg"
+            height={159}
+            width={308.03}
+            alt=""
+            className="rotate-180 -ml-[2%] bottom-[43%] absolute"
+          />
+        </div>
+        <div className="relative w-1/2 -mb-[165%]">
+          <Image
+            src="/tryout/timeline/ornamenMobile.svg"
+            height={159}
+            width={308.03}
+            alt=""
+            className="right-0 -mr-[2%] bottom-[43%] absolute"
+          />
+        </div>
+        <div
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(15,11,54,0) 0%,rgba(15,11,54,0.9) 40%, rgba(15,11,54,1) 50%, rgba(15,11,54,0.9) 60%,rgba(15,11,54,0) 90%)",
+          }}
+          className="w-full h-full absolute"
+        ></div>
+      </div>
+
+      <div className="hidden lg:block h-full absolute left-0">
         <div className="relative h-full">
           <Image
             src="/tryout/timeline/ornamen.svg"
             height={1070}
             width={1350}
             alt=""
-            className="hidden lg:block lg:-ml-[50%] xl:-ml-[47%]"
+            className="lg:-ml-[50%] xl:-ml-[47%]"
           />
           <div
             style={{
@@ -50,14 +100,14 @@ function Timeline() {
           ></div>
         </div>
       </div>
-      <div className="h-full absolute right-0">
+      <div className="hidden lg:block h-full absolute right-0">
         <div className="relative h-full">
           <Image
             src="/tryout/timeline/ornamen.svg"
             height={1070}
             width={1350}
             alt=""
-            className="hidden lg:block lg:ml-[50%] xl:ml-[47%]"
+            className="lg:ml-[50%] xl:ml-[47%]"
           />
           <div
             style={{
