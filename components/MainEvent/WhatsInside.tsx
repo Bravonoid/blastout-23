@@ -5,67 +5,84 @@ function WhatsInside() {
     {
       title: "Interactive Talkshow",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae imperdiet quam. Pellentesque volutpat fringilla ultricies. Donec neque eros, porta a varius vel, luctus eget ex.",
+      img: "1-talkshow",
     },
     {
       title: "Faculty Fair",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae imperdiet quam. Pellentesque volutpat fringilla ultricies. Donec neque eros, porta a varius vel, luctus eget ex.",
+      img: "2-faculty",
     },
     {
       title: "Campus Fair",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae imperdiet quam. Pellentesque volutpat fringilla ultricies. Donec neque eros, porta a varius vel, luctus eget ex.",
+      img: "3-campus",
     },
     {
       title: "Entertainment",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae imperdiet quam. Pellentesque volutpat fringilla ultricies. Donec neque eros, porta a varius vel, luctus eget ex.",
+      img: "4-entertainment",
     },
   ];
 
   return (
-    <div className="min-h-screen font-inter flex flex-col justify-center items-center relative mt-24">
-      <h2 className="uppercase text-blastoutwhite text-glow text-2xl lg:text-5xl font-bold mb-12">
-        What's Inside
-      </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-24 px-16 lg:px-0">
-        {events.map(({ title, desc }, i) => (
-          <article
-            key={i}
-            className="bg-neutral-400 lg:w-80 h-[240px] lg:h-[22rem] px-4 py-5 lg:p-10 flex flex-col justify-between z-10"
-          >
-            <div className="h-[4rem] w-fit aspect-square bg-neutral-600 rounded-full" />
-            <div>
-              <h4 className="text-[16px] lg:text-[40px] font-bold mb-2 lg:mb-5">
-                {title}
-              </h4>
-              <p className="text-[14px] lg:text-[18px] leading-none">{desc}</p>
-            </div>
-          </article>
-        ))}
+    <>
+      <div className="font-inter flex flex-col justify-center items-center relative mt-24 md:mt-12">
+        <h2 className="uppercase text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl font-bold mb-12">
+          What's Inside
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 xl:gap-12 px-16 lg:px-0">
+          {events.map(({ title, desc, img }, i) => (
+            <article
+              key={i}
+              className="bg-[#E5E5E5] text-[#1A1A1A] border-4 border-blastoutdarkpink aspect-square max-w-[15rem] lg:max-w-none lg:w-[22rem] lg:h-[26rem] px-4 py-6 lg:p-10 flex flex-col justify-between z-10 cursor-default transition group hover:border-blastoutpink hover:drop-shadow-[0_0_48px_rgba(255,0,112,.6)]"
+            >
+              <div className="flex items-center lg:flex-col lg:items-start lg:justify-between lg:h-full gap-x-3">
+                <Image
+                  src={`/mainevent/whatsinside/${img}.svg`}
+                  alt={`${img} logo`}
+                  width={1000}
+                  height={1000}
+                  className="h-10 w-10 lg:h-16 lg:w-16 p-2 lg:p-4 aspect-square lg:mb-8 bg-blastoutdarkpink mb-2 transition group-hover:bg-blastoutpink rounded-full"
+                />
+                {i !== 0 ? (
+                  <div className="h-full w-full lg:mt-8 hidden lg:inline-block" />
+                ) : (
+                  ""
+                )}
+                <h4 className="text-[16px] lg:text-3xl xl:text-4xl font-bold mb-2 lg:mb-5 leading-tight font-inter">
+                  {title}
+                </h4>
+              </div>
+              <p className="text-[14px] lg:text-[18px] leading-[1.1]">{desc}</p>
+            </article>
+          ))}
+        </div>
+        {/* whats inside blastout kiri atas */}
+        <Image
+          src="/mainevent/whats-whats.svg"
+          alt="whats inside blastout"
+          width={1000}
+          height={1000}
+          className="w-[224px] lg:w-[400px] xl:w-[624px] absolute left-0 top-24"
+        />
+        {/* blastout kiri bawah */}
+        <Image
+          src="/mainevent/whats-blastout.svg"
+          alt="whats inside blastout"
+          width={1000}
+          height={1000}
+          className="w-[150px] sm:w-[200px] lg:w-[400px] 2xl:w-[500px] absolute -left-8 lg:-left-32 -bottom-60 lg:-bottom-[26rem]"
+        />
+        {/* bg kanan bawah */}
+        <Image
+          src="/mainevent/whats-paper.svg"
+          alt="whats inside blastout"
+          width={1000}
+          height={1000}
+          className="w-[200px] sm:w-[300px] lg:w-[560px] 2xl:w-[50vw] absolute right-0 -bottom-60 lg:-bottom-[26rem]"
+        />
       </div>
-      {/* whats inside blastout kiri atas */}
-      <Image
-        src="/mainevent/whats-whats.svg"
-        alt="whats inside blastout"
-        width={1000}
-        height={1000}
-        className="w-[224px] lg:w-[624px] absolute left-0 top-24"
-      />
-      {/* blastout kiri bawah */}
-      <Image
-        src="/mainevent/whats-blastout.svg"
-        alt="whats inside blastout"
-        width={1000}
-        height={1000}
-        className="w-[150px] lg:w-[466px] absolute -left-8 lg:-left-32 -bottom-96"
-      />
-      {/* bg kanan bawah */}
-      <Image
-        src="/mainevent/whats-paper.svg"
-        alt="whats inside blastout"
-        width={1000}
-        height={1000}
-        className="w-[60vw] lg:w-[50vw] absolute right-0 -bottom-96"
-      />
-    </div>
+    </>
   );
 }
 
