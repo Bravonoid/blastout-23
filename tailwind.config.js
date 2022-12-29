@@ -26,8 +26,8 @@ module.exports = {
         blastoutwhite: "#F0F0F0",
         blastoutgold: "#FFBD0C",
         blastoutmustard: "#EE9125",
-        blastoutpink: '#FF0070',
-        blastoutdarkpink: '#B90051'
+        blastoutpink: "#FF0070",
+        blastoutdarkpink: "#B90051",
       },
     },
   },
