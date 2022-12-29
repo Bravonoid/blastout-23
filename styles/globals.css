@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --shadow-pink: hsla(346, 68%, 43%, 0.5);
+  --shadow-gold: hsla(36, 83%, 43%, 0.4);
+}
+
+.text-glow {
+  text-shadow: 4px 0 8px var(--shadow-pink), -4px 0 8px var(--shadow-gold);
+}
