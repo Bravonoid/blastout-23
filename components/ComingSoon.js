@@ -63,105 +63,94 @@ const ComingSoon = () => {
       </div>
 
       <div className="invisible lg:visible flex justify-center items-center w-[100vw]">
-          <div>
-              <img src="./Coming Soon bg.svg" className="w-[100vw]"></img>
-          </div>
+        <div>
+          <img src="./Coming Soon bg.svg" className="w-[100vw]"></img>
+        </div>
         <Parallax pages={5}>
-
-        <ParallaxLayer 
-          speed={1}
-          offset={0}
-          factor={1}
-          sticky={{end:1}}
-          >
-          <div className="absolute right-[385px] top-[720px] z-[10] h-[4px] w-[600px] bg-[#FFBD0C]">
-          </div>
+          <ParallaxLayer speed={1} offset={0} factor={1} sticky={{ end: 1 }}>
+            <div className="absolute right-[385px] top-[720px] z-[10] h-[4px] w-[600px] bg-[#FFBD0C]"></div>
           </ParallaxLayer>
 
+          <ParallaxLayer
+            speed={1}
+            offset={0}
+            factor={0.1}
+            sticky={{ start: 0, end: 1.5 }}
+          ></ParallaxLayer>
 
-          <ParallaxLayer 
-          speed={1}
-          offset={0}
-          factor={0.1}
-          sticky={{start:0,end:1.5}}
+          <ParallaxLayer
+            offset={0}
+            speed={1}
+            factor={2}
+            sticky={{ start: 1, end: 1.5 }}
           >
-          </ParallaxLayer>
-
-          <ParallaxLayer 
-          offset={0} 
-          speed={1} 
-          factor={2}
-          sticky={{start:1,end:1.5}}
-          >
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[420px] opacity-10">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[440px] opacity-20">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[460px] opacity-30">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[480px] opacity-40">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[500px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[520px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[540px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[560px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[580px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute right-[425px] top-[600px] z-[15] text-[70px] text-black font-extrabold font-outline-4 font-inter">
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[420px] opacity-10">
               COMING SOON
             </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[620px] opacity-10">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[640px] opacity-20">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[660px] opacity-30">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[680px] opacity-40">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[700px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[720px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[740px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[760px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[780px] opacity-50">
-          COMING SOON
-        </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[440px] opacity-20">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[460px] opacity-30">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[480px] opacity-40">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[500px] opacity-50">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[520px] opacity-50">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[540px] opacity-50">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[560px] opacity-50">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[580px] opacity-50">
+              COMING SOON
+            </div>
+            <div className="absolute right-[425px] top-[600px] z-[15] text-[70px] text-black font-extrabold font-outline-4 font-inter">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[620px] opacity-10">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[640px] opacity-20">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[660px] opacity-30">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[680px] opacity-40">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[700px] opacity-50">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[720px] opacity-50">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[740px] opacity-50">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[760px] opacity-50">
+              COMING SOON
+            </div>
+            <div className="absolute z-[10] text-[70px] text-black font-extrabold font-outline-1 font-inter right-[425px] top-[780px] opacity-50">
+              COMING SOON
+            </div>
           </ParallaxLayer>
 
-          <ParallaxLayer 
-          speed={2}
-          offset={1.5}
-          factor={0.1}
-          sticky={{start:0,end:1.5}}
+          <ParallaxLayer
+            speed={2}
+            offset={1.5}
+            factor={0.1}
+            sticky={{ start: 0, end: 1.5 }}
           >
-          <div className="absolute right-[385px] top-[580px] z-[10] h-[4px] w-[600px] bg-[#FFBD0C]">
-          </div>
+            <div className="absolute right-[385px] top-[580px] z-[10] h-[4px] w-[600px] bg-[#FFBD0C]"></div>
           </ParallaxLayer>
-
         </Parallax>
       </div>
     </>

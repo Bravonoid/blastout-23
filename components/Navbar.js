@@ -21,22 +21,34 @@ const Navbar = () => {
               </a>
             </div>
             <div className="mx-5 flex">
-              <a href="#" className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]">
+              <a
+                href="#"
+                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
+              >
                 TENTANG
               </a>
             </div>
             <div className="mx-5 flex">
-              <a href="#" className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]">
+              <a
+                href="#"
+                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
+              >
                 TRYOUT
               </a>
             </div>
             <div className="mx-5 flex">
-              <a href="#" className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]">
+              <a
+                href="#"
+                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
+              >
                 MAIN EVENT
               </a>
             </div>
             <div className="mx-5 flex bg-[#FBDF97] px-[10px] py-[3px] rounded-xl hover:bg-[#b5a16d]">
-              <a href="#" className="text-[#0A0823] text-lg font-inter font-semibold">
+              <a
+                href="#"
+                className="text-[#0A0823] text-lg font-inter font-semibold"
+              >
                 DAFTAR
               </a>
             </div>
