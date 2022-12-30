@@ -58,14 +58,6 @@ const Footer = () => {
             </a>
           </div>
         </div>
-<<<<<<< HEAD
-        <div class="flex justify-center">
-          <img src="./Group 11.svg" class="flex mx-2 w-[30px]"></img>
-          <img src="./Group 12.svg" class="flex mx-2 w-[30px]"></img>
-        </div>
-        <div class="flex justify-center mt-4">
-          <div class="font-inter font-semibold text-sm">
-=======
         <div className="absolute flex z-[10] justify-center lg:mt-[130px] mt-[260px] ml-8 lg:ml-0">
           <a href="#" className="">
             <img
@@ -82,7 +74,6 @@ const Footer = () => {
         </div>
         <div className="absolute lg:flex z-[10] justify-center mt-[310px] ml-10 lg:mt-[185px] lg:ml-0">
           <div className="font-inter text-[#FBDF97] font-semibold text-xs lg:text-lg">
->>>>>>> master-2
             IT BLASTOUT 2023
           </div>
         </div>
