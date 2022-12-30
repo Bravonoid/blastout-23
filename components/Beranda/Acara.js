@@ -14,50 +14,64 @@ const Acara = () => {
   const [k, setK] = useState(0);
   const rangkaian = [
     {
-      title: "Briefing",
+      title: "BRIEFING",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
+      no: 0,
+      bg: "./rangkaianAcara/briefing.png",
     },
     {
-      title: "Try Out",
+      title: "TRYOUT",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
+      no: 1,
+      bg: "./rangkaianAcara/tryout.png",
     },
     {
-      title: "Talk Show",
+      title: "BLASTALK",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
+      no: 2,
+      bg: "./rangkaianAcara/blastalk.png",
     },
     {
-      title: "Faculty Fair",
+      title: "FACULTY FAIR",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
+      no: 3,
+      bg: "./rangkaianAcara/facfair.png",
     },
     {
-      title: "Campus Fair",
+      title: "CAMPUS FAIR",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
+      no: 4,
+      bg: "./rangkaianAcara/camfair.png",
     },
     {
-      title: "Entertainment",
+      title: "ENTERTAINMENT",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
+      no: 5,
+      bg: "./rangkaianAcara/entertainment.png",
     },
   ];
 
   const normal = {
-    w: 12,
+    w: "12%",
+    h: "12%",
     disp: "none",
-    rot: -90,
-    titleSize: 50,
-    trans: "translate(16.25vh, -16.25vh)",
+    rot: "-90deg",
+    titleSize: "50px",
+    trans: "translate(16.25vh, -18vh)",
   };
 
   const active = {
-    w: 30,
+    w: "30%",
+    h: "30%",
     disp: "block",
-    rot: 0,
-    titleSize: 40,
+    rot: "0deg",
+    titleSize: "40px",
     trans: "translate(0, 0)",
   };
 
@@ -72,62 +86,109 @@ const Acara = () => {
     return () => clearInterval(interval);
   }, [k]);
 
-  const handler = () => {
-    console.log("handler");
+  const enterHandler = (e, key) => {
+    // clearInterval(interval);
+    let x = key % 6;
+    setK(x);
+    let temp = [false, false, false, false, false, false];
+    temp[x] = true;
+    setState([...temp]);
+    // console.log(e._targetInst.index + " " + e._targetInst.key);
+    // console.log(e.target.__reactFiber$dh933erxn7i.key % 6);
+    // console.log(key);
+  };
+
+  const leaveHandler = (e, key) => {
+    let x = key % 6;
+    setK(x);
+    // console.log(x);
   };
 
   return (
     <>
-      <div class="font-bold w-[37.5vh] text-[50px] w-full flex justify-center m-[20px]">
-        Rangkaian Acara
+      <div className="flex justify-center font-bold text-3xl sm:text-[50px] w-full m-[20px] text-[#EEEEEE]">
+        RANGKAIAN ACARA
       </div>
-      <div class="flex justify-evenly mb-[200px] px-[50px]">
+      <div className="h-[100vh] sm:h-[50vh] flex flex-col sm:flex-row justify-evenly mb-[200px] px-[50px]">
         {rangkaian &&
-          rangkaian.map((item, i) =>
-            state[i] ? (
-              <div
-                key={i}
-                class="w-[15%] overflow-hidden h-[50vh] flex flex-col transition-all duration-500 justify-end border-2 border-black p-[2.5vh]"
-                style={{ width: active.w + "%" }}
+          rangkaian.map((item, i) => {
+            const width = state[i] ? active.w : normal.w;
+            const height = state[i] ? active.h : normal.h;
+            const disp = state[i] ? active.disp : normal.disp;
+            const rot = state[i] ? active.rot : normal.rot;
+            const trans = state[i] ? active.trans : normal.trans;
+            const fontSize = state[i] ? active.titleSize : normal.titleSize;
+            const st = state[i] ? {width: width, background: "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"} : {width: width, background: "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"};
+            const stsm = state[i] ? {height: height, background: "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"} : {height: height, background: "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"};
+            return (
+              <>
+                <div
+                  key={item.no}
+                  className="sm:hidden relative overflow-hidden w-[80vw] flex flex-col transition-all duration-500 justify-end p-[2.5vh] text-white"
+                  style={stsm}
+                  onMouseOver={(e) => enterHandler(e, i)}
+                  onMouseLeave={(e) => leaveHandler(e, i)}
+                >
+                  <div
+                    className="font-bold w-[37.5vh] flex justify-start"
+                    key={item.no + 6}
+                  >
+                    <p
+                      className="text-xl"
+                    >
+                      {item.title}
+                    </p>
+                  </div>
+                  <div
+                    className="text-sm"
+                    style={{ display: disp }}
+                    key={item.no + 12}
+                  >
+                    {item.desc}
+                  </div>
+                  <img
+                    src={item.bg}
+                    className="absolute -z-[10] left-0 bottom-0 w-full h-full"
+                  ></img>
+                </div>
+                <div
+                key={item.no}
+                className="hidden sm:flex relative overflow-hidden h-[50vh] flex-col transition-all duration-500 justify-end p-[2.5vh] text-white"
+                style={st}
+                onMouseOver={(e) => enterHandler(e, i)}
+                onMouseLeave={(e) => leaveHandler(e, i)}
               >
                 <div
-                  class="font-bold w-[37.5vh]"
+                  className="font-bold w-[37.5vh] flex justify-start"
                   style={{
-                    fontSize: active.titleSize + "px",
-                    rotate: active.rot + "deg",
-                    transform: active.trans,
+                    fontSize: fontSize,
+                    rotate: rot,
+                    transform: trans,
                   }}
+                  key={item.no + 6}
                 >
-                  {item.title}
+                  <p
+                    className="text-2xl"
+                  >
+                    {item.title}
+                  </p>
                 </div>
-                <div class="font-bold" style={{ display: active.disp }}>
-                  {item.desc}
-                </div>
-              </div>
-            ) : (
-              <div
-                key={i}
-                class="w-[15%] overflow-hidden h-[50vh] flex flex-col transition-all duration-500 justify-end border-2 border-black p-[2.5vh]"
-                style={{ width: normal.w + "%" }}
-              >
                 <div
-                  class="font-bold w-[37.5vh]"
-                  style={{
-                    fontSize: normal.titleSize + "px",
-                    rotate: normal.rot + "deg",
-                    transform: normal.trans,
-                  }}
+                  className="text-l"
+                  style={{ display: disp }}
+                  key={item.no + 12}
                 >
-                  {item.title}
-                </div>
-                <div class="font-bold" style={{ display: normal.disp }}>
                   {item.desc}
                 </div>
+                <img
+                  src={item.bg}
+                  className="absolute -z-[10] left-0 bottom-0 w-full h-full"
+                ></img>
               </div>
-            )
-          )}
+              </>
+            );
+          })}
       </div>
-      <div onClick={handler}>tes</div>
     </>
   );
 };

@@ -7,7 +7,7 @@ const NotFound404 = () => {
       <Head>
         <title>404 Not Found. Blastout 2023</title>
       </Head>
-    <NotFound/>
+      <NotFound />
     </>
   );
 };

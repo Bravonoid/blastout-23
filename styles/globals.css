@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --shadow-pink: hsla(346, 68%, 43%, 0.5);
+  --shadow-gold: hsla(36, 83%, 43%, 0.4);
+}
+
+.text-glow {
+  text-shadow: 4px 0 8px var(--shadow-pink), -4px 0 8px var(--shadow-gold);
+}
+
+.burger-aktif > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.burger-aktif > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.burger-aktif > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+@layer base {
+  .font-outline-4 {
+    -webkit-text-stroke: 2px #FFBD0C;
+  }
+
+  .font-outline-2 {
+    -webkit-text-stroke: 2.5px #FFBD0C;
+  }
+
+  .font-outline-1 {
+    -webkit-text-stroke: 1px #FFBD0C;
+  }
+}
