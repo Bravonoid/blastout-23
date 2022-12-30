@@ -19,12 +19,18 @@ module.exports = {
         inter: ["var(--font-inter)", ...fontFamily.sans],
         poppins: ["var(--font-poppins)", ...fontFamily.sans],
         montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
+        Inter: ["Inter"],
+        Universal: ["Universal"],
+        Times: ["Times"],
+        Poppins: ["Poppins"],
+        TransAmerica: ["Trans-America Bold"],
       },
       maxWidth: {
         "8xl": "90rem",
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
+        "spin-medium": "spin 4s linear infinite",
       },
       colors: {
         blastoutpurple: "#8338ED",

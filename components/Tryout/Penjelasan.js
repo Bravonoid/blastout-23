@@ -9,7 +9,7 @@ import wave from "../../assets/Tryout/wave.png"
 const Penjelasan = () => {
   return (
     <>
-      <div class="h-screen relative overflow-hidden bg-[#0F0B36]">
+      <div class="h-screen relative overflow-hidden bg-[#0F0B36] z-50">
         <Image src={cloud} alt="cloud" class="absolute w-[35%] -top-16 left-0 mobile:-top-8 mobile:w-[250px] sm:-top-8 sm:w-[250px]" />
         <div class="flex lg:flex-row mobile:flex-col-reverse sm:flex-col-reverse">
           <div class="flex flex-col text-justify font-Inter pt-40 pb-20 pl-20 mobile:px-[60px] sm:px-[60px]">
@@ -33,7 +33,7 @@ const Penjelasan = () => {
           </div>
         </div>
         <Image src={cloud1} alt="cloud1" class="absolute w-[35%] right-0 bottom-0"/>
-        <Image src={wave} alt="cloud1" class="absolute w-[20%] left-0 -bottom-8"/>
+        <Image src={wave} alt="cloud1" class="absolute w-[20%] left-0 -bottom-8 mobile:w-1/2 z-50 mobile:top-[800px]"/>
       </div>
     </>
   );

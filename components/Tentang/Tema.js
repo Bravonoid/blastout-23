@@ -10,10 +10,10 @@ const Tema = () => {
   return (
     <>
       <div class="h-auto overflow-hidden py-20 text-[#000000] bg-[#0F0B36] bg-cover" style={{backgroundImage: `url(${background.src})`}}>
-      <Image src={cloud} alt="cloud" class="absolute w-[35%] sm:top-[700px] lg:top-[550px] xl:top-[600px] left-0 mobile:top-[690px] mobile:w-[150px]" />
-      <Image src={tema} alt="tema" class="px-5 mobile:hidden" />
+      <Image src={cloud} alt="cloud" class="absolute w-[35%] sm:top-[800px] lg:top-[650px] xl:top-[700px] left-0 mobile:top-[900px] mobile:w-[150px]" />
+      <Image src={tema} alt="tema" class="px-[115px] mobile:hidden" />
       <Image src={tema_mobile} alt="tema" class="mobile:block sm:hidden px-5" />
-      <Image src={cloud2} alt="cloud" class="absolute right-0 w-1/3 mobile:-bottom-64" />
+      <Image src={cloud2} alt="cloud" class="absolute right-0 w-1/3 mobile:-bottom-[900px]" />
       </div>
     </>
   );
