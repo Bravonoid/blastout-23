@@ -4,21 +4,20 @@ import { useMemo } from "react";
 
 function Lokasi() {
   return (
-    <div className="w-screen h-screen flex flex-col items-center mt-96 mb-96 relative">
-      <h2 className="font-bold text-blastoutwhite text-glow text-2xl lg:text-6xl mb-8 lg:mb-28 uppercase font-inter">
+    <div className="w-screen h-full flex flex-col items-center justify-center mt-20 mb-40 md:mb-52 lg:mt-32 lg:mb-64 xl:mb-80 relative">
+      <h2 className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl mb-8 lg:mb-16 uppercase font-inter">
         Lokasi
       </h2>
-      <div className="relative h-full w-full">
+      <div className="relative 2xl:min-h-[20vh] mb-96">
         <Map />
-        <Image
-          src="/mainevent/lokasi-pins.svg"
-          alt="pins"
-          height={1000}
-          width={1000}
-          className="hidden lg:inline-block absolute 2xl:w-[1440px] lg:-top-16 xl:-top-[30%] left-1/2 -translate-x-1/2 z-30 pointer-events-none"
-        />
-        {/* <Image src="/mainevent/lokasi-pin.svg" alt="pin" height={1000} width={1000} className="absolute w-fit left-1/2 -translate-x-1/2 -translate-y-1/2 z-30" /> */}
       </div>
+      <Image
+        src="/mainevent/lokasi-pins.svg"
+        alt="pins"
+        height={1000}
+        width={1000}
+        className="hidden lg:inline-block absolute w-[90%] top-[4%] left-1/2 -translate-x-1/2  z-30 pointer-events-none"
+      />
     </div>
   );
 }
@@ -44,26 +43,26 @@ function Map() {
 
   if (!isLoaded) {
     return (
-      <div className="w-[240px] h-[400px] lg:w-[1228px] lg:h-[536px] absolute top-0 left-1/2 -translate-x-1/2 z-10 bg-neutral-900 border-4 lg:border-[16px] border-blastoutmustard">
-        <MapLayout>
-          <div className="h-full grid place-content-center">
-            {/* <div className="w-4 h-16 bg-blastoutmustard rounded-full animate-spin-slow" /> */}
-            <span className="font-bold text-4xl text-blastoutmustard">
-              Loading...
-            </span>
-          </div>
-        </MapLayout>
-      </div>
+      // <div className="w-[240px] h-[400px] sm:w-[80vw] sm:h-[50vh] lg:w-[80vw] lg:h-[50vh] absolute top-0 left-1/2 -translate-x-1/2 z-10 bg-neutral-900 border-4 lg:border-[16px] border-blastoutmustard">
+      //   <MapLayout>
+      //     <div className="h-full grid place-content-center">
+      //       <span className="font-bold text-4xl text-blastoutmustard">
+      //         Loading...
+      //       </span>
+      //     </div>
+      //   </MapLayout>
+      // </div>
+      null
     );
   }
 
   return (
-    <div className="w-[240px] h-[400px] sm:w-[80vw] lg:h-[536px] absolute top-0 left-1/2 -translate-x-1/2 z-10">
+    <div className="w-[240px] h-[400px] sm:w-[80vw] sm:h-[50vh] lg:w-[70vw] lg:h-[50vh] xl:h-[55vh] 2xl:h-[70vh] absolute top-0 left-1/2 -translate-x-1/2 z-10">
       <MapLayout>
         <GoogleMap
           zoom={18}
           center={center}
-          mapContainerClassName="h-full w-full relative z-10 border-4 lg:border-[16px] border-blastoutmustard"
+          mapContainerClassName="h-full w-full relative z-10 border-4 lg:border-[8px] 2xl:border-[16px] border-blastoutmustard"
           options={defaultMapOptions}
         >
           <MarkerF position={center} />
@@ -83,29 +82,35 @@ function MapLayout({ children }) {
         alt="blastout logo"
         height={1000}
         width={1000}
-        className="absolute w-16 sm:w-36 lg:w-60 -top-6 -left-8 lg:-top-20 lg:-left-16 xl:-top-36 xl:-left-28 -rotate-[20deg] z-20"
+        className="absolute w-16 sm:w-36 lg:w-40 xl:w-48 2xl:w-56 -top-6 -left-8 lg:-top-20 lg:-left-16 -rotate-[20deg] z-20"
       />
       {/* detail kiri bawah */}
-      <div className="w-[60%] md:w-[300px] lg:w-[45%] lg:h-60 2xl:h-[356px] 2xl:w-[564px] absolute -bottom-12 lg:-bottom-24 xl:-bottom-48 left-1/2 lg:-left-20 xl:-left-32 -translate-x-1/2 lg:translate-x-0 flex flex-col justify-center py-2 px-3 lg:px-16 xl:px-28 z-20 bg-[#E5E5E5] lg:bg-[url(/mainevent/lokasi-paper.svg)] bg-contain bg-no-repeat font-inter border-4 border-[#FF3234] drop-shadow-[0_0_12px_rgba(255,50,52,.25)] lg:border-transparent lg:bg-transparent lg:drop-shadow-none">
-        <h4 className="text-[10px] lg:text-xl 2xl:text-3xl">
+      <div className="w-[60%] md:w-[300px] lg:w-[48%] xl:w-[40%] lg:h-60 2xl:h-80 absolute -bottom-12 lg:-bottom-24 xl:-bottom-36 left-1/2 lg:-left-32 xl:-left-36 2xl:-left-44 -translate-x-1/2 lg:translate-x-0 flex flex-col justify-center py-2 px-3 lg:px-16 z-20 bg-[#E5E5E5] lg:bg-[url(/mainevent/lokasi-paper.svg)] bg-contain bg-no-repeat font-inter border-4 border-[#FF3234] drop-shadow-[0_0_12px_rgba(255,50,52,.25)] lg:border-transparent lg:bg-transparent lg:drop-shadow-none">
+        <h4 className="text-[10px] lg:text-lg 2xl:text-xl">
           Sabtu, 7 Januari 2023
         </h4>
-        <h3 className="text-[14px] lg:text-3xl 2xl:text-5xl font-bold lg:my-2 2xl:mt-4 2xl:mb-6">
+        <h3 className="text-[14px] lg:text-2xl 2xl:text-3xl font-bold sm:mb-1 lg:my-2">
           Nama Lokasi
         </h3>
-        <h4 className="text-[12px] lg:text-2xl 2xl:text-4xl">
+        <h4 className="text-[12px] lg:text-xl 2xl:text-2xl">
           Detail alamat lorem ipsum dolor
         </h4>
       </div>
       {/* foto + bg orange */}
-      <div className="absolute w-2/3 h-1/2 bg-[#FB5507] -bottom-4 -left-4 lg:w-[32%] lg:aspect-square lg:bg-blastoutmustard lg:-bottom-[20%] lg:-right-[14%]" />
+      <div className="absolute w-2/3 h-1/2 bg-[#FB5507] -bottom-4 -left-4 lg:w-[32%] lg:aspect-square lg:bg-blastoutmustard lg:-bottom-16 lg:left-auto lg:-right-28 xl:-right-36 2xl:-right-48" />
       <Image
         src="/mainevent/lokasi-foto.png"
         alt="foto"
         height={1000}
         width={1000}
-        className="absolute w-2/3 sm:w-1/3 -top-4 -right-4 lg:w-[48%] lg:top-[48%] lg:-translate-y-1/2 lg:-right-36 border-4 lg:border-[16px] z-0"
+        className="absolute w-2/3 sm:w-1/3 -top-4 -right-4 lg:w-auto lg:h-[55vh] xl:h-[60vh] 2xl:h-[75vh] lg:top-[50%] lg:-translate-y-1/2 lg:-right-24 xl:-right-32 2xl:-right-44   border-4 lg:border-[8px] 2xl:border-[16px] z-0"
       />
     </>
   );
+}
+
+function MapLayoutWrapper() {
+  return (
+    null
+  )
 }

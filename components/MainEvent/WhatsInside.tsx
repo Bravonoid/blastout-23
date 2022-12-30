@@ -37,13 +37,15 @@ function WhatsInside() {
               className="bg-[#E5E5E5] text-[#1A1A1A] border-4 border-blastoutdarkpink aspect-square max-w-[15rem] lg:max-w-none lg:w-[22rem] lg:h-[26rem] px-4 py-6 lg:p-10 flex flex-col justify-between z-10 cursor-default transition group hover:border-blastoutpink hover:drop-shadow-[0_0_48px_rgba(255,0,112,.6)]"
             >
               <div className="flex items-center lg:flex-col lg:items-start lg:justify-between lg:h-full gap-x-3">
-                <Image
-                  src={`/mainevent/whatsinside/${img}.svg`}
-                  alt={`${img} logo`}
-                  width={1000}
-                  height={1000}
-                  className="h-10 w-10 lg:h-16 lg:w-16 p-2 lg:p-4 aspect-square lg:mb-8 bg-blastoutdarkpink mb-2 transition group-hover:bg-blastoutpink rounded-full"
-                />
+                <div className="w-10 h-10 p-[.6rem] rounded-full bg-blastoutdarkpink flex items-center justify-center mb-2 transition group-hover:bg-blastoutpink lg:h-16 lg:w-16 lg:p-4 lg:mb-8">
+                  <Image
+                    src={`/mainevent/whatsinside/${img}.svg`}
+                    alt={`${img} logo`}
+                    width={1000}
+                    height={1000}
+                    className="aspect-square"
+                  />
+                </div>
                 {i !== 0 ? (
                   <div className="h-full w-full lg:mt-8 hidden lg:inline-block" />
                 ) : (
@@ -57,6 +59,23 @@ function WhatsInside() {
             </article>
           ))}
         </div>
+        <div className="flex justify-between w-[100vw] mt-20">
+          <Image
+            src="/mainevent/whats-blastout.svg"
+            alt="whats inside blastout"
+            width={1000}
+            height={1000}
+            className="w-32 sm:w-[200px] lg:w-[300px] 2xl:w-[400px] -ml-8"
+          />
+          {/* bg kanan bawah */}
+          <Image
+            src="/mainevent/whats-paper.svg"
+            alt="whats inside blastout"
+            width={1000}
+            height={1000}
+            className="w-40 sm:w-[300px] lg:w-[400px] 2xl:w-[500px]"
+          />
+        </div>
         {/* whats inside blastout kiri atas */}
         <Image
           src="/mainevent/whats-whats.svg"
@@ -66,21 +85,6 @@ function WhatsInside() {
           className="w-[224px] lg:w-[400px] xl:w-[624px] absolute left-0 top-24"
         />
         {/* blastout kiri bawah */}
-        <Image
-          src="/mainevent/whats-blastout.svg"
-          alt="whats inside blastout"
-          width={1000}
-          height={1000}
-          className="w-[150px] sm:w-[200px] lg:w-[400px] 2xl:w-[500px] absolute -left-8 lg:-left-32 -bottom-60 lg:-bottom-[26rem]"
-        />
-        {/* bg kanan bawah */}
-        <Image
-          src="/mainevent/whats-paper.svg"
-          alt="whats inside blastout"
-          width={1000}
-          height={1000}
-          className="w-[200px] sm:w-[300px] lg:w-[560px] 2xl:w-[50vw] absolute right-0 -bottom-60 lg:-bottom-[26rem]"
-        />
       </div>
     </>
   );
