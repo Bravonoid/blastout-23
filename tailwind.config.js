@@ -5,6 +5,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./lib/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -25,6 +26,8 @@ module.exports = {
         blastoutwhite: "#F0F0F0",
         blastoutgold: "#FFBD0C",
         blastoutmustard: "#EE9125",
+        blastoutpink: "#FF0070",
+        blastoutdarkpink: "#B90051",
       },
     },
   },

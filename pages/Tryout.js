@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Penjelasan from "../components/Tryout/Penjelasan";
 import Timeline from "../components/Tryout/Timeline";
+import Sistem from "../components/Tryout/Sistem";
 const Beranda = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const Beranda = () => {
       </Head>
       <Penjelasan />
       <Timeline />
+      <Sistem />
     </>
   );
 };
