@@ -14,42 +14,42 @@ const Acara = () => {
   const [k, setK] = useState(0);
   const rangkaian = [
     {
-      title: "Briefing",
+      title: "BRIEFING",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
       no: 0,
       bg: "./rangkaianAcara/briefing.png",
     },
     {
-      title: "Try Out",
+      title: "TRYOUT",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
       no: 1,
       bg: "./rangkaianAcara/tryout.png",
     },
     {
-      title: "Talk Show",
+      title: "BLASTALK",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
       no: 2,
-      bg: "./rangkaianAcara/talkshow.png",
+      bg: "./rangkaianAcara/blastalk.png",
     },
     {
-      title: "Faculty Fair",
+      title: "FACULTY FAIR",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
       no: 3,
       bg: "./rangkaianAcara/facfair.png",
     },
     {
-      title: "Campus Fair",
+      title: "CAMPUS FAIR",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
       no: 4,
       bg: "./rangkaianAcara/camfair.png",
     },
     {
-      title: "Entertainment",
+      title: "ENTERTAINMENT",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc. Sed euismod, nunc sit amet aliquam lacinia, nunc nisl aliquam nisl, eget aliquam nisl nisl eu nunc.",
       img: "",
       no: 5,
@@ -59,14 +59,16 @@ const Acara = () => {
 
   const normal = {
     w: "12%",
+    h: "12%",
     disp: "none",
     rot: "-90deg",
     titleSize: "50px",
-    trans: "translate(16.25vh, -16.25vh)",
+    trans: "translate(16.25vh, -18vh)",
   };
 
   const active = {
     w: "30%",
+    h: "30%",
     disp: "block",
     rot: "0deg",
     titleSize: "40px",
@@ -104,26 +106,55 @@ const Acara = () => {
 
   return (
     <>
-      <div className="flex justify-center font-bold w-[37.5vh] text-[50px] w-full m-[20px]">
-        <div>Rangkaian Acara</div>
+      <div className="flex justify-center font-bold text-3xl sm:text-[50px] w-full m-[20px] text-[#EEEEEE]">
+        RANGKAIAN ACARA
       </div>
-      <div className="flex justify-evenly mb-[200px] px-[50px]">
+      <div className="h-[100vh] sm:h-[50vh] flex flex-col sm:flex-row justify-evenly mb-[200px] px-[50px]">
         {rangkaian &&
           rangkaian.map((item, i) => {
             const width = state[i] ? active.w : normal.w;
+            const height = state[i] ? active.h : normal.h;
             const disp = state[i] ? active.disp : normal.disp;
             const rot = state[i] ? active.rot : normal.rot;
             const trans = state[i] ? active.trans : normal.trans;
             const fontSize = state[i] ? active.titleSize : normal.titleSize;
+            const st = state[i] ? {width: width, background: "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"} : {width: width, background: "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"};
+            const stsm = state[i] ? {height: height, background: "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"} : {height: height, background: "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"};
             return (
-              <div
+              <>
+                <div
+                  key={item.no}
+                  className="sm:hidden relative overflow-hidden w-[80vw] flex flex-col transition-all duration-500 justify-end p-[2.5vh] text-white"
+                  style={stsm}
+                  onMouseOver={(e) => enterHandler(e, i)}
+                  onMouseLeave={(e) => leaveHandler(e, i)}
+                >
+                  <div
+                    className="font-bold w-[37.5vh] flex justify-start"
+                    key={item.no + 6}
+                  >
+                    <p
+                      className="text-xl"
+                    >
+                      {item.title}
+                    </p>
+                  </div>
+                  <div
+                    className="text-sm"
+                    style={{ display: disp }}
+                    key={item.no + 12}
+                  >
+                    {item.desc}
+                  </div>
+                  <img
+                    src={item.bg}
+                    className="absolute -z-[10] left-0 bottom-0 w-full h-full"
+                  ></img>
+                </div>
+                <div
                 key={item.no}
-                className="relative overflow-hidden h-[50vh] flex flex-col transition-all duration-500 justify-end p-[2.5vh] text-white"
-                style={{
-                  width: width,
-                  background:
-                    "linear-gradient(179.91deg, rgba(37, 37, 37, 0) 28.25%, rgba(0, 0, 0, 0.8) 110.91%)",
-                }}
+                className="hidden sm:flex relative overflow-hidden h-[50vh] flex-col transition-all duration-500 justify-end p-[2.5vh] text-white"
+                style={st}
                 onMouseOver={(e) => enterHandler(e, i)}
                 onMouseLeave={(e) => leaveHandler(e, i)}
               >
@@ -137,17 +168,13 @@ const Acara = () => {
                   key={item.no + 6}
                 >
                   <p
-                    className="bg-[#8338ED] rounded-[25px] px-[20px] py-[5px] text-2xl font-retrolight"
-                    style={{
-                      background:
-                        "linear-gradient(111.14deg, #8338ED 23.71%, #FF0070 102.48%)",
-                    }}
+                    className="text-2xl"
                   >
                     {item.title}
                   </p>
                 </div>
                 <div
-                  className="font-bold"
+                  className="text-l"
                   style={{ display: disp }}
                   key={item.no + 12}
                 >
@@ -158,6 +185,7 @@ const Acara = () => {
                   className="absolute -z-[10] left-0 bottom-0 w-full h-full"
                 ></img>
               </div>
+              </>
             );
           })}
       </div>
