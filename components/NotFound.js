@@ -14,7 +14,7 @@ const NotFound = () => {
           alt=""
         ></img>
         <img src="./405.png" className="hidden lg:block" alt=""></img>
-        <img src="./404 mobile.png" className="block lg:hidden"></img>
+        <img src="./404 mobile.png" className="block lg:hidden w-[100vw]"></img>
       </div>
     </>
   );

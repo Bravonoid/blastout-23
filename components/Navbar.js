@@ -67,7 +67,7 @@ const Navbar = () => {
             id="nav-menu"
             className={
               isActive
-                ? "absolute py-5 bg-[#201D41] w-full max-w-full h-[50vw] top-full left-0"
+                ? "absolute py-5 bg-[#201D41] w-full max-w-full h-[60vw] top-full left-0"
                 : "hidden absolute py-5 bg-[#201D41] w-full max-w-full h-[60vw] top-full left-0"
             }
           >
