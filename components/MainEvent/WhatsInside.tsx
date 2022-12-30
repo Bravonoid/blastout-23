@@ -27,7 +27,8 @@ function WhatsInside() {
   return (
     <>
       <div className="font-inter flex flex-col justify-center items-center relative mt-24 md:mt-12">
-        <h2 className="uppercase text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl font-bold mb-12">
+        <h2 className="uppercase text-blastoutwhite text-glow 
+         font-bold mb-12">
           What's Inside
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 xl:gap-12 px-16 lg:px-0">

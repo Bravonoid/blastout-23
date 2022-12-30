@@ -110,7 +110,5 @@ function MapLayout({ children }) {
 }
 
 function MapLayoutWrapper() {
-  return (
-    null
-  )
+  return null;
 }

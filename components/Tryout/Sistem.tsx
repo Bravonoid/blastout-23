@@ -112,32 +112,29 @@ function Step(i, j) {
   return (
     <div
       className={`col-start-2 mb-20 lg:mb-36 
-      ${i == 2
+      ${
+        i == 2
           ? "row-start-2"
           : i == 4
-            ? "row-start-4"
-            : i == 6
-              ? "row-start-6"
-              : i == 8
-                ? "row-start-8"
-                : ""
-        }
-      ${i == 2
+          ? "row-start-4"
+          : i == 6
+          ? "row-start-6"
+          : i == 8
+          ? "row-start-8"
+          : ""
+      }
+      ${
+        i == 2
           ? "lg:row-start-1"
           : i == 4
-            ? "lg:row-start-2"
-            : i == 6
-              ? "lg:row-start-3"
-              : i == 8
-                ? "lg:row-start-4"
-                : ""
-        }
-      ${j == 1
-          ? "lg:col-start-1"
-          : j == 3
-            ? "lg:col-start-3"
-            : ""
-        }`}
+          ? "lg:row-start-2"
+          : i == 6
+          ? "lg:row-start-3"
+          : i == 8
+          ? "lg:row-start-4"
+          : ""
+      }
+      ${j == 1 ? "lg:col-start-1" : j == 3 ? "lg:col-start-3" : ""}`}
     >
       <h3 className="text-base 2xl:text-5xl font-bold text-blastoutpink drop-shadow-[0_0_16px_rgba(244,164,182,.3)] mb-3 2xl:mb-6">
         Lorem Ipsum {i}
@@ -157,18 +154,20 @@ function Step(i, j) {
 function StepImg(i, j, k) {
   return (
     <div
-      className={`w-28 lg:w-44 2xl:w-80 h-fit mb-6 lg:mb-auto ${i === 1 ? "lg:ml-auto" : ""
-        } col-start-2 lg:col-start-${i} lg:row-start-${k} bg-blastoutpink p-2
-      ${j == 1
+      className={`w-28 lg:w-44 2xl:w-80 h-fit mb-6 lg:mb-auto ${
+        i === 1 ? "lg:ml-auto" : ""
+      } col-start-2 lg:col-start-${i} lg:row-start-${k} bg-blastoutpink p-2
+      ${
+        j == 1
           ? "row-start-1"
           : j == 3
-            ? "row-start-3"
-            : j == 5
-              ? "row-start-5"
-              : j == 7
-                ? "row-start-7"
-                : ""
-        }`}
+          ? "row-start-3"
+          : j == 5
+          ? "row-start-5"
+          : j == 7
+          ? "row-start-7"
+          : ""
+      }`}
     >
       <Image
         src="/mainevent/lokasi-foto.png"
