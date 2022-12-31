@@ -22,3 +22,17 @@
 .burger-aktif > span:nth-child(3) {
   @apply -rotate-45;
 }
+
+@layer base {
+  .font-outline-4 {
+    -webkit-text-stroke: 2px #ffbd0c;
+  }
+
+  .font-outline-8 {
+    -webkit-text-stroke: 3px #ffbd0c;
+  }
+
+  .font-outline-1 {
+    -webkit-text-stroke: 1px #ffbd0c;
+  }
+}

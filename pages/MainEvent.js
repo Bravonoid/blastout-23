@@ -12,8 +12,8 @@ const MainEvent = () => {
       </Head>
       <Navbar />
       <TombolDaftar />
-      <Footer />
       <ComingSoon />
+      <Footer />
     </>
   );
 };
