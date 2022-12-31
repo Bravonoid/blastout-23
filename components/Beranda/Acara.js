@@ -105,11 +105,15 @@ const Acara = () => {
   return (
     <div className="bg-[#0F0B36] h-[110vh] sm:h-[70vh]">
       <div className="flex justify-center font-bold text-3xl sm:text-5xl w-full text-[#EEEEEE] py-[3vh] sm:py-[7vh]">
-        <p style={{
+        <p
+          style={{
             textShadow:
               "4px 0px 8px rgba(185, 35, 69, 0.5), -4px 0px 8px rgba(199, 126, 19, 0.4)",
           }}
-          className="m-0 p-0">RANGKAIAN ACARA</p>
+          className="m-0 p-0"
+        >
+          RANGKAIAN ACARA
+        </p>
       </div>
       <div className="h-[100vh] sm:h-[50vh] flex flex-col sm:flex-row justify-evenly items-center mb-[200px] px-[5vw]">
         {rangkaian &&
@@ -120,12 +124,52 @@ const Acara = () => {
             const rot = state[i] ? active.rot : normal.rot;
             const trans = state[i] ? active.trans : normal.trans;
             const fontSize = state[i] ? active.titleSize : normal.titleSize;
-            const st = state[i] ? {width: width, background: "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)", filter:"drop-shadow(-2px 0 3px rgb(131 56 237 / 1)) drop-shadow(2px 0 3px rgb(255 0 112 / 1))"} : {width: width, background: "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"};
-            const stsm = state[i] ? {height: height, background: "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)", filter:"drop-shadow(-2px 0 3px rgb(131 56 237 / 1)) drop-shadow(2px 0 3px rgb(255 0 112 / 1))"} : {height: height, background: "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"};
-            const bg = state[i] ? {background: "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"} : {background: "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"};
-            const bgsm = state[i] ? {background: "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"} : {background: "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"};
+            const st = state[i]
+              ? {
+                  width: width,
+                  background:
+                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                  filter:
+                    "drop-shadow(-2px 0 3px rgb(131 56 237 / 1)) drop-shadow(2px 0 3px rgb(255 0 112 / 1))",
+                }
+              : {
+                  width: width,
+                  background:
+                    "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                };
+            const stsm = state[i]
+              ? {
+                  height: height,
+                  background:
+                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                  filter:
+                    "drop-shadow(-2px 0 3px rgb(131 56 237 / 1)) drop-shadow(2px 0 3px rgb(255 0 112 / 1))",
+                }
+              : {
+                  height: height,
+                  background:
+                    "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                };
+            const bg = state[i]
+              ? {
+                  background:
+                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                }
+              : {
+                  background:
+                    "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                };
+            const bgsm = state[i]
+              ? {
+                  background:
+                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                }
+              : {
+                  background:
+                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                };
 
-            return ( 
+            return (
               <>
                 <div
                   key={item.no}
@@ -138,11 +182,7 @@ const Acara = () => {
                     className="font-bold w-[37.5vh] flex justify-start z-[10]"
                     key={item.no + 5}
                   >
-                    <p
-                      className="text-l"
-                    >
-                      {item.title}
-                    </p>
+                    <p className="text-l">{item.title}</p>
                   </div>
                   <div
                     className="text-xs z-[10]"
@@ -151,45 +191,57 @@ const Acara = () => {
                   >
                     {item.desc}
                   </div>
-                  <div key={item.no + 30} className="left-0 absolute h-[30vh] w-full" style={{top: "50%", transform: "translateY(-50%)"}}>
+                  <div
+                    key={item.no + 30}
+                    className="left-0 absolute h-[30vh] w-full"
+                    style={{ top: "50%", transform: "translateY(-50%)" }}
+                  >
                     <div className={item.bgsm}></div>
                   </div>
-                  <div key={item.no + 35} className="h-full w-full absolute z-[20] bottom-0 left-0" style={bgsm}></div>
+                  <div
+                    key={item.no + 35}
+                    className="h-full w-full absolute z-[20] bottom-0 left-0"
+                    style={bgsm}
+                  ></div>
                 </div>
                 <div
-                key={item.no + 15}
-                className="hidden sm:flex relative overflow-hidden h-[50vh] flex-col transition-all duration-500 justify-end items-start p-[2.5vh] text-white"
-                style={st}
-                onMouseOver={(e) => enterHandler(e, i)}
-                onMouseLeave={(e) => leaveHandler(e, i)}
-              >
-                <div
-                  className="font-bold w-[37.5vh] flex justify-start z-[10]"
-                  style={{
-                    fontSize: fontSize,
-                    rotate: rot,
-                    transform: trans,
-                  }}
-                  key={item.no + 20}
+                  key={item.no + 15}
+                  className="hidden sm:flex relative overflow-hidden h-[50vh] flex-col transition-all duration-500 justify-end items-start p-[2.5vh] text-white"
+                  style={st}
+                  onMouseOver={(e) => enterHandler(e, i)}
+                  onMouseLeave={(e) => leaveHandler(e, i)}
                 >
-                  <p
-                    className="text-2xl"
+                  <div
+                    className="font-bold w-[37.5vh] flex justify-start z-[10]"
+                    style={{
+                      fontSize: fontSize,
+                      rotate: rot,
+                      transform: trans,
+                    }}
+                    key={item.no + 20}
                   >
-                    {item.title}
-                  </p>
+                    <p className="text-2xl">{item.title}</p>
+                  </div>
+                  <div
+                    className="text-l z-[10]"
+                    style={{ display: disp }}
+                    key={item.no + 25}
+                  >
+                    {item.desc}
+                  </div>
+                  <div
+                    key={item.no + 40}
+                    className="bottom-0 absolute w-[27vw] flex flex-row justify-center h-full shrink-0"
+                    style={{ left: "50%", transform: "translateX(-50%)" }}
+                  >
+                    <div className={item.bg}></div>
+                  </div>
+                  <div
+                    key={item.no + 45}
+                    className="h-full w-full absolute z-[5] bottom-0 left-0"
+                    style={bg}
+                  ></div>
                 </div>
-                <div
-                  className="text-l z-[10]"
-                  style={{ display: disp }}
-                  key={item.no + 25}
-                >
-                  {item.desc}
-                </div>
-                <div key={item.no + 40} className="bottom-0 absolute w-[27vw] flex flex-row justify-center h-full shrink-0" style={{left: "50%", transform: "translateX(-50%)"}}>
-                  <div className={item.bg}></div>
-                </div>
-                <div key={item.no + 45} className="h-full w-full absolute z-[5] bottom-0 left-0" style={bg}></div>
-              </div>
               </>
             );
           })}

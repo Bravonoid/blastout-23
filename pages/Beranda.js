@@ -13,12 +13,12 @@ const Beranda = () => {
       <Head>
         <title>Beranda . Blastout 2023</title>
       </Head>
-      <Navbar/>
+      <Navbar />
       <Header />
       <Sekilas />
       <Acara />
       <Testimoni />
-      <Footer/>
+      <Footer />
     </>
   );
 };
