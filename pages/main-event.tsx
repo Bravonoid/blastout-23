@@ -1,4 +1,4 @@
-import Timeline from "../components/Beranda/Timeline";
+// import Timeline from "../components/Beranda/Timeline";
 import Hero from "../components/mainevent/Hero";
 import Lokasi from "../components/mainevent/Lokasi";
 import WhatsInside from "../components/mainevent/WhatsInside";

@@ -44,20 +44,22 @@ function Map() {
   if (!isLoaded) {
     return (
       // <div className="w-[240px] h-[400px] sm:w-[80vw] sm:h-[50vh] lg:w-[80vw] lg:h-[50vh] absolute top-0 left-1/2 -translate-x-1/2 z-10 bg-neutral-900 border-4 lg:border-[16px] border-blastoutmustard">
-      //   <MapLayout>
-      //     <div className="h-full grid place-content-center">
-      //       <span className="font-bold text-4xl text-blastoutmustard">
-      //         Loading...
-      //       </span>
-      //     </div>
-      //   </MapLayout>
+      <MapLayoutWrapper>
+        <MapLayout>
+          <div className="h-full bg-neutral-900/90 grid place-content-center border-4 lg:border-[8px] 2xl:border-[16px] border-blastoutmustard">
+            <span className="font-bold text-4xl text-blastoutmustard">
+              Loading...
+            </span>
+          </div>
+        </MapLayout>
+      </MapLayoutWrapper>
       // </div>
-      null
     );
   }
 
   return (
-    <div className="w-[240px] h-[400px] sm:w-[80vw] sm:h-[50vh] lg:w-[70vw] lg:h-[50vh] xl:h-[55vh] 2xl:h-[70vh] absolute top-0 left-1/2 -translate-x-1/2 z-10">
+    // <div className="w-[240px] h-[400px] sm:w-[80vw] sm:h-[50vh] lg:w-[70vw] lg:h-[50vh] xl:h-[55vh] 2xl:h-[70vh] absolute top-0 left-1/2 -translate-x-1/2 z-10">
+    <MapLayoutWrapper>
       <MapLayout>
         <GoogleMap
           zoom={18}
@@ -68,7 +70,8 @@ function Map() {
           <MarkerF position={center} />
         </GoogleMap>
       </MapLayout>
-    </div>
+    </MapLayoutWrapper>
+    // </div>
   );
 }
 
@@ -85,16 +88,13 @@ function MapLayout({ children }) {
         className="absolute w-16 sm:w-36 lg:w-40 xl:w-48 2xl:w-56 -top-6 -left-8 lg:-top-20 lg:-left-16 -rotate-[20deg] z-20"
       />
       {/* detail kiri bawah */}
-      <div className="w-[60%] md:w-[300px] lg:w-[48%] xl:w-[40%] lg:h-60 2xl:h-80 absolute -bottom-12 lg:-bottom-24 xl:-bottom-36 left-1/2 lg:-left-32 xl:-left-36 2xl:-left-44 -translate-x-1/2 lg:translate-x-0 flex flex-col justify-center py-2 px-3 lg:px-16 z-20 bg-[#E5E5E5] lg:bg-[url(/mainevent/lokasi-paper.svg)] bg-contain bg-no-repeat font-inter border-4 border-[#FF3234] drop-shadow-[0_0_12px_rgba(255,50,52,.25)] lg:border-transparent lg:bg-transparent lg:drop-shadow-none">
+      <div className="w-[60%] md:w-[300px] lg:w-[48%] xl:w-[40%] lg:h-60 2xl:h-80 absolute -bottom-12 lg:-bottom-24 xl:-bottom-36 left-1/2 lg:-left-32 xl:-left-36 2xl:-left-44 -translate-x-1/2 lg:translate-x-0 flex flex-col justify-center py-2 px-3 lg:px-16 lg:-py-4 z-20 bg-[#E5E5E5] lg:bg-[url(/mainevent/lokasi-paper.svg)] bg-contain bg-no-repeat font-inter border-4 border-[#FF3234] drop-shadow-[0_0_12px_rgba(255,50,52,.25)] lg:border-transparent lg:bg-transparent lg:drop-shadow-none">
         <h4 className="text-[10px] lg:text-lg 2xl:text-xl">
-          Sabtu, 7 Januari 2023
+          Sabtu, 4 Februari 2023
         </h4>
         <h3 className="text-[14px] lg:text-2xl 2xl:text-3xl font-bold sm:mb-1 lg:my-2">
-          Nama Lokasi
+          SMK Negeri 4 Klaten
         </h3>
-        <h4 className="text-[12px] lg:text-xl 2xl:text-2xl">
-          Detail alamat lorem ipsum dolor
-        </h4>
       </div>
       {/* foto + bg orange */}
       <div className="absolute w-2/3 h-1/2 bg-[#FB5507] -bottom-4 -left-4 lg:w-[32%] lg:aspect-square lg:bg-blastoutmustard lg:-bottom-16 lg:left-auto lg:-right-28 xl:-right-36 2xl:-right-48" />
@@ -109,6 +109,10 @@ function MapLayout({ children }) {
   );
 }
 
-function MapLayoutWrapper() {
-  return null;
+function MapLayoutWrapper({ children }: { children: any }) {
+  return (
+    <div className="w-[240px] h-[400px] sm:w-[80vw] sm:h-[50vh] lg:w-[70vw] lg:h-[50vh] xl:h-[55vh] 2xl:h-[70vh] absolute top-0 left-1/2 -translate-x-1/2 z-10">
+      {children}
+    </div>
+  );
 }

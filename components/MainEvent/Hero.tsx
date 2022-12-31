@@ -7,7 +7,7 @@ function Hero() {
 
   useEffect(() => {
     const NOW_IN_MS = new Date().getTime();
-    const ANNOUNCEMENT_IN_MS = new Date("January 1, 2023 15:00:00").getTime();
+    const ANNOUNCEMENT_IN_MS = new Date("February 4, 2023 15:00:00").getTime();
 
     let timeRemaining = ANNOUNCEMENT_IN_MS - NOW_IN_MS;
 
