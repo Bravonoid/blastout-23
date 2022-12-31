@@ -53,7 +53,7 @@ const Penjelasan = () => {
         <Image
           src={wave}
           alt="cloud1"
-          class="absolute w-[20%] left-0 -bottom-8 mobile:w-1/2 z-50 mobile:top-[800px]"
+          class="absolute w-[20%] left-0 -bottom-8 mobile:w-1/2 z-50 mobile:top-[800px] sm:top-[600px] xl:top-[400px]"
         />
       </div>
     </>

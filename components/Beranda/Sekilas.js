@@ -15,7 +15,7 @@ const Sekilas = ({ onClick, image, position }) => {
     <>
       <div class="h-screen  overflow-hidden bg-blastoutdarkpurple text-[#FFFFFF] py-20">
         <div class="relative flex flex-col gap-y-2">
-          <div class="flex flex-row justify-center">
+          <div class="flex flex-row justify-center gap-x-5">
           <h1 class="font-bold text-6xl font-TransAmerica text-center mobile:text-3xl">
             BLASTOUT 
           </h1>
@@ -37,7 +37,7 @@ const Sekilas = ({ onClick, image, position }) => {
                 src={Arrow}
                 alt=""
                 onClick={onClick}
-                className="cursor-pointer mobile:w-[50px] w-[48px]"
+                className="cursor-pointer mobile:w-[25px] w-[48px]"
               />
             )}
           </div></Link>
