@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Line from "../../assets/Beranda/Vector 2.png";
-import Arrow from "../../assets/Beranda/arrow.svg";
+import Arrow from "../../assets/Beranda/arrow.png";
 import ArrowGlow from "../../assets/Beranda/arrow_glow.png";
 import Text from "../../assets/Beranda/text.png";
 import { useState, useEffect } from "react";
@@ -37,7 +37,7 @@ const Sekilas = ({ onClick, image, position }) => {
                 src={Arrow}
                 alt=""
                 onClick={onClick}
-                className="cursor-pointer mobile:w-[50px]"
+                className="cursor-pointer mobile:w-[50px] w-[48px]"
               />
             )}
           </div></Link>
