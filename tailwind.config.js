@@ -9,6 +9,9 @@ module.exports = {
       maxWidth: {
         "8xl": "90rem",
       },
+      content: {
+        quote: "url('../public/beranda/testimoni/quote.svg')",
+      },
     },
   },
   plugins: [],
