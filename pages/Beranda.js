@@ -4,6 +4,7 @@ import Header from "../components/Beranda/Header";
 import Sekilas from "../components/Beranda/Sekilas";
 import Acara from "../components/Beranda/Acara";
 import Link from "next/link";
+import Testimoni from "../components/beranda/Testimoni";
 const Beranda = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const Beranda = () => {
       <Header />
       <Sekilas />
       <Acara />
+      <Testimoni />
     </>
   );
 };

@@ -38,6 +38,9 @@ module.exports = {
         blastoutpink: "#FF0070",
         blastoutdarkpink: "#B90051",
       },
+      content: {
+        quote: "url('../public/beranda/testimoni/quote.svg')",
+      },
     },
   },
   plugins: [],
