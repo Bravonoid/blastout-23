@@ -3,7 +3,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 const ComingSoon = () => {
   return (
     <>
-      <div className="visible lg:invisible">
+      <div className="block lg:hidden">
         <div className="bg-[#0A071F] w-[100vw] h-[700px] flex justify-center items-center">
           <div className="absolute flex z-[10] text-6xl mb-[340px] text-black font-extrabold font-outline-4 font-inter opacity-20">
             COMING
@@ -62,7 +62,7 @@ const ComingSoon = () => {
         </div>
       </div>
 
-      <div className="invisible lg:visible">
+      <div className="hidden lg:block">
         <div className="flex justify-center items-center w-[100vw] bg-[#0A071F] h-[1080px] relative">
           <div className="absolute top-0">
             <img src="./Vector.svg" className="w-[100vw]"></img>

@@ -7,11 +7,11 @@ const Navbar = () => {
   return (
     <>
       <div className="invisible lg:visible">
-        <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0 z-[50]">
+        <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0 z-[100]">
           <div className="flex flex-col justify-center ml-12">
             <img src="BLASTOUT 2023.png" alt="" className="h-[20px]"></img>
           </div>
-          <div className="py-4 right-4 top-full max-w-full flex mr-8">
+          <div className="py-4 right-4 top-full max-w-full flex mr-8 items-center">
             <div className="mx-5 flex">
               <a
                 href="#"
@@ -46,7 +46,7 @@ const Navbar = () => {
             </div>
             <div className="mx-5 flex bg-[#FBDF97] px-[10px] py-[3px] rounded-xl hover:bg-[#b5a16d]">
               <a
-                href="#"
+                href="https://bit.ly/PendaftaranBlastOut2023"
                 className="text-[#0A0823] text-lg font-inter font-semibold"
               >
                 DAFTAR
@@ -57,8 +57,8 @@ const Navbar = () => {
       </div>
 
       <div className="visible lg:invisible">
-        <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0 z-[50]">
-          <div className="flex flex-col justify-center ml-5">
+        <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0 z-[99]">
+          <div className="flex flex-col justify-center ml-5 z-[105]">
             <img src="BLASTOUT 2023.png" alt="" className="h-[14px]"></img>
           </div>
           <button
@@ -79,8 +79,8 @@ const Navbar = () => {
             id="nav-menu"
             className={
               isActive
-                ? "absolute py-5 bg-[#201D41] w-full max-w-full h-[70vw] top-full left-0"
-                : "hidden absolute py-5 bg-[#201D41] w-full max-w-full h-[70vw] top-full left-0"
+                ? "absolute py-5 bg-[#201D41] w-full max-w-full h-[70vw] top-[0px] left-0 translate-y-[60px] transition duration-300 ease-in-out z-[100]"
+                : "invisible absolute py-5 bg-[#201D41] w-full max-w-full h-[70vw] top-[0px] left-0 z-[100]"
             }
           >
             <div className="flex justify-center mb-3">
@@ -117,7 +117,7 @@ const Navbar = () => {
             </div>
             <div className="flex justify-center my-4">
               <a
-                href="#"
+                href="https://bit.ly/PendaftaranBlastOut2023"
                 className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 DAFTAR

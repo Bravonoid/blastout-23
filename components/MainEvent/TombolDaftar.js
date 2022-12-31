@@ -2,11 +2,11 @@ import React from "react";
 const TombolDaftar = () => {
   return (
     <>
-      <div className="flex justify-center items-center bg-gra relative my-[100px] bg-[#0F0B36] w-[100vw] lg:h-[500px] h-[200px] overflow-hidden">
-        <div className="absolute top-[120px]">
+      <div className="flex justify-center items-center relative bg-[#0F0B36] w-[100vw] lg:h-[500px] h-[200px] overflow-hidden">
+        <div className="absolute lg:top-[120px] top-[50px]">
           <a
             href="https://bit.ly/PendaftaranBlastOut2023"
-            className="z-[10] lg:px-6 lg:py-4 px-3 py-2 bg-blastoutpink text-2xl font-bold text-[#240724] lg:text-5xl lg:hover:text-white lg:hover:shadow-pink-300 lg:hover:shadow-lg active:text-white active:shadow-pink-300 active:shadow-lg"
+            className="z-[10] lg:px-6 lg:py-4 px-3 py-2 text-2xl bg-gradient-to-r from-pink-700 to-purple-700 font-bold text-[#240724] lg:text-5xl lg:hover:text-white lg:hover:shadow-pink-300 lg:hover:shadow-lg active:text-white active:shadow-pink-300 active:shadow-lg"
           >
             DAFTAR
           </a>

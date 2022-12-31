@@ -2,7 +2,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#0A0823] lg:justify-center lg:items-center w-[100vw] lg:h-[280px] h-[400px] flex relative my-[200px]">
+      <div className="bg-[#0A0823] lg:justify-center lg:items-center w-[100vw] lg:h-[280px] h-[400px] flex relative">
         <div className="w-[100vw] bottom-0 absolute invisible lg:visible">
           <img src="./Group 5908.svg" alt="" className=""></img>
         </div>
