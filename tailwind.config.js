@@ -8,7 +8,7 @@ module.exports = {
     "./lib/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    backgroundImage:{
+    backgroundImage: {
       "background-tema": "url('/assets/Tentang/asset_tema.png')",
     },
     extend: {
@@ -16,14 +16,14 @@ module.exports = {
 				mobile: { MIN: "360px", max: "639px" },
 			},
       fontFamily: {
-        inter: ["var(--font-inter)", ...fontFamily.sans],
-        poppins: ["var(--font-poppins)", ...fontFamily.sans],
-        montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
         Inter: ["Inter"],
         Universal: ["Universal"],
         Times: ["Times"],
         Poppins: ["Poppins"],
         TransAmerica: ["Trans-America Bold"],
+        inter: ["var(--font-inter)", ...fontFamily.sans],
+        poppins: ["var(--font-poppins)", ...fontFamily.sans],
+        montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
       },
       maxWidth: {
         "8xl": "90rem",
@@ -40,6 +40,9 @@ module.exports = {
         blastoutmustard: "#EE9125",
         blastoutpink: "#FF0070",
         blastoutdarkpink: "#B90051",
+      },
+      content: {
+        quote: "url('../public/beranda/testimoni/quote.svg')",
       },
     },
   },

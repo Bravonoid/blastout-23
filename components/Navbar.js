@@ -7,36 +7,48 @@ const Navbar = () => {
   return (
     <>
       <div className="invisible lg:visible">
-        <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0">
-          <div className="flex flex-col justify-center ml-8">
-            <img src="BLASTOUT 2023.png" alt="" className="h-[16px]"></img>
+        <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0 z-[50]">
+          <div className="flex flex-col justify-center ml-12">
+            <img src="BLASTOUT 2023.png" alt="" className="h-[20px]"></img>
           </div>
-          <div className="py-3 right-4 top-full static max-w-full flex mr-8">
+          <div className="py-4 right-4 top-full max-w-full flex mr-8">
             <div className="mx-5 flex">
               <a
                 href="#"
-                className="text-[#FBDF97] text-md font-inter font-bold"
+                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
               >
                 BERANDA
               </a>
             </div>
             <div className="mx-5 flex">
-              <a href="#" className="text-[#FBDF97] text-md font-inter">
+              <a
+                href="#"
+                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
+              >
                 TENTANG
               </a>
             </div>
             <div className="mx-5 flex">
-              <a href="#" className="text-[#FBDF97] text-md font-inter">
+              <a
+                href="#"
+                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
+              >
                 TRYOUT
               </a>
             </div>
             <div className="mx-5 flex">
-              <a href="#" className="text-[#FBDF97] text-md font-inter">
+              <a
+                href="#"
+                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
+              >
                 MAIN EVENT
               </a>
             </div>
-            <div className="mx-5 flex bg-[#FBDF97] px-2 rounded-lg">
-              <a href="#" className="text-[#0A0823] text-md font-inter">
+            <div className="mx-5 flex bg-[#FBDF97] px-[10px] py-[3px] rounded-xl hover:bg-[#b5a16d]">
+              <a
+                href="#"
+                className="text-[#0A0823] text-lg font-inter font-semibold"
+              >
                 DAFTAR
               </a>
             </div>
@@ -45,7 +57,7 @@ const Navbar = () => {
       </div>
 
       <div className="visible lg:invisible">
-        <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0">
+        <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0 z-[50]">
           <div className="flex flex-col justify-center ml-5">
             <img src="BLASTOUT 2023.png" alt="" className="h-[14px]"></img>
           </div>
@@ -67,14 +79,14 @@ const Navbar = () => {
             id="nav-menu"
             className={
               isActive
-                ? "absolute py-5 bg-[#201D41] w-full max-w-full h-[60vw] top-full left-0"
-                : "hidden absolute py-5 bg-[#201D41] w-full max-w-full h-[60vw] top-full left-0"
+                ? "absolute py-5 bg-[#201D41] w-full max-w-full h-[70vw] top-full left-0"
+                : "hidden absolute py-5 bg-[#201D41] w-full max-w-full h-[70vw] top-full left-0"
             }
           >
             <div className="flex justify-center mb-3">
               <a
                 href="#"
-                className="text-[#FBDF97] text-md font-inter font-bold"
+                className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 BERANDA
               </a>
@@ -82,7 +94,7 @@ const Navbar = () => {
             <div className="flex justify-center my-4">
               <a
                 href="#"
-                className="text-[#FBDF97] text-md font-inter font-bold"
+                className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 TENTANG
               </a>
@@ -90,7 +102,7 @@ const Navbar = () => {
             <div className="flex justify-center my-4">
               <a
                 href="#"
-                className="text-[#FBDF97] text-md font-inter font-bold"
+                className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 TRY OUT
               </a>
@@ -98,7 +110,7 @@ const Navbar = () => {
             <div className="flex justify-center my-4">
               <a
                 href="#"
-                className="text-[#FBDF97] text-md font-inter font-bold"
+                className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 MAIN EVENT
               </a>
@@ -106,7 +118,7 @@ const Navbar = () => {
             <div className="flex justify-center my-4">
               <a
                 href="#"
-                className="text-[#FBDF97] text-md font-inter font-bold"
+                className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 DAFTAR
               </a>

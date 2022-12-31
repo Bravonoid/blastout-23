@@ -118,8 +118,28 @@ const Acara = () => {
             const rot = state[i] ? active.rot : normal.rot;
             const trans = state[i] ? active.trans : normal.trans;
             const fontSize = state[i] ? active.titleSize : normal.titleSize;
-            const st = state[i] ? {width: width, background: "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"} : {width: width, background: "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"};
-            const stsm = state[i] ? {height: height, background: "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"} : {height: height, background: "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)"};
+            const st = state[i]
+              ? {
+                  width: width,
+                  background:
+                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                }
+              : {
+                  width: width,
+                  background:
+                    "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                };
+            const stsm = state[i]
+              ? {
+                  height: height,
+                  background:
+                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                }
+              : {
+                  height: height,
+                  background:
+                    "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                };
             return (
               <>
                 <div
@@ -133,11 +153,7 @@ const Acara = () => {
                     className="font-bold w-[37.5vh] flex justify-start"
                     key={item.no + 6}
                   >
-                    <p
-                      className="text-xl"
-                    >
-                      {item.title}
-                    </p>
+                    <p className="text-xl">{item.title}</p>
                   </div>
                   <div
                     className="text-sm"
@@ -152,39 +168,35 @@ const Acara = () => {
                   ></img>
                 </div>
                 <div
-                key={item.no}
-                className="hidden sm:flex relative overflow-hidden h-[50vh] flex-col transition-all duration-500 justify-end p-[2.5vh] text-white"
-                style={st}
-                onMouseOver={(e) => enterHandler(e, i)}
-                onMouseLeave={(e) => leaveHandler(e, i)}
-              >
-                <div
-                  className="font-bold w-[37.5vh] flex justify-start"
-                  style={{
-                    fontSize: fontSize,
-                    rotate: rot,
-                    transform: trans,
-                  }}
-                  key={item.no + 6}
+                  key={item.no}
+                  className="hidden sm:flex relative overflow-hidden h-[50vh] flex-col transition-all duration-500 justify-end p-[2.5vh] text-white"
+                  style={st}
+                  onMouseOver={(e) => enterHandler(e, i)}
+                  onMouseLeave={(e) => leaveHandler(e, i)}
                 >
-                  <p
-                    className="text-2xl"
+                  <div
+                    className="font-bold w-[37.5vh] flex justify-start"
+                    style={{
+                      fontSize: fontSize,
+                      rotate: rot,
+                      transform: trans,
+                    }}
+                    key={item.no + 6}
                   >
-                    {item.title}
-                  </p>
+                    <p className="text-2xl">{item.title}</p>
+                  </div>
+                  <div
+                    className="text-l"
+                    style={{ display: disp }}
+                    key={item.no + 12}
+                  >
+                    {item.desc}
+                  </div>
+                  <img
+                    src={item.bg}
+                    className="absolute -z-[10] left-0 bottom-0 w-full h-full"
+                  ></img>
                 </div>
-                <div
-                  className="text-l"
-                  style={{ display: disp }}
-                  key={item.no + 12}
-                >
-                  {item.desc}
-                </div>
-                <img
-                  src={item.bg}
-                  className="absolute -z-[10] left-0 bottom-0 w-full h-full"
-                ></img>
-              </div>
               </>
             );
           })}

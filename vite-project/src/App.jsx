@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+=======
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+
+function App() {
+  const [count, setCount] = useState(0);
+>>>>>>> 52e6c61a47483dc60d817f4c4245a126bfdcc80c
 
   return (
     <div className="App">
@@ -28,7 +37,14 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </div>
+<<<<<<< HEAD
   )
 }
 
 export default App
+=======
+  );
+}
+
+export default App;
+>>>>>>> 52e6c61a47483dc60d817f4c4245a126bfdcc80c

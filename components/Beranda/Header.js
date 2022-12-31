@@ -9,7 +9,10 @@ import Link from "next/link";
 const Header = () => {
   return (
     <>
-      <div class="h-screen overflow-hidden bg-blastoutdarkpurple bg-cover flex justify-center items-center" style={{backgroundImage: `url(${background1.src})`}}>
+      <div
+        class="h-screen overflow-hidden bg-blastoutdarkpurple bg-cover flex justify-center items-center"
+        style={{ backgroundImage: `url(${background1.src})` }}
+      >
         <div class="w-3/4">
           <Image src={background} alt="background" />
         </div>

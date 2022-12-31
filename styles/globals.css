@@ -25,14 +25,14 @@
 
 @layer base {
   .font-outline-4 {
-    -webkit-text-stroke: 2px #FFBD0C;
+    -webkit-text-stroke: 2px #ffbd0c;
   }
 
-  .font-outline-2 {
-    -webkit-text-stroke: 2.5px #FFBD0C;
+  .font-outline-8 {
+    -webkit-text-stroke: 3px #ffbd0c;
   }
 
   .font-outline-1 {
-    -webkit-text-stroke: 1px #FFBD0C;
+    -webkit-text-stroke: 1px #ffbd0c;
   }
 }
