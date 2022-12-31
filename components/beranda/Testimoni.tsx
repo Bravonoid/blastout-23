@@ -1,12 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperClass from "swiper";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCaretRight,
-  faCaretLeft,
-  IconDefinition,
-} from "@fortawesome/free-solid-svg-icons";
 
 import "swiper/css";
 import Image from "next/image";
@@ -142,9 +136,6 @@ type ButtonProps = {
 
 const Button = ({ onClick, image, position }: ButtonProps) => {
   const [isHover, setHover] = useState<boolean>(false);
-  useEffect(() => {
-    console.log(isHover);
-  }, [isHover]);
 
   return (
     <div
