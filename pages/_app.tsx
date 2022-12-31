@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <main
-      class={`${inter.variable} ${poppins.variable} ${montserrat.variable}`}
+      className={`${inter.variable} ${poppins.variable} ${montserrat.variable}`}
     >
       <Component {...pageProps} />
     </main>
