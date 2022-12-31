@@ -6,6 +6,9 @@ const Footer = () => {
         <div className="w-[100vw] bottom-0 absolute invisible lg:visible">
           <img src="./Group 5908.svg" alt="" className=""></img>
         </div>
+        <div className="bottom-0 right-0 absolute visible lg:invisible">
+          <img src="./Group 6019.svg" alt="" className=""></img>
+        </div>
         <div className="lg:top-[40px] absolute lg:flex z-[10] lg:justify-center">
           <div className="flex absolute w-[100vw]">
             <img

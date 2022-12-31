@@ -71,64 +71,64 @@ const ComingSoon = () => {
             <img src="./Union.svg"></img>
           </div>
           <div className="absolute hidden lg:block z-[10] mb-[730px] h-[6px] w-[700px] bg-[#FFBD0C]"></div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[620px] opacity-10">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[550px] opacity-20">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[480px] opacity-30">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[410px] opacity-40">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[340px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[270px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[200px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[130px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[60px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[15] text-[90px] text-black font-extrabold font-outline-8 font-inter">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[620px] opacity-10">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[550px] opacity-20">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[480px] opacity-30">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[410px] opacity-40">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[340px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[270px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[200px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[130px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[60px] opacity-50">
-          COMING SOON
-        </div>
-        <div className="absolute hidden lg:block z-[10] mt-[730px] h-[6px] w-[700px] bg-[#FFBD0C]"></div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[620px] opacity-10">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[550px] opacity-20">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[480px] opacity-30">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[410px] opacity-40">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[340px] opacity-50">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[270px] opacity-50">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[200px] opacity-50">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[130px] opacity-50">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[60px] opacity-50">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[15] text-[90px] text-black font-extrabold font-outline-8 font-inter">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[620px] opacity-10">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[550px] opacity-20">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[480px] opacity-30">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[410px] opacity-40">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[340px] opacity-50">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[270px] opacity-50">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[200px] opacity-50">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[130px] opacity-50">
+            COMING SOON
+          </div>
+          <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mt-[60px] opacity-50">
+            COMING SOON
+          </div>
+          <div className="absolute hidden lg:block z-[10] mt-[730px] h-[6px] w-[700px] bg-[#FFBD0C]"></div>
         </div>
       </div>
     </>

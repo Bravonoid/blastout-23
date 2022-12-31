@@ -8,8 +8,16 @@ module.exports = {
     "./lib/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    backgroundImage: {
+      "background-tema": "url('/assets/Tentang/asset_tema.png')",
+    },
     extend: {
       fontFamily: {
+        Inter: ["Inter"],
+        Universal: ["Universal"],
+        Times: ["Times"],
+        Poppins: ["Poppins"],
+        TransAmerica: ["Trans-America Bold"],
         inter: ["var(--font-inter)", ...fontFamily.sans],
         poppins: ["var(--font-poppins)", ...fontFamily.sans],
         montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
@@ -19,6 +27,7 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
+        "spin-medium": "spin 4s linear infinite",
       },
       colors: {
         blastoutpurple: "#8338ED",

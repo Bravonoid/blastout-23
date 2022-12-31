@@ -1,33 +1,37 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Line from "../../assets/Beranda/Group 16.png";
+import Line from "../../assets/Beranda/Vector 2.png";
+import Arrow from "../../assets/Beranda/arrow.svg";
+import Text from "../../assets/Beranda/text.png";
 import { useRouter } from "next/router";
-import Tentang from "../../pages/Tentang";
 const Sekilas = () => {
   const router = useRouter();
   return (
     <>
-      <div className="h-screen  overflow-hidden bg-slate-100 py-20">
-        <div className="relative flex flex-col gap-y-12">
-          <h1 className="font-bold text-4xl font-TransAmerica text-center">
-            BLASTOUT
+      <div class="h-screen  overflow-hidden bg-blastoutdarkpurple text-[#FFFFFF] py-20">
+        <div class="relative flex flex-col gap-y-2">
+          <div class="flex flex-row justify-center">
+            <h1 class="font-bold text-6xl font-TransAmerica text-center">
+              BLASTOUT
+            </h1>
             <Link href="./Tentang">
-              <span className="animate-pulse text-red-500">
-                {"      "}&#x3e;
-              </span>
+              <Image
+                src={Arrow}
+                alt="arrow"
+                class="w-[100px] flex justify-center hover:shadow-[50px_50px_25px_24px_#FFBD0C] duration-300 text-[#FFBD0C] p-0"
+              />
             </Link>
-          </h1>
-          <Image src={Line} alt="line" className="block mx-auto pt-5" />
-          <p className="text-center px-20 font-Poppins text-[36px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae
-            imperdiet quam. Pellentesque volutpat fringilla ultricies. Donec
-            neque eros, porta a varius vel, luctus eget ex. Cras non
-            pellentesque diam. Ut at arcu urna. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Ut vitae imperdiet quam. Pellentesque
-            volutpat fringilla ultricies. Donec neque eros, porta a varius vel,
-            luctus eget ex. Cras non pellentesque diam. Ut at arcu urna.
+          </div>
+          <Image src={Line} alt="line" class="block mx-auto pt-5 w-[500px]" />
+          <p class="text-center px-[200px] font-Poppins text-[36px] pt-12">
+            BlastOut merupakan program kerja dari Balairung Klass, organisasi
+            mahasiswa daerah dengan anggota mahasiswa UGM yang berdomisili di
+            Klaten. BlastOut terdiri dari rangkaian acara briefing ke SMA di
+            Kab. Klaten, tryout beserta pembahasan soal, talkshow, expo kampus,
+            dan penampilan hiburan.
           </p>
+          <Image src={Text} alt="text" class="pt-40" />
         </div>
       </div>
     </>
