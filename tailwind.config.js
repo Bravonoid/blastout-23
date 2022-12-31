@@ -13,8 +13,8 @@ module.exports = {
     },
     extend: {
       screens: {
-				mobile: { MIN: "360px", max: "639px" },
-			},
+        mobile: { MIN: "360px", max: "639px" },
+      },
       fontFamily: {
         Inter: ["Inter"],
         Universal: ["Universal"],
