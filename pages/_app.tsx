@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { Inter, Poppins, Montserrat } from "@next/font/google";
 import { useEffect } from "react";
-import "locomotive-scroll/dist/locomotive-scroll.css";
 
 const inter = Inter({
   subsets: ["latin"],

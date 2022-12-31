@@ -57,7 +57,7 @@ const Navbar = () => {
       </div>
 
       <div className="visible lg:invisible">
-        <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0">
+        <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0 z-[50]">
           <div className="flex flex-col justify-center ml-5">
             <img src="BLASTOUT 2023.png" alt="" className="h-[14px]"></img>
           </div>
