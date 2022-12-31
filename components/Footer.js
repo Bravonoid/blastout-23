@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="w-[100vw] bottom-0 absolute invisible lg:visible">
           <img src="./Group 5908.svg" alt="" className=""></img>
         </div>
-        <div className="bottom-0 right-0 absolute visible lg:invisible">
+        <div className="bottom-0 right-3 absolute visible lg:invisible">
           <img src="./Group 6019.svg" alt="" className=""></img>
         </div>
         <div className="lg:top-[40px] absolute lg:flex z-[10] lg:justify-center">
@@ -20,14 +20,14 @@ const Footer = () => {
           <img
             src="BLASTOUT 2023 footer mobile.svg"
             alt=""
-            className="visible lg:invisible mt-16 ml-10"
+            className="visible lg:invisible mt-12 ml-10 h-[50px]"
           ></img>
         </div>
         <div className="lg:top-[80px] lg:mt-0 absolute lg:flex z-[10] mt-[120px] ml-[25px]">
           <div className="mx-[18px] my-2 lg:flex">
             <a
               href="#"
-              className="text-[#FBDF97] text-sm lg:text-lg font-inter hover:font-bold"
+              className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               BERANDA
             </a>
@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="mx-[18px] my-2 lg:flex">
             <a
               href="#"
-              className="text-[#FBDF97] text-sm lg:text-lg font-inter hover:font-bold"
+              className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               TENTANG
             </a>
@@ -43,7 +43,7 @@ const Footer = () => {
           <div className="mx-[18px] my-2 lg:flex">
             <a
               href="#"
-              className="text-[#FBDF97] text-sm lg:text-lg font-inter hover:font-bold"
+              className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               TRYOUT
             </a>
@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="mx-[18px] my-2 lg:flex">
             <a
               href="#"
-              className="text-[#FBDF97] text-sm lg:text-lg font-inter hover:font-bold"
+              className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               MAIN EVENT
             </a>
@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="absolute lg:flex z-[10] justify-center mt-[310px] ml-10 lg:mt-0 lg:ml-0 lg:top-[210px]">
-          <div className="font-inter text-[#FBDF97] font-semibold text-xs lg:text-lg">
+          <div className="font-inter text-[#FBDF97] font-semibold text-sm lg:text-lg">
             IT BLASTOUT 2023
           </div>
         </div>
