@@ -200,7 +200,7 @@ const Acara = () => {
                   </div>
                   <div
                     key={item.no + 35}
-                    className="h-full w-full absolute z-[20] bottom-0 left-0"
+                    className="h-full w-full absolute z-[5] bottom-0 left-0"
                     style={bgsm}
                   ></div>
                 </div>
