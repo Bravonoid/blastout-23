@@ -174,7 +174,7 @@ function Timeline({ pageNumber }: Timeline) {
                     {desc}
                   </div>
                 </div>
-                <button
+                <div
                   className={`${styles.stepCounter} ${
                     active ? styles.stepCounterActive : ""
                   } ${completed ? styles.stepCounterCompleted : ""}`}
@@ -186,7 +186,7 @@ function Timeline({ pageNumber }: Timeline) {
                   >
                     {id}
                   </p>
-                </button>
+                </div>
                 <div
                   className={`text-xl mt-3 md:text-2xl lg:text-3xl xl:text-4xl font-bold hidden sm:block ${
                     active
