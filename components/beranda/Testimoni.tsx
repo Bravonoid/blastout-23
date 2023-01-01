@@ -35,7 +35,7 @@ function Testimoni() {
       image: "/beranda/testimoni/dinda.png",
     },
     {
-      nama: "Naufal Majid Nursalim",
+      nama: "Naufal Majid N",
       fakultas: "Teknik Geodesi 2022",
       blastout: "Blastout 2022",
       testimoni:
@@ -51,7 +51,7 @@ function Testimoni() {
     //   image: "/beranda/testimoni/hidayat.png",
     // },
     {
-      nama: "Hidayat Syaifudin Ma'arif",
+      nama: "Hidayat Syaifudin",
       fakultas: "Teknik Sipil 2022",
       blastout: "Blastout 2020",
       testimoni:
@@ -59,7 +59,7 @@ function Testimoni() {
       image: "/beranda/testimoni/hidayat.png",
     },
     {
-      nama: "Rosyidatun Nur Fa'izah",
+      nama: "Rosyidatun Nur F",
       fakultas: "FKH 2021",
       blastout: "Blastout 2020 & 2021",
       testimoni:
@@ -194,6 +194,7 @@ const CardCarousel = ({
           width={303}
           height={438}
           className="aspect-square h-full object-contain"
+          quality={100}
           alt=""
         />
         <div className="mt-auto text-center">
