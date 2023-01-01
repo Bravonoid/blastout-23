@@ -24,8 +24,8 @@ const Beranda = () => {
       <Penjelasan />
       {/* <ComingSoon title="SISTEM" bgColor="#0F0B36" /> */}
       <Sistem />
-      <Lokasi2 />
       <Timeline pageNumber={2} />
+      <Lokasi2 />
       <Footer />
     </div>
   );
