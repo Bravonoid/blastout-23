@@ -63,6 +63,7 @@ const Footer = () => {
           <div className="flex mx-2 lg:mx-[10px] lg:w-[45px] w-[30px] group">
             <a
               href="https://instagram.com/blastout2023?igshid=YmMyMTA2M2Y="
+              target="_blank"
               className=""
             >
               <img
@@ -76,7 +77,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex mx-2 lg:mx-[10px] lg:w-[45px] w-[30px] group">
-            <a href="https://wa.me/6282243337608" className="">
+            <a href="https://wa.me/6282243337608" target="_blank" className="">
               <img
                 src="./Group 12.svg"
                 className="group-hover:hidden block"
