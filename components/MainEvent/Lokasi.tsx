@@ -4,7 +4,7 @@ import { useMemo } from "react";
 
 function Lokasi() {
   return (
-    <div className="w-screen h-full flex flex-col items-center justify-center mt-20 mb-40 md:mb-52 lg:mt-32 lg:mb-64 xl:mb-80 relative">
+    <div className="w-screen h-full flex flex-col items-center justify-center mt-20 mb-40 md:mb-52 lg:mt-32 lg:mb-64 xl:mb-80 relative ">
       <h2 className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl mb-8 lg:mb-16 uppercase font-inter">
         Lokasi
       </h2>
