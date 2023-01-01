@@ -23,12 +23,12 @@ const NotFound = () => {
           </div>
         </div>
       </div>
-      <div className="block lg:hidden">
-        <div className="flex justify-center items-center w-screen bg-[#0F0B36] relative h-screen">
-          <div className="absolute z-[10] top-0">
-            <img src="./atas404hp.svg"></img>
+      <div className="block lg:hidden w-full">
+        <div className="flex justify-center items-center w-full bg-[#0F0B36] relative h-screen">
+          <div className="absolute z-[10] w-full top-0">
+            <img src="./atas404hp.svg" className="w-full"></img>
           </div>
-          <div className="absolute z-[10] bottom-0">
+          <div className="absolute z-[10] bottom-0 w-full">
             <img src="./bawah404hp.svg"></img>
           </div>
           <div className="absolute z-[10]">

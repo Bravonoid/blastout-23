@@ -5,7 +5,7 @@ const NotFound404 = () => {
   return (
     <>
       <Head>
-        <title>404 Not Found. Blastout 2023</title>
+        <title>404 | Blastout 2023</title>
       </Head>
       <NotFound />
     </>
