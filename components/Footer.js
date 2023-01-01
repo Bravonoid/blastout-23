@@ -5,9 +5,9 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#0A0823] lg:justify-center lg:items-center w-[100vw] lg:h-[280px] h-[400px] flex relative">
-        <div className="w-[100vw] bottom-0 absolute invisible lg:visible">
-          <img src="./Group 5908.svg" alt="" className=""></img>
+      <div className="from-[#0A0823] bg-gradient-to-t to-blastoutdarkpurple lg:justify-center lg:items-center w-[100vw] lg:h-[280px] h-[400px] flex relative lg:py-40">
+        <div className="w-screen bottom-0 absolute invisible lg:visible">
+          <img src="./Group 5908.svg" alt="" className="w-screen"></img>
         </div>
         <div className="bottom-0 right-3 absolute visible lg:invisible">
           <img src="./Group 6019.svg" alt="" className=""></img>
@@ -16,13 +16,13 @@ const Footer = () => {
           <div className="flex absolute w-[100vw]">
             <img
               src="BLASTOUT 2023.png"
-              alt=""
+              alt="Blastout"
               className="h-[20px] invisible lg:visible flex mx-auto"
             ></img>
           </div>
           <img
             src="BLASTOUT 2023 footer mobile.svg"
-            alt=""
+            alt="Blastout"
             className="visible lg:invisible mt-12 ml-10 h-[50px]"
           ></img>
         </div>
@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="mx-[18px] my-2 lg:flex">
             <Link
               href="/"
-              className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
+              className="text-[#FBDF97] text-lg lg:text-2xl font-inter hover:font-bold"
             >
               BERANDA
             </Link>
@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="mx-[18px] my-2 lg:flex">
             <Link
               href="/tentang"
-              className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
+              className="text-[#FBDF97] text-lg lg:text-2xl font-inter hover:font-bold"
             >
               TENTANG
             </Link>
@@ -46,7 +46,7 @@ const Footer = () => {
           <div className="mx-[18px] my-2 lg:flex">
             <Link
               href="/tryout"
-              className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
+              className="text-[#FBDF97] text-lg lg:text-2xl font-inter hover:font-bold"
             >
               TRYOUT
             </Link>
@@ -54,13 +54,13 @@ const Footer = () => {
           <div className="mx-[18px] my-2 lg:flex">
             <Link
               href="/main-event"
-              className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
+              className="text-[#FBDF97] text-lg lg:text-2xl font-inter hover:font-bold"
             >
               MAIN EVENT
             </Link>
           </div>
         </div>
-        <div className="absolute flex z-[10] justify-center lg:mt-0 mt-[260px] ml-8 lg:ml-0 lg:top-[140px]">
+        <div className="absolute top-5 flex z-[10] justify-center lg:mt-0 mt-[260px] ml-8 lg:ml-0 lg:top-[140px]">
           <div className="flex mx-2 lg:mx-[10px] lg:w-[45px] w-[30px] group">
             <a
               href="https://instagram.com/blastout2023?igshid=YmMyMTA2M2Y="
@@ -90,8 +90,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="absolute lg:flex z-[10] justify-center mt-[310px] ml-10 lg:mt-0 lg:ml-0 lg:top-[210px]">
-          <div className="font-inter text-[#FBDF97] font-semibold text-sm lg:text-lg">
+        <div className="absolute top-3 lg:flex z-[10] justify-center mt-[310px] ml-10 lg:mt-0 lg:ml-0 lg:top-[210px]">
+          <div className="font-inter text-[#FBDF97] font-semibold text-base lg:text-xl">
             IT BLASTOUT 2023
           </div>
         </div>

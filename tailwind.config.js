@@ -44,6 +44,9 @@ module.exports = {
       content: {
         quote: "url('../public/beranda/testimoni/quote.svg')",
       },
+      boxShadow: {
+        "inner-bottom": "inset 0px -20px 80px 20px #0F0B36",
+      },
     },
   },
   plugins: [],

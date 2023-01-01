@@ -19,7 +19,7 @@ const Penjelasan = () => {
         <div class="flex lg:flex-row mobile:flex-col-reverse sm:flex-col-reverse mobile:pt-20">
           <div class="flex flex-col text-justify font-inter pt-60 pb-20 pl-20 mobile:px-[60px] sm:px-[60px]">
             <div class="flex flex-row gap-x-6">
-              <h1 class="font-bold text-6xl text-[#F0F0F0] mobile:text-3xl mobile:block mobile:mx-auto sm:text-6xl sm:block sm:mx-auto lg:mx-0">
+              <h1 class="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl uppercase font-inter flex items-center justify-center">
                 TRYOUT <span class="bg-[#FFBD0C] text-black p-2">DAY 1</span>
               </h1>
               <div class="border-[#D9D9D9] border-t-2 px-[60px] block my-auto mobile:hidden sm:hidden lg:block" />

@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <div
-        class="h-screen overflow-hidden bg-blastoutdarkpurple bg-cover flex justify-center items-center"
+        class="h-screen overflow-hidden shadow-inner-bottom bg-blastoutdarkpurple bg-cover bg-center bg-cover flex justify-center items-center"
         style={{ backgroundImage: `url(${background1.src})` }}
       >
         <div class="flex flex-col justify-center items-center">
