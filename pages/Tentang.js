@@ -11,11 +11,11 @@ const Beranda = () => {
       <Head>
         <title>Tentang . Blastout 2023</title>
       </Head>
-      <Navbar/>
+      <Navbar />
       <Penjelasan />
       <Tema />
       <Sejarah />
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -6,7 +6,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="invisible lg:visible">
+      <div className="hidden lg:block">
         <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0 z-[100]">
           <div className="flex flex-col justify-center ml-12">
             <img src="BLASTOUT 2023.png" alt="" className="h-[20px]"></img>
@@ -56,7 +56,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="visible lg:invisible">
+      <div className="block lg:hidden">
         <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0 z-[99]">
           <div className="flex flex-col justify-center ml-5 z-[105]">
             <img src="BLASTOUT 2023.png" alt="" className="h-[14px]"></img>
