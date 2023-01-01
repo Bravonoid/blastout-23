@@ -15,7 +15,7 @@ const Beranda = () => {
       </Head>
       <Navbar />
       <Penjelasan />
-      <Timeline />
+      <Timeline pageNumber={2} />
       <ComingSoon title="SISTEM" bgColor="#0F0B36" />
       {/* <Sistem /> */}
       <Footer />
