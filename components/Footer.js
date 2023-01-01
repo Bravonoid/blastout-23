@@ -1,16 +1,17 @@
+/* eslint-disable */
+/* eslint-disable */
 import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="flex lg:justify-center my-[500px] w-[100vw]">
-        <div className="bg-[#0A0823] visible lg:invisible w-[100vw] h-[400px]">
-          <img
-            src="Footer.svg"
-            alt=""
-            className="w-[100vw] invisible lg:visible"
-          ></img>
+      <div className="bg-[#0A0823] lg:justify-center lg:items-center w-[100vw] lg:h-[280px] h-[400px] flex relative">
+        <div className="w-[100vw] bottom-0 absolute invisible lg:visible">
+          <img src="./Group 5908.svg" alt="" className=""></img>
         </div>
-        <div className="lg:mt-[40px] absolute lg:flex z-[10] lg:justify-center">
+        <div className="bottom-0 right-3 absolute visible lg:invisible">
+          <img src="./Group 6019.svg" alt="" className=""></img>
+        </div>
+        <div className="lg:top-[40px] absolute lg:flex z-[10] lg:justify-center">
           <div className="flex absolute w-[100vw]">
             <img
               src="BLASTOUT 2023.png"
@@ -21,59 +22,71 @@ const Footer = () => {
           <img
             src="BLASTOUT 2023 footer mobile.svg"
             alt=""
-            className="visible lg:invisible mt-16 ml-10"
+            className="visible lg:invisible mt-12 ml-10 h-[50px]"
           ></img>
         </div>
-        <div className="lg:mt-[80px] absolute lg:flex z-[10] mt-[120px] ml-[25px]">
-          <div className="mx-4 my-2 lg:flex">
+        <div className="lg:top-[80px] lg:mt-0 absolute lg:flex z-[10] mt-[120px] ml-[25px]">
+          <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="#"
-              className="text-[#FBDF97] text-sm lg:text-lg font-inter font-bold"
+              href="./"
+              className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               BERANDA
             </a>
           </div>
-          <div className="mx-4 my-2 lg:flex">
+          <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="#"
-              className="text-[#FBDF97] text-sm lg:text-lg font-inter"
+              href="/tentang"
+              className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               TENTANG
             </a>
           </div>
-          <div className="mx-4 my-2 lg:flex">
+          <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="#"
-              className="text-[#FBDF97] text-sm lg:text-lg font-inter"
+              href="./tryout"
+              className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               TRYOUT
             </a>
           </div>
-          <div className="mx-4 my-2 lg:flex">
+          <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="#"
-              className="text-[#FBDF97] text-sm lg:text-lg font-inter"
+              href="./main-event"
+              className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               MAIN EVENT
             </a>
           </div>
         </div>
-        <div className="absolute flex z-[10] justify-center lg:mt-[130px] mt-[260px] ml-8 lg:ml-0">
-          <a href="#" className="">
-            <img
-              src="Group 11.svg"
-              className="flex mx-2 lg:w-[40px] w-[30px]"
-            ></img>
-          </a>
-          <a href="#" className="">
-            <img
-              src="Group 12.svg"
-              className="flex mx-2 lg:w-[40px] w-[30px]"
-            ></img>
-          </a>
+        <div className="absolute flex z-[10] justify-center lg:mt-0 mt-[260px] ml-8 lg:ml-0 lg:top-[140px]">
+          <div className="flex mx-2 lg:mx-[10px] lg:w-[45px] w-[30px] group">
+            <a href="#" className="">
+              <img
+                src="./Group 11.svg"
+                className="group-hover:hidden block"
+              ></img>
+              <img
+                src="./Group 11h.svg"
+                className="group-hover:block hidden"
+              ></img>
+            </a>
+          </div>
+          <div className="flex mx-2 lg:mx-[10px] lg:w-[45px] w-[30px] group">
+            <a href="#" className="">
+              <img
+                src="./Group 12.svg"
+                className="group-hover:hidden block"
+              ></img>
+              <img
+                src="./Group 12h.svg"
+                className="group-hover:block hidden"
+              ></img>
+            </a>
+          </div>
         </div>
-        <div className="absolute lg:flex z-[10] justify-center mt-[310px] ml-10 lg:mt-[185px] lg:ml-0">
-          <div className="font-inter text-[#FBDF97] font-semibold text-xs lg:text-lg">
+        <div className="absolute lg:flex z-[10] justify-center mt-[310px] ml-10 lg:mt-0 lg:ml-0 lg:top-[210px]">
+          <div className="font-inter text-[#FBDF97] font-semibold text-sm lg:text-lg">
             IT BLASTOUT 2023
           </div>
         </div>
