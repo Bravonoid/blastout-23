@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Sekilas from "../components/Beranda/Sekilas";
 import Acara from "../components/Beranda/Acara";
 import Testimoni from "../components/Beranda/Testimoni";
+import ComingSoon from "../components/ComingSoon";
 import Footer from "../components/Footer";
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Sekilas />
       <Acara />
       <Testimoni />
+      <ComingSoon title={"MEDIA PARTNER | SPONSOR"} bgColor="#0F0B36" />
       <Footer />
     </>
   );

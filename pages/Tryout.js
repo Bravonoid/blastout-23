@@ -5,6 +5,8 @@ import Penjelasan from "../components/Tryout/Penjelasan";
 import Timeline from "../components/Tryout/Timeline";
 import Sistem from "../components/Tryout/Sistem";
 import Footer from "../components/Footer";
+import ComingSoon from "../components/ComingSoon";
+
 const Beranda = () => {
   return (
     <>
@@ -14,7 +16,8 @@ const Beranda = () => {
       <Navbar />
       <Penjelasan />
       <Timeline />
-      <Sistem />
+      <ComingSoon title="SISTEM" bgColor="#0F0B36" />
+      {/* <Sistem /> */}
       <Footer />
     </>
   );

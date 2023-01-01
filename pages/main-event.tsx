@@ -10,19 +10,21 @@ import Head from "next/head";
 
 function mainEvent() {
   return (
-    <div className="bg-blastoutdarkpurple overflow-hidden">
+    <>
       <Head>
         <title>Main Event | Blastout 2023</title>
       </Head>
       <Navbar />
-      <Hero />
-      {/* <Timeline /> */}
-      <WhatsInside />
-      <ComingSoon title={"GUEST STAR"} />
-      <Lokasi />
-      <TombolDaftar />
+      <div className="bg-blastoutdarkpurple overflow-hidden">
+        <Hero />
+        {/* <Timeline /> */}
+        <WhatsInside />
+        <ComingSoon title={"GUEST STAR"} bgColor="#0F0B36" />
+        <Lokasi />
+        <TombolDaftar />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

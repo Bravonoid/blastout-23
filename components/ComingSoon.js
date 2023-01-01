@@ -1,12 +1,11 @@
 import React from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-const ComingSoon = ({ title }) => {
+const ComingSoon = ({ title, bgColor }) => {
   return (
     <>
-      <h2 className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl -mb-20 lg:mb-16 uppercase font-inter flex items-center justify-center mt-40">
+      <h2 className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl -mb-20 lg:-mb-16 uppercase font-inter flex items-center justify-center">
         {title}
       </h2>
-      <div className="block lg:hidden">
+      <div className={`bg-[${bgColor}]block lg:hidden`}>
         <div className={`w-[100vw] h-[700px] flex justify-center items-center`}>
           <div className="absolute flex z-[10] text-6xl mb-[340px] text-black font-extrabold font-outline-4 font-inter opacity-20">
             COMING
@@ -65,7 +64,7 @@ const ComingSoon = ({ title }) => {
         </div>
       </div>
 
-      <div className="hidden lg:block">
+      <div className={`bg-[${bgColor}] hidden lg:block`}>
         <div className="flex justify-center items-center w-[100vw] h-[1080px] relative">
           {/* <div className="absolute top-0">
             <img src="./Vector.svg" className="w-[100vw]"></img>
