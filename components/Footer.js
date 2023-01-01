@@ -1,6 +1,7 @@
 /* eslint-disable */
 /* eslint-disable */
 import React from "react";
+import Link from "next/link";
 const Footer = () => {
   return (
     <>
@@ -27,36 +28,36 @@ const Footer = () => {
         </div>
         <div className="lg:top-[80px] lg:mt-0 absolute lg:flex z-[10] mt-[120px] ml-[25px]">
           <div className="mx-[18px] my-2 lg:flex">
-            <a
-              href="./"
+            <Link
+              href="/"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               BERANDA
-            </a>
+            </Link>
           </div>
           <div className="mx-[18px] my-2 lg:flex">
-            <a
+            <Link
               href="/tentang"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               TENTANG
-            </a>
+            </Link>
           </div>
           <div className="mx-[18px] my-2 lg:flex">
-            <a
-              href="./tryout"
+            <Link
+              href="/tryout"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               TRYOUT
-            </a>
+            </Link>
           </div>
           <div className="mx-[18px] my-2 lg:flex">
-            <a
-              href="./main-event"
+            <Link
+              href="/main-event"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               MAIN EVENT
-            </a>
+            </Link>
           </div>
         </div>
         <div className="absolute flex z-[10] justify-center lg:mt-0 mt-[260px] ml-8 lg:ml-0 lg:top-[140px]">
