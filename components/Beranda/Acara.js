@@ -181,7 +181,7 @@ const Acara = () => {
                   <div
                     key={item.no + 45}
                     className="h-full w-full absolute z-[5] bottom-0 left-0"
-                    style={item.bg}
+                    style={bg}
                   ></div>
                 </div>
                 <div
