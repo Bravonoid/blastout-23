@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Timeline() {
   return (
-    <div className="w-full my-32 relative">
+    <div className="w-full py-32 relative bg-blastoutdarkpurple">
       <h2 className="font-bold text-blastoutwhite text-glow text-2xl lg:text-5xl uppercase font-inter text-center mb-36 2xl:mb-48">
         Timeline
       </h2>

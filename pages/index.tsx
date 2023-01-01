@@ -6,6 +6,7 @@ import Acara from "../components/Beranda/Acara";
 import Testimoni from "../components/Beranda/Testimoni";
 import ComingSoon from "../components/ComingSoon";
 import Footer from "../components/Footer";
+import Timeline from "../components/Beranda/Timeline";
 export default function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <Sekilas />
       <Acara />
+      <Timeline />
       <Testimoni />
       <ComingSoon title={"MEDIA PARTNER | SPONSOR"} bgColor="#0F0B36" />
       <Footer />

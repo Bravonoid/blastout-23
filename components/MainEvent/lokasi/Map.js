@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, Marker } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Icon } from "leaflet";
 
 const smk = new Icon({
@@ -21,7 +21,11 @@ export default function Map() {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           className=""
         />
-        <Marker key={1} position={center} icon={smk} />
+        <Marker key={1} position={center} icon={smk}>
+          <Popup>
+            <span className="text-2xl">SMK Negeri 4 Klaten</span>
+          </Popup>
+        </Marker>
       </MapContainer>
     </>
   );
