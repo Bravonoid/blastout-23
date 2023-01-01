@@ -18,7 +18,7 @@ function mainEvent() {
       <Hero />
       {/* <Timeline /> */}
       <WhatsInside />
-      <ComingSoon />
+      <ComingSoon title={"GUEST STAR"} />
       <Lokasi />
       <TombolDaftar />
       <Footer />
