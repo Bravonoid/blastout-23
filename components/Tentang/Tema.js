@@ -10,7 +10,7 @@ const Tema = () => {
   return (
     <>
       <div
-        class="h-auto py-20 text-[#000000] bg-[#0F0B36] relative bg-cover xl:bg-contain"
+        class="h-auto py-20 text-[#000000] bg-[#0F0B36] relative bg-cover 2xl:bg-contain"
         style={{ backgroundImage: `url(${background.src})` }}
       >
         <Image
