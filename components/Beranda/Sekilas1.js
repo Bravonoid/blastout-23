@@ -10,14 +10,14 @@ const Sekilas1 = () => {
   };
 
   return (
-    <div className="bg-[#0F0B36] flex flex-col items-center justify-center text-white">
+    <div className="bg-[#0F0B36] flex flex-col items-center justify-center text-white pt-20">
       <div className="flex flex-col items-center justify-center">
-        <div className="flex flex-row justify-evenly w-[80%] h-[6vw] sm:h-[4vw] items-center">
+        <div
+          className="flex flex-row justify-evenly w-[80%] h-[6vw] sm:h-[4vw] items-center cursor-pointer"
+          onClick={clickHandler}
+        >
           <div className="bg-[url('/beranda/BLASTOUT.png')] w-[70%] h-[6vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat"></div>
-          <div
-            className="bg-[url('/beranda/arrow.png')] w-[10%] h-[4vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat hover:scale-[1.05]"
-            onClick={clickHandler}
-          ></div>
+          <div className="bg-[url('/beranda/arrow.png')] w-[10%] h-[4vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat hover:scale-[1.05]"></div>
         </div>
         <div className="bg-[url('/beranda/vector2.png')] w-[50vw] h-[1.5vw] sm:w-[32.5vw] sm:h-[1vw] bg-contain bg-center bg-no-repeat"></div>
       </div>
