@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -9,42 +10,44 @@ const Navbar = () => {
       <div className="hidden lg:block">
         <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0 z-[100]">
           <div className="flex flex-col justify-center ml-12">
-            <img src="BLASTOUT 2023.png" alt="" className="h-[20px]"></img>
+            <a href="./">
+              <img src="BLASTOUT 2023.png" alt="" className="h-[20px]"></img>
+            </a>
           </div>
           <div className="py-4 right-4 top-full max-w-full flex mr-8 items-center">
             <div className="mx-5 flex">
               <a
-                href="#"
-                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
+                href="./"
+                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d] transition-all duration-200"
               >
                 BERANDA
               </a>
             </div>
             <div className="mx-5 flex">
               <a
-                href="#"
-                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
+                href="./tentang"
+                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d] transition-all duration-200"
               >
                 TENTANG
               </a>
             </div>
             <div className="mx-5 flex">
               <a
-                href="#"
-                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
+                href="./tryout"
+                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d] transition-all duration-200"
               >
                 TRYOUT
               </a>
             </div>
             <div className="mx-5 flex">
               <a
-                href="#"
-                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
+                href="./main-event"
+                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d] transition-all duration-200"
               >
                 MAIN EVENT
               </a>
             </div>
-            <div className="mx-5 flex bg-[#FBDF97] px-[10px] py-[3px] rounded-xl hover:bg-[#b5a16d]">
+            <div className="mx-5 flex bg-[#FBDF97] px-[10px] py-[3px] rounded-xl hover:bg-[#b5a16d] transition-all duration-300">
               <a
                 href="https://bit.ly/PendaftaranBlastOut2023"
                 className="text-[#0A0823] text-lg font-inter font-semibold"
@@ -59,7 +62,13 @@ const Navbar = () => {
       <div className="block lg:hidden">
         <div className="bg-[#0A0823] px-4 flex justify-between w-[100vw] fixed top-0 z-[99]">
           <div className="flex flex-col justify-center ml-5 z-[105]">
-            <img src="BLASTOUT 2023.png" alt="" className="h-[14px]"></img>
+            <a href="./">
+              <img
+                src="BLASTOUT 2023.png"
+                alt="blastout"
+                className="h-[14px]"
+              ></img>
+            </a>
           </div>
           <button
             id="burger"
@@ -85,7 +94,7 @@ const Navbar = () => {
           >
             <div className="flex justify-center mb-3">
               <a
-                href="#"
+                href="./"
                 className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 BERANDA
@@ -93,7 +102,7 @@ const Navbar = () => {
             </div>
             <div className="flex justify-center my-4">
               <a
-                href="#"
+                href="./tentang"
                 className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 TENTANG
@@ -101,7 +110,7 @@ const Navbar = () => {
             </div>
             <div className="flex justify-center my-4">
               <a
-                href="#"
+                href="./tryout"
                 className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 TRY OUT
@@ -109,7 +118,7 @@ const Navbar = () => {
             </div>
             <div className="flex justify-center my-4">
               <a
-                href="#"
+                href="./main-event"
                 className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 MAIN EVENT

@@ -6,20 +6,17 @@ import Arrow from "../../assets/Beranda/arrow.png";
 import ArrowGlow from "../../assets/Beranda/arrow_glow.png";
 import Text from "../../assets/Beranda/text.png";
 import { useState, useEffect } from "react";
-const Sekilas = ({ onClick, image, position }) => {
+const Sekilas = () => {
   const [isHover, setHover] = useState(false);
-  useEffect(() => {
-    console.log(isHover);
-  }, [isHover]);
   return (
     <>
-      <div class="h-screen  overflow-hidden bg-blastoutdarkpurple text-[#FFFFFF] py-20">
+      <div class="overflow-hidden bg-blastoutdarkpurple text-[#FFFFFF] py-20">
         <div class="relative flex flex-col gap-y-2">
           <div class="flex flex-row justify-center gap-x-5">
             <h1 class="font-bold text-6xl font-TransAmerica text-center mobile:text-3xl">
               BLASTOUT
             </h1>
-            <Link href="./Tentang">
+            <Link href="./tentang">
               <div
                 className="transition-all"
                 onMouseOver={() => setHover(true)}
@@ -28,15 +25,13 @@ const Sekilas = ({ onClick, image, position }) => {
                 {isHover ? (
                   <Image
                     src={ArrowGlow}
-                    alt=""
-                    onClick={onClick}
+                    alt="arrow"
                     className="cursor-pointer w-[50px] scale-125 mobile:"
                   />
                 ) : (
                   <Image
                     src={Arrow}
-                    alt=""
-                    onClick={onClick}
+                    alt="arrow"
                     className="cursor-pointer mobile:w-[25px] w-[48px]"
                   />
                 )}
