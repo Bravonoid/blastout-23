@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../components/Beranda/Header";
 import Navbar from "../components/Navbar";
 import Sekilas from "../components/Beranda/Sekilas";
+import Sekilas1 from "../components/Beranda/Sekilas1";
 import Acara from "../components/Beranda/Acara";
 import Link from "next/link";
 import Testimoni from "../components/Beranda/Testimoni";
@@ -16,6 +17,7 @@ const Beranda = () => {
       <Navbar />
       <Header />
       <Sekilas />
+      <Sekilas1 />
       <Acara />
       <Testimoni />
       <Footer />
