@@ -26,35 +26,35 @@ const Footer = () => {
             className="visible lg:invisible mt-12 ml-10 h-[50px]"
           ></img>
         </div>
-        <div className="lg:top-[80px] lg:mt-0 absolute lg:flex z-[10] mt-[120px] ml-[25px]">
-          <div className="mx-[18px] my-2 lg:flex">
+        <div className="lg:top-[80px] lg:mt-0 absolute lg:flex z-[10] mt-[120px] ml-[25px] lg:justify-evenly">
+          <div className="mx-[18px] lg:mx-0 my-2 lg:flex lg:w-[160px] justify-center">
             <Link
               href="/"
-              className="text-[#FBDF97] text-lg lg:text-2xl font-inter hover:font-bold"
+              className="text-[#FBDF97] text-lg lg:text-2xl font-inter hover:font-bold transition-all duration-200"
             >
               BERANDA
             </Link>
           </div>
-          <div className="mx-[18px] my-2 lg:flex">
+          <div className="mx-[18px] lg:mx-0 my-2 lg:flex lg:w-[160px] justify-center">
             <Link
               href="/tentang"
-              className="text-[#FBDF97] text-lg lg:text-2xl font-inter hover:font-bold"
+              className="text-[#FBDF97] text-lg lg:text-2xl font-inter hover:font-bold transition-all duration-200"
             >
               TENTANG
             </Link>
           </div>
-          <div className="mx-[18px] my-2 lg:flex">
+          <div className="mx-[18px] lg:mx-0 my-2 lg:flex lg:w-[160px] justify-center">
             <Link
               href="/tryout"
-              className="text-[#FBDF97] text-lg lg:text-2xl font-inter hover:font-bold"
+              className="text-[#FBDF97] text-lg lg:text-2xl font-inter hover:font-bold transition-all duration-200"
             >
               TRYOUT
             </Link>
           </div>
-          <div className="mx-[18px] my-2 lg:flex">
+          <div className="mx-[18px] lg:mx-0 my-2 lg:flex lg:w-[160px] justify-center">
             <Link
               href="/main-event"
-              className="text-[#FBDF97] text-lg lg:text-2xl font-inter hover:font-bold"
+              className="text-[#FBDF97] text-lg lg:text-2xl font-inter hover:font-bold transition-all duration-200"
             >
               MAIN EVENT
             </Link>
@@ -65,27 +65,27 @@ const Footer = () => {
             <a
               href="https://instagram.com/blastout2023?igshid=YmMyMTA2M2Y="
               target="_blank"
-              className=""
+              className="relative lg:w-[45px]"
             >
               <img
                 src="./Group 11.svg"
-                className="group-hover:hidden block"
+                className="group-hover:opacity-0 opacity-100 transition duration-200 absolute"
               ></img>
               <img
                 src="./Group 11h.svg"
-                className="group-hover:block hidden"
+                className="group-hover:opacity-100 opacity-0 transition duration-200 absolute"
               ></img>
             </a>
           </div>
           <div className="flex mx-2 lg:mx-[10px] lg:w-[45px] w-[30px] group">
-            <a href="https://wa.me/6282243337608" target="_blank" className="">
+            <a href="https://wa.me/6282243337608" target="_blank" className="relative lg:w-[45px]">
               <img
                 src="./Group 12.svg"
-                className="group-hover:hidden block"
+                className="group-hover:opacity-0 opacity-100 transition duration-200 absolute"
               ></img>
               <img
                 src="./Group 12h.svg"
-                className="group-hover:block hidden"
+                className="group-hover:opacity-100 opacity-0 transition duration-200 absolute"
               ></img>
             </a>
           </div>
