@@ -1,16 +1,20 @@
 import React from "react";
-import block1 from "../../assets/Beranda/Group 14.png";
-import block2 from "../../assets/Beranda/Group 15.png";
-import background from "../../assets/Beranda/background_beranda.png";
 import Image from "next/image";
-import Link from "next/link";
+import background1 from "../../assets/Beranda/background.png";
+import title from "../../public/beranda/title.png";
 
 const Header = () => {
   return (
     <>
-      <div className="h-screen overflow-hidden bg-blastoutpurple">
-        <div class="block mx-auto my-40 w-3/4 relative">
-          <Image src={background} alt="background" />
+      <div
+        class="h-screen overflow-hidden bg-blastoutdarkpurple bg-cover flex justify-center items-center"
+        style={{ backgroundImage: `url(${background1.src})` }}
+      >
+        <div class="flex flex-col justify-center items-center">
+          <Image src={title} alt="title" />
+          <p className="bg-gradient-to-br from-[#8338ED] to-[#FF0070] px-3 py-2 rounded-full font-bold text-white text-sm lg:text-4xl lg:-mt-10 lg:px-6 lg:py-3 md:text-2xl">
+            Adaptasi, Susun Strategi, Raih Mimpi
+          </p>
         </div>
       </div>
     </>

@@ -111,7 +111,7 @@ export default Sistem;
 function Step(i, j) {
   return (
     <div
-      className={`col-start-2 lg:col-start-${j} mb-20 lg:mb-36 
+      className={`col-start-2 mb-20 lg:mb-36 
       ${
         i == 2
           ? "row-start-2"
@@ -133,7 +133,8 @@ function Step(i, j) {
           : i == 8
           ? "lg:row-start-4"
           : ""
-      }`}
+      }
+      ${j == 1 ? "lg:col-start-1" : j == 3 ? "lg:col-start-3" : ""}`}
     >
       <h3 className="text-base 2xl:text-5xl font-bold text-blastoutpink drop-shadow-[0_0_16px_rgba(244,164,182,.3)] mb-3 2xl:mb-6">
         Lorem Ipsum {i}

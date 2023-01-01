@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 import styles from "./Timeline.module.css";
 
 function Timeline() {
@@ -124,7 +125,7 @@ function Timeline() {
             textShadow:
               "4px 0px 8px rgba(185, 35, 69, 0.5), -4px 0px 8px rgba(199, 126, 19, 0.4)",
           }}
-          className="text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-10 sm:mb-20"
+          className="text-center text-2xl lg:text-4xl xl:text-5xl font-bold mb-10 sm:mb-20"
         >
           TIMELINE
         </h1>
