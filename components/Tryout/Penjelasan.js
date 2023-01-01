@@ -5,18 +5,19 @@ import rounded from "../../assets/Tryout/round_border.png";
 import round from "../../assets/Tryout/round_text.png";
 import cloud1 from "../../assets/Tryout/cloud2.png";
 import wave from "../../assets/Tryout/wave.png";
+import grid from "../../assets/Tryout/grid.png";
 
 const Penjelasan = () => {
   return (
     <>
-      <div class="h-screen relative overflow-hidden bg-[#0F0B36] z-50">
+      <div class="h-screen mobile:h-[1200px] sm:h-[1100px] md:h-[1200px] relative overflow-hidden bg-[#0F0B36] z-50 pb-40">
         <Image
           src={cloud}
           alt="cloud"
-          class="absolute w-[35%] -top-16 left-0 mobile:-top-8 mobile:w-[250px] sm:-top-8 sm:w-[250px]"
+          class="absolute xl:w-[500px] xl:top-[10px] left-0 mobile:top-[30px] mobile:w-[250px] sm:top-[30px] sm:w-[300px]"
         />
-        <div class="flex lg:flex-row mobile:flex-col-reverse sm:flex-col-reverse">
-          <div class="flex flex-col text-justify font-Inter pt-40 pb-20 pl-20 mobile:px-[60px] sm:px-[60px]">
+        <div class="flex lg:flex-row mobile:flex-col-reverse sm:flex-col-reverse mobile:pt-20">
+          <div class="flex flex-col text-justify font-inter pt-60 pb-20 pl-20 mobile:px-[60px] sm:px-[60px]">
             <div class="flex flex-row gap-x-6">
               <h1 class="font-bold text-6xl text-[#F0F0F0] mobile:text-3xl mobile:block mobile:mx-auto sm:text-6xl sm:block sm:mx-auto lg:mx-0">
                 TRYOUT <span class="bg-[#FFBD0C] text-black p-2">DAY 1</span>
@@ -36,24 +37,29 @@ const Penjelasan = () => {
             <Image
               src={rounded}
               alt="cloud"
-              class="absolute w-1/4 animate-spin-medium mobile:w-[300px] mobile:top-[60px] sm:w-[300px] sm:top-[60px]"
+              class="absolute w-1/4 animate-spin-medium mobile:w-[300px] mobile:top-[140px] sm:w-[300px] sm:top-[160px]"
             />
             <Image
               src={round}
               alt="cloud"
-              class="absolute w-1/6 mobile:w-[200px] sm:w-[200px]"
+              class="absolute w-1/6 mobile:w-[200px] sm:w-[200px] sm:top-[210px]"
             />
           </div>
         </div>
         <Image
           src={cloud1}
           alt="cloud1"
-          class="absolute w-[35%] right-0 bottom-0"
+          class="absolute sm:w-[50%] right-0 bottom-0 mobile:w-[200px] mobile:top-[900px] sm:top-[800px] lg:top-[600px]"
         />
         <Image
           src={wave}
           alt="cloud1"
-          class="absolute w-[20%] left-0 -bottom-8 mobile:w-1/2 z-50 mobile:top-[800px] sm:top-[600px] xl:top-[400px]"
+          class="absolute sm:w-[30%] xl:w-[300px] left-0 -bottom-8 mobile:w-[100px] z-50 mobile:top-[900px] sm:top-[800px] lg:top-[600px] xl:top-[600px]"
+        />
+        <Image
+          src={grid}
+          alt="grid"
+          class="absolute sm:w-[35%] lg:w-[200px] right-0 bottom-0 mobile:w-[100px] mobile:top-[950px] sm:top-[850px] lg:top-[700px]"
         />
       </div>
     </>

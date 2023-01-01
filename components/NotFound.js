@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 const NotFound = () => {
   return (
@@ -21,16 +23,19 @@ const NotFound = () => {
           </div>
         </div>
       </div>
-      <div className="block lg:hidden">
-        <div className="flex justify-center items-center w-screen bg-[#0F0B36] relative h-screen">
-          <div className="absolute z-[10] top-0">
-            <img src="./atas404hp.svg"></img>
+      <div className="block lg:hidden w-full">
+        <div className="flex justify-center items-center w-full bg-[#0F0B36] relative h-screen">
+          <div className="absolute z-[10] w-full top-0">
+            <img src="./atas404hp.svg" className="w-full"></img>
           </div>
-          <div className="absolute z-[10] bottom-0">
-            <img src="./bawah404hp.svg"></img>
+          <div className="absolute z-[10] bottom-0 w-full right-0">
+            <img src="./Group 6018.svg" className="w-full"></img>
+          </div>
+          <div className="absolute z-[5] bottom-0 left-0">
+            <img src="./Group 41.svg" className=""></img>
           </div>
           <div className="absolute z-[10]">
-            <img src="./Group 5984.png"></img>
+            <img src="./Group 5984.png" className="w-full"></img>
           </div>
         </div>
       </div>

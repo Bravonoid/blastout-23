@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* eslint-disable */
 import React from "react";
 const Footer = () => {
   return (
@@ -26,7 +28,7 @@ const Footer = () => {
         <div className="lg:top-[80px] lg:mt-0 absolute lg:flex z-[10] mt-[120px] ml-[25px]">
           <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="#"
+              href="./"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               BERANDA
@@ -34,7 +36,7 @@ const Footer = () => {
           </div>
           <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="#"
+              href="/tentang"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               TENTANG
@@ -42,7 +44,7 @@ const Footer = () => {
           </div>
           <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="#"
+              href="./tryout"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               TRYOUT
@@ -50,7 +52,7 @@ const Footer = () => {
           </div>
           <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="#"
+              href="./main-event"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               MAIN EVENT
@@ -59,7 +61,11 @@ const Footer = () => {
         </div>
         <div className="absolute flex z-[10] justify-center lg:mt-0 mt-[260px] ml-8 lg:ml-0 lg:top-[140px]">
           <div className="flex mx-2 lg:mx-[10px] lg:w-[45px] w-[30px] group">
-            <a href="#" className="">
+            <a
+              href="https://instagram.com/blastout2023?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              className=""
+            >
               <img
                 src="./Group 11.svg"
                 className="group-hover:hidden block"
@@ -71,7 +77,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex mx-2 lg:mx-[10px] lg:w-[45px] w-[30px] group">
-            <a href="#" className="">
+            <a href="https://wa.me/6282243337608" target="_blank" className="">
               <img
                 src="./Group 12.svg"
                 className="group-hover:hidden block"

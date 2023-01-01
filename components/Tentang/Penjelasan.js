@@ -9,11 +9,11 @@ import Logo from "../../assets/Tentang/logo.png";
 const Penjelasan = () => {
   return (
     <>
-      <div class="h-fit  overflow-hidden pb-40 mobile:pb-20 bg-[#0F0B36]">
+      <div class="h-fit pt-12  overflow-hidden pb-40 mobile:pb-20 bg-[#0F0B36]">
         <Image
           src={blastout_side}
           alt="text"
-          class="sm:h-[800px] sm:w-[200px] lg:h-[700px] mobile:h-[600px] absolute right-0 -top-8 mobile:w-[175px] -z-0"
+          class="sm:h-[800px] sm:w-[200px] lg:h-[700px] mobile:h-full absolute right-0 -top-8 mobile:w-[175px] -z-0"
         />
         <Image
           src={text}
@@ -24,7 +24,7 @@ const Penjelasan = () => {
           TENTANG
         </h1>
         <div class="flex justify-center">
-          <div class="flex lg:flex-row sm:gap-x-12 xl:mx-32 xl:px-8 mobile:mx-[62px] sm:mx-[62px] sm:px-5 bg-[#030022] py-5 w-fit rounded-[50px] mobile:flex-col z-50 sm:flex-col gap-y-5 max-w-[800px] 2xl:max-w-[1200px]">
+          <div class="flex lg:flex-row sm:gap-x-12 xl:mx-32 xl:px-8 mobile:mx-6 sm:mx-[62px] sm:px-5 bg-[#030022] py-5 w-fit rounded-[50px] mobile:flex-col z-50 sm:flex-col gap-y-5 max-w-[800px] 2xl:max-w-[1200px]">
             <Image
               src={blastout}
               alt="blastout"
@@ -33,7 +33,7 @@ const Penjelasan = () => {
             <Image
               src={Logo}
               alt="logo"
-              class=" lg:w-[200px] lg:h-[200px] rounded-xl mobile:w-[88.43px] mobile:h-[88.43px] sm:w-[88.43px] sm:h-[88.43px] z-50 relative block mx-auto my-auto"
+              class=" lg:w-[200px] lg:h-[200px] rounded-xl mobile:w-1/2 mobile:h-1/2 sm:w-1/2 sm:h-1/2 z-50 relative block mx-auto my-auto"
             />
             <div class="flex flex-col">
               {/* <h1 class="text-6xl font-bold font-TransAmerica">BLASTOUT</h1> */}
@@ -42,7 +42,7 @@ const Penjelasan = () => {
                 alt="blastout"
                 class="w-1/2 mobile:hidden sm:w-[300px] sm:hidden lg:block pb-12"
               />
-              <p class="text-justify font-inter text-[#FFFFFF] mobile:px-5 z-50 mobile:pt-5 mobile:text-sm sm:text-sm">
+              <p class="text-justify font-inter text-[#FFFFFF] mobile:px-5 z-50 mobile:pt-5 mobile:text-sm sm:text-sm mb-8">
                 BlastOut merupakan program kerja tahunan dari Balairung Klass,
                 organisasi mahasiswa daerah dengan anggota mahasiswa UGM yang
                 berdomisili di Klaten. Acara ini dilakukan secara offline selama
@@ -51,7 +51,7 @@ const Penjelasan = () => {
               <p class="text-justify font-inter text-[#FFFFFF] mobile:px-5 z-50 mobile:text-sm sm:text-sm">
                 BlastOut terdiri dari rangkaian acara inti, yaitu:
               </p>
-              <ol class="text-justify font-inter text-[#FFFFFF] mobile:px-5 z-50 mobile:text-sm sm:text-sm list-disc pl-5 mobile:pl-5">
+              <ol class="text-justify font-inter text-[#FFFFFF] mobile:px-5 z-50 mobile:text-sm sm:text-sm list-disc pl-5 mobile:pl-10 mb-4">
                 <li>briefing ke SMA di Kab. Klaten</li>
                 <li>tryout beserta pembahasan soal</li>
                 <li>talkshow oleh pembicara inspiratif</li>

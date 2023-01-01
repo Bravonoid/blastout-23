@@ -1,10 +1,12 @@
 import React from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-const ComingSoon = () => {
+const ComingSoon = ({ title, bgColor }) => {
   return (
     <>
-      <div className="block lg:hidden">
-        <div className="bg-[#0A071F] w-[100vw] h-[700px] flex justify-center items-center">
+      <h2 className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl -mb-20 lg:-mb-16 uppercase font-inter flex items-center justify-center">
+        {title}
+      </h2>
+      <div className={`bg-[${bgColor}]block lg:hidden`}>
+        <div className={`w-[100vw] h-[700px] flex justify-center items-center`}>
           <div className="absolute flex z-[10] text-6xl mb-[340px] text-black font-extrabold font-outline-4 font-inter opacity-20">
             COMING
           </div>
@@ -62,14 +64,14 @@ const ComingSoon = () => {
         </div>
       </div>
 
-      <div className="hidden lg:block">
-        <div className="flex justify-center items-center w-[100vw] bg-[#0A071F] h-[1080px] relative">
-          <div className="absolute top-0">
+      <div className={`bg-[${bgColor}] hidden lg:block`}>
+        <div className="flex justify-center items-center w-[100vw] h-[1080px] relative">
+          {/* <div className="absolute top-0">
             <img src="./Vector.svg" className="w-[100vw]"></img>
-          </div>
-          <div className="absolute bottom-0 left-0">
+          </div> */}
+          {/* <div className="absolute bottom-0 left-0">
             <img src="./Union.svg"></img>
-          </div>
+          </div> */}
           <div className="absolute hidden lg:block z-[10] mb-[730px] h-[6px] w-[700px] bg-[#FFBD0C]"></div>
           <div className="absolute flex z-[10] text-[90px] text-black font-extrabold font-outline-1 font-inter mb-[620px] opacity-10">
             COMING SOON

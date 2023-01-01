@@ -35,15 +35,23 @@ function Testimoni() {
       image: "/beranda/testimoni/dinda.png",
     },
     {
-      nama: "Naufal Majid Nursalim",
+      nama: "Naufal Majid N",
       fakultas: "Teknik Geodesi 2022",
       blastout: "Blastout 2022",
       testimoni:
         "Menurut saya Blastout 2022 merupakan acara yang sangat menarik. Try out yang diadakan cocok banget buat jadi persiapan ujian masuk ptn. Try out tersebut bisa dijadikan sebagai latihan untuk menguji sejauh mana tingkat kemampuan dan tingkat pemahaman materi masing-masing. Selain try out tersebut ada juga beberapa rangkaian acara asik lainnya, yaitu talkshow dan lomba. Intinya secara keseluruhan acaranya asik banget.",
       image: "/beranda/testimoni/naufal.png",
     },
+    // {
+    //   nama: "Fathya Rizkyana K",
+    //   fakultas: "Kesehatan Gigi 2021",
+    //   blastout: "Blastout 2021",
+    //   testimoni:
+    //     "seruu dapet pengalaman baru, bisa latihan soal model terbaru. terus ada talkshow jugaa yg menambah motivasi hidup :) gstarnya menambah semangat dan jadi bisa refreshing setelah otak bekerja keras ngutak-atik soal.",
+    //   image: "/beranda/testimoni/hidayat.png",
+    // },
     {
-      nama: "Hidayat Syaifudin Ma'arif",
+      nama: "Hidayat Syaifudin",
       fakultas: "Teknik Sipil 2022",
       blastout: "Blastout 2020",
       testimoni:
@@ -51,12 +59,12 @@ function Testimoni() {
       image: "/beranda/testimoni/hidayat.png",
     },
     {
-      nama: "Rosyidatun Nur Fa'izah",
+      nama: "Rosyidatun Nur F",
       fakultas: "FKH 2021",
       blastout: "Blastout 2020 & 2021",
       testimoni:
         "pernah cobain yang offline sama online dan itu seru bangettt. Apalagi taun ini bakal offline kann, pasti bakal lebih seruu",
-      image: "",
+      image: "/beranda/testimoni/rosyidatun.png",
     },
     {
       nama: "Salva Ditya Alvira",
@@ -66,14 +74,14 @@ function Testimoni() {
         "TO blastout kemarin cukup membantu buat nyiapin utbk, karena bisa nambah perbendaharaan soal-soal juga, selain itu kita dikasih urutan ranking hasil TO nya jadi sekalian bisa buat patokan sejauh mana kita paham tentang materi utbk kemarin",
       image: "/beranda/testimoni/salva.png",
     },
-    {
-      nama: "Rangga Mahardhika Indarta",
-      fakultas: "Teknik Pertanian 2022",
-      blastout: "Blastout 2022",
-      testimoni:
-        "Blastout tahun lalu seru dan bermanfaat banget. Meskipun online, rangkaian acaranya tetep bagusss. Ada tryout yang soalnya bener² bermanfaat dan talkshownya juga bermanfaat bangett.",
-      image: "",
-    },
+    // {
+    //   nama: "Rangga Mahardhika Indarta",
+    //   fakultas: "Teknik Pertanian 2022",
+    //   blastout: "Blastout 2022",
+    //   testimoni:
+    //     "Blastout tahun lalu seru dan bermanfaat banget. Meskipun online, rangkaian acaranya tetep bagusss. Ada tryout yang soalnya bener² bermanfaat dan talkshownya juga bermanfaat bangett.",
+    //   image: "",
+    // },
   ];
 
   return (
@@ -186,6 +194,7 @@ const CardCarousel = ({
           width={303}
           height={438}
           className="aspect-square h-full object-contain"
+          quality={100}
           alt=""
         />
         <div className="mt-auto text-center">

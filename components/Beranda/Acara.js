@@ -15,43 +15,43 @@ const Acara = () => {
       title: "BRIEFING",
       desc: "Briefing merupakan serangkaian kegiatan yang dilakukan sebelum hari H pelaksanaan BlastOut 2023. Kegiatan ini berisi sosialisasi ke SMA - SMA yang ada di klaten mengenai UGM dan Balairungklass Association (BKlass) sebagai ormada mahasiswa Klaten di UGM.",
       no: 0,
-      bgsm: "bg-[url('/rangkaianAcara/briefing.png')] w-[27vw] h-full shrink-0 text-white bg-cover",
-      bg: "bg-[url('/rangkaianAcara/briefing.png')] h-[30vh] w-full shrink-0 text-white bg-cover",
+      bg: "bg-[url('/rangkaianAcara/briefing.png')] w-[27vw] h-full shrink-0 text-white bg-cover",
+      bgsm: "bg-[url('/rangkaianAcara/briefing.png')] h-[30vh] w-full shrink-0 text-white bg-cover",
     },
     {
       title: "TRYOUT",
       desc: "TryOut merupakan serangkaian kegiatan pelatihan ujian masuk perguruan tinggi yang ditujukan kepada siswa-siswi SMA/SMK Sederajat di seluruh Kabupaten Klaten. Kegiatan ini bertujuan agar siswa-siswi SMA/SMK Sederajat yang ingin melanjutkan pendidikan ke perguruan tinggi memiliki bekal materi dan sistem ujian yang akan mereka hadapi.",
       no: 1,
-      bgsm: "bg-[url('/rangkaianAcara/tryout.png')] w-[27vw] h-full shrink-0 text-white bg-cover",
-      bg: "bg-[url('/rangkaianAcara/tryout.png')] h-[30vh] w-full shrink-0 text-white bg-cover",
+      bg: "bg-[url('/rangkaianAcara/tryout.png')] w-[27vw] h-full shrink-0 text-white bg-cover",
+      bgsm: "bg-[url('/rangkaianAcara/tryout.png')] h-[30vh] w-full shrink-0 text-white bg-cover",
     },
     {
       title: "BLASTALK",
       desc: "Merupakan talkshow interaktif yang menghadirkan pembicara-pembicara inspiratif. Blastalk menjadi sarana untuk mengetahui strategi meraih kampus impian dan hal-hal yang dapat dilakukan untuk menjadi pelajar adaptif.",
       no: 2,
-      bgsm: "bg-[url('/rangkaianAcara/blastalk.png')] w-[27vw] h-full shrink-0 text-white bg-cover",
-      bg: "bg-[url('/rangkaianAcara/blastalk.png')] h-[30vh] w-full shrink-0 text-white bg-cover",
+      bg: "bg-[url('/rangkaianAcara/blastalk.png')] w-[27vw] h-full shrink-0 text-white bg-cover",
+      bgsm: "bg-[url('/rangkaianAcara/blastalk.png')] h-[30vh] w-full shrink-0 text-white bg-cover",
     },
     // {
     //   title: "FACULTY FAIR",
     //   desc: "",
     //   no: 3,
-    //   bgsm: "bg-[url('/rangkaianAcara/facfair.png')] w-[27vw] h-full shrink-0 text-white bg-cover",
-    //   bg: "bg-[url('/rangkaianAcara/facfair.png')] h-[30vh] w-full shrink-0 text-white bg-cover",
+    //   bg: "bg-[url('/rangkaianAcara/facfair.png')] w-[27vw] h-full shrink-0 text-white bg-cover",
+    //   bgsm: "bg-[url('/rangkaianAcara/facfair.png')] h-[30vh] w-full shrink-0 text-white bg-cover",
     // },
     {
       title: "CAMPUS FAIR",
       desc: "Campus Fair merupakan serangkaian kegiatan yang mengenalkan beberapa Universitas, Fakultas di UGM, dan beberapa UKM yang berada di UGM. Campus Fair ini bertujuan untuk memberikan gambaran lebih mendalam kepada siswa-siswi SMA/SMK terkait universitas dan fakultas yang diminati. Dalam Campus Fair ini, terdapat banyak stand beserta mahasiswa/i yang berasal dari universitas atau fakultas terkait yang akan membantu menjawab rasa penasaran dari siswa-siswi SMA/SMK untuk memberikan gambaran terkait univeritas maupun fakultas tersebut.",
       no: 3,
-      bgsm: "bg-[url('/rangkaianAcara/camfair.png')] w-[27vw] h-full shrink-0 text-white bg-cover",
-      bg: "bg-[url('/rangkaianAcara/camfair.png')] h-[30vh] w-full shrink-0 text-white bg-cover",
+      bg: "bg-[url('/rangkaianAcara/camfair.png')] w-[27vw] h-full shrink-0 text-white bg-cover",
+      bgsm: "bg-[url('/rangkaianAcara/camfair.png')] h-[30vh] w-full shrink-0 text-white bg-cover",
     },
     {
       title: "ENTERTAINMENT",
       desc: "Entertainment GS merupakan sesi penampilan band lokal ataupun nasional yang tentunya menarik sebagai hiburan bagi para peserta setelah mengikuti rangkaian acara. Blastout mengundang beberapa band yang akan tampil untuk menghibur peserta dengan mempersembahkan beberapa lagu.",
       no: 4,
-      bgsm: "bg-[url('/rangkaianAcara/entertainment.png')] w-[27vw] h-full shrink-0 text-white bg-cover",
-      bg: "bg-[url('/rangkaianAcara/entertainment.png')] h-[30vh] w-full shrink-0 text-white bg-cover",
+      bg: "bg-[url('/rangkaianAcara/entertainment.png')] w-[27vw] h-full shrink-0 text-white bg-cover",
+      bgsm: "bg-[url('/rangkaianAcara/entertainment.png')] h-[30vh] w-full shrink-0 text-white bg-cover",
     },
   ];
 
@@ -126,30 +126,30 @@ const Acara = () => {
             const fontSize = state[i] ? active.titleSize : normal.titleSize;
             const st = state[i]
               ? {
-                  width: width,
-                  background:
-                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-                  filter:
-                    "drop-shadow(-2px 0 3px rgb(131 56 237 / 1)) drop-shadow(2px 0 3px rgb(255 0 112 / 1))",
-                }
+                width: width,
+                background:
+                  "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                filter:
+                  "drop-shadow(-2px 0 3px rgb(131 56 237 / 1)) drop-shadow(2px 0 3px rgb(255 0 112 / 1))",
+              }
               : {
-                  width: width,
-                  background:
-                    "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-                };
+                width: width,
+                background:
+                  "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+              };
             const stsm = state[i]
               ? {
-                  height: height,
-                  background:
-                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-                  filter:
-                    "drop-shadow(-2px 0 3px rgb(131 56 237 / 1)) drop-shadow(2px 0 3px rgb(255 0 112 / 1))",
-                }
+                height: height,
+                background:
+                  "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                filter:
+                  "drop-shadow(-2px 0 3px rgb(131 56 237 / 1)) drop-shadow(2px 0 3px rgb(255 0 112 / 1))",
+              }
               : {
-                  height: height,
-                  background:
-                    "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-                };
+                height: height,
+                background:
+                  "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+              };
             return (
               <>
                 <div
@@ -178,6 +178,11 @@ const Acara = () => {
                   >
                     <div className={item.bg}></div>
                   </div>
+                  <div
+                    key={item.no + 45}
+                    className="h-full w-full absolute z-[5] bottom-0 left-0"
+                    style={item.bg}
+                  ></div>
                 </div>
                 <div
                   key={item.no + 15}
