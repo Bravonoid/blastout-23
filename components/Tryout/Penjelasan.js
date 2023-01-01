@@ -56,11 +56,11 @@ const Penjelasan = () => {
           alt="cloud1"
           class="absolute sm:w-[30%] xl:w-[300px] left-0 -bottom-8 mobile:w-[100px] z-50 mobile:top-[900px] sm:top-[800px] lg:top-[600px] xl:top-[600px]"
         />
-        <Image
+        {/* <Image
           src={grid}
           alt="grid"
           class="absolute sm:w-[35%] lg:w-[200px] right-0 bottom-0 mobile:w-[100px] mobile:top-[950px] sm:top-[850px] lg:top-[700px]"
-        />
+        /> */}
       </div>
     </>
   );
