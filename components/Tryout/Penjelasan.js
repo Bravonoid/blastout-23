@@ -17,14 +17,15 @@ const Penjelasan = () => {
           class="absolute xl:w-[500px] xl:top-[10px] left-0 mobile:top-[30px] mobile:w-[250px] sm:top-[30px] sm:w-[300px]"
         />
         <div class="flex lg:flex-row mobile:flex-col-reverse sm:flex-col-reverse mobile:pt-20">
-          <div class="flex flex-col text-justify font-inter pt-60 pb-20 pl-20 mobile:px-[60px] sm:px-[60px]">
-            <div class="flex flex-row gap-x-6">
+          <div class="flex flex-col text-justify font-inter pt-60 pb-20 pl-20 px-[60px] lg:px-60">
+            <div class="flex flex-row items-center justify-center lg:justify-start gap-x-4">
               <h1 class="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl uppercase font-inter flex items-center justify-center">
-                TRYOUT <span class="bg-[#FFBD0C] text-black p-2">DAY 1</span>
+                TRYOUT{" "}
+                <span class="bg-[#FFBD0C] ml-4 text-black p-1">DAY 1</span>
               </h1>
               <div class="border-[#D9D9D9] border-t-2 px-[60px] block my-auto mobile:hidden sm:hidden lg:block" />
             </div>
-            <p class="lg:py-8 lg:w-1/2 text-[#D9D9D9] font-inter mobile:text-sm mobile:w-full sm:text-sm sm:w-full py-12">
+            <p class="lg:w-1/2 text-[#D9D9D9] font-inter text-sm w-full lg:text-2xl py-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae
               imperdiet quam. Pellentesque volutpat fringilla ultricies. Donec
               neque eros, porta a varius vel, luctus eget ex. Cras non
