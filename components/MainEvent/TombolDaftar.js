@@ -4,7 +4,7 @@ import React from "react";
 const TombolDaftar = () => {
   return (
     <>
-      <div className="flex justify-center items-center relative bg-[#0F0B36] w-[100vw] lg:h-[500px] h-[200px] overflow-hidden py-20">
+      <div className="flex justify-center items-center relative bg-[#0F0B36] w-[100vw] lg:h-[500px] h-[200px] overflow-hidden">
         <div className="absolute z-20 lg:top-[120px] top-[50px]">
           <a
             href="https://bit.ly/PendaftaranBlastOut2023"
@@ -13,7 +13,7 @@ const TombolDaftar = () => {
             DAFTAR
           </a>
         </div>
-        <div className="absolute lg:-bottom-[320px] z-10 -bottom-[50px] scale-150 lg:scale-100">
+        <div className="absolute lg:-bottom-[250px] z-10 sm:-bottom-[200px] sm:scale-70 -bottom-[60px] scale-150 lg:scale-100">
           <img src="./Group 5890.svg" className="w-[100vw]"></img>
         </div>
       </div>
