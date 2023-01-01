@@ -29,7 +29,7 @@ function WhatsInside() {
           {events.map(({ title, desc, img }, i) => (
             <article
               key={i}
-              className="bg-[#E5E5E5] text-[#1A1A1A] border-4 border-blastoutdarkpink aspect-square max-w-[15rem] lg:max-w-none lg:w-[18rem] xl:w-[22rem] 2xl:w-[24rem] lg:h-[44rem] xl:h-[38rem] px-4 py-6 lg:px-10 lg:py-12 flex flex-col z-10 cursor-default transition group hover:border-blastoutpink hover:drop-shadow-[0_0_48px_rgba(255,0,112,.6)]"
+              className="bg-[#E5E5E5] text-[#1A1A1A] border-4 border-blastoutdarkpink aspect-square max-w-[15rem] lg:max-w-none lg:w-[18rem] xl:w-[22rem] 2xl:w-[24rem] lg:h-full px-4 py-6 lg:px-8 lg:py-10 flex flex-col z-10 cursor-default transition group hover:border-blastoutpink hover:drop-shadow-[0_0_48px_rgba(255,0,112,.6)]"
             >
               <div className="flex items-center lg:flex-col lg:items-start gap-x-3 mb-4">
                 <div className="w-10 h-10 p-[.6rem] rounded-full bg-blastoutdarkpink flex items-center justify-center mb-2 transition group-hover:bg-blastoutpink lg:h-16 lg:w-16 lg:p-4 lg:mb-8">
@@ -45,7 +45,9 @@ function WhatsInside() {
                   {title}
                 </h4>
               </div>
-              <p className="text-[14px] lg:text-[16px] leading-[1.1]">{desc}</p>
+              <p className="text-[14px] lg:text-[16px] xl:text-lg leading-[1.1]">
+                {desc}
+              </p>
             </article>
           ))}
         </div>

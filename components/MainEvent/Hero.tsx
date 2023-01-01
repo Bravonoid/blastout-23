@@ -25,15 +25,12 @@ function Hero() {
       <div className="w-screen min-h-screen relative">
         <div className="flex flex-col-reverse lg:flex-row justify-center lg:justify-between relative overflow-x-hidden min-h-[80vh] xl:min-h-[90vh]">
           {/* countdown, acara utama, day count */}
-          <div className="w-full basis-[40%] font-inter flex flex-col justify-end items-center lg:items-start lg:pl-24">
+          <div className="w-full basis-[40%] font-inter flex flex-col justify-end items-center lg:items-start lg:pl-24 z-10">
             <div className="flex flex-col gap-y-3 md:gap-y-4 lg:gap-y-5 xl:gap-y-6 text-blastoutwhite">
               <CountdownTimer targetDate={date} setCount={setCount} />
-              <h2 className="whitespace-nowrap border-y border-blastoutgold uppercase font-bold text-[32px] sm:text-4xl md:text-5xl 2xl:text-[5rem] text-center leading-none pt-2 lg:pt-3 pb-2 lg:pb-3 text-glow">
+              <h2 className="whitespace-nowrap border-y border-blastoutgold uppercase font-bold text-[32px] sm:text-4xl md:text-5xl 2xl:text-[4rem] text-center leading-none pt-2 lg:pt-3 pb-2 lg:pb-3 text-glow">
                 Acara Utama
               </h2>
-              {/* <h2 className="self-center lg:self-start text-xl lg:text-6xl uppercase font-bold p-1 bg-blastoutgold text-black w-fit">
-              Day 2
-            </h2> */}
               <Image
                 src="/mainevent/hero-days.svg"
                 alt="day counter"
@@ -44,7 +41,7 @@ function Hero() {
             </div>
           </div>
           {/* title */}
-          <div className="w-full max-w-xs md:max-w-lg lg:max-w-none mx-auto basis-[60%] flex justify-center items-center mt-28 mb-6 lg:mb-32">
+          <div className="w-full max-w-xs md:max-w-lg lg:max-w-none mx-auto basis-[60%] flex justify-center items-center mt-28 mb-6">
             <Image
               src="/mainevent/hero-title.png"
               width={1000}
@@ -88,7 +85,7 @@ function Hero() {
           width={1000}
           height={1000}
           alt="bg"
-          className="absolute top-0 lg:-top-10 xl:-top-20 w-[135px] md:w-[250px] lg:w-[325px] xl:w-[475px]"
+          className="absolute top-12 2xl:-top-0 w-[135px] md:w-[250px] lg:w-[300px] 2xl:w-[450px]"
         />
         {/* bg kotak gradasi */}
         <Image
@@ -96,7 +93,7 @@ function Hero() {
           width={1000}
           height={1000}
           alt="bg"
-          className="absolute left-0 top-24 md:top-44 lg:top-48 xl:top-64 h-[26px] md:h-[48px] lg:h-[60px] xl:h-[100px] w-fit"
+          className="absolute left-0 top-36 md:top-56 lg:top-[17rem] 2xl:top-[20rem] h-[26px] md:h-[48px] lg:h-[60px] 2xl:h-[80px] w-fit"
         />
         {/* bg kertas atas */}
         <Image
@@ -104,7 +101,7 @@ function Hero() {
           width={1000}
           height={1000}
           alt="bg"
-          className="w-[345px] md:w-[600px] xl:w-[900px] absolute -top-10 md:-top-24 lg:-top-[10%] -right-28 lg:-right-[20%] -rotate-[168deg]"
+          className="w-[345px] md:w-[600px] 2xl:w-[900px] absolute top-0 md:-top-20 2xl:-top-[5%] -right-28 lg:-right-[20%] -rotate-[168deg]"
         />
       </div>
     </>

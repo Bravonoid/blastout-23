@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 const Beranda = () => {
   return (
-    <>
+    <div className="bg-blastoutdarkpurple">
       <Head>
         <title>Tryout . Blastout 2023</title>
       </Head>
@@ -18,7 +18,7 @@ const Beranda = () => {
       <Sistem />
       <Lokasi />
       <Footer />
-    </>
+    </div>
   );
 };
 export default Beranda;
