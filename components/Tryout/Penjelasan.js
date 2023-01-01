@@ -5,7 +5,7 @@ import rounded from "../../assets/Tryout/round_border.png";
 import round from "../../assets/Tryout/round_text.png";
 import cloud1 from "../../assets/Tryout/cloud2.png";
 import wave from "../../assets/Tryout/wave.png";
-import grid from "../../assets/Tryout/grid.png";
+// import grid from "../../assets/Tryout/grid.png";
 
 const Penjelasan = () => {
   return (
@@ -17,7 +17,7 @@ const Penjelasan = () => {
           class="absolute xl:w-[500px] xl:top-[10px] left-0 mobile:top-[30px] mobile:w-[250px] sm:top-[30px] sm:w-[300px]"
         />
         <div class="flex lg:flex-row mobile:flex-col-reverse sm:flex-col-reverse mobile:pt-20">
-          <div class="flex flex-col text-justify font-inter pt-60 pb-20 pl-20 px-[60px] lg:px-60">
+          <div class="flex flex-col text-justify font-inter pt-60 pb-20 pl-20 px-[60px] lg:px-60 2xl:pl-80">
             <div class="flex flex-row items-center justify-center lg:justify-start gap-x-4">
               <h1 class="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl uppercase font-inter flex items-center justify-center">
                 TRYOUT{" "}
@@ -25,7 +25,7 @@ const Penjelasan = () => {
               </h1>
               <div class="border-[#D9D9D9] border-t-2 px-[60px] block my-auto mobile:hidden sm:hidden lg:block" />
             </div>
-            <p class="lg:w-1/2 text-[#D9D9D9] font-inter text-sm w-full lg:text-2xl py-8">
+            <p class="lg:max-w-[500px] text-[#D9D9D9] font-inter text-sm w-full lg:text-2xl py-8 2xl:max-w-[700px]">
               Try Out (TO) yang diadakan oleh Balairung Klass UGM merupakan
               serangkaian kegiatan pelatihan ujian masuk perguruan tinggi yang
               ditujukan kepada siswa-siswi SMA/SMK Sederajat di seluruh
@@ -34,16 +34,16 @@ const Penjelasan = () => {
               memiliki bekal materi dan sistem ujian yang akan mereka hadapi.
             </p>
           </div>
-          <div class="flex justify-center py-28 lg:pr-[300px]">
+          <div class="flex justify-center py-28 2xl:pl-60">
             <Image
               src={rounded}
               alt="cloud"
-              class="absolute w-1/4 animate-spin-medium mobile:w-[300px] mobile:top-[140px] sm:w-[300px] sm:top-[160px]"
+              class="absolute animate-spin-medium mobile:w-[300px] mobile:top-[140px] sm:w-[300px] sm:top-[160px] lg:top-[300px] xl:w-[400px] xl:top-[260px]"
             />
             <Image
               src={round}
               alt="cloud"
-              class="absolute w-1/6 mobile:w-[200px] sm:w-[200px] sm:top-[210px]"
+              class="absolute mobile:w-[200px] sm:w-[200px] sm:top-[210px] lg:top-[350px] xl:w-[300px] xl:top-[310px]"
             />
           </div>
         </div>
