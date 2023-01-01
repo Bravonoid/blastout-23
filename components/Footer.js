@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
         <div className="absolute flex z-[10] justify-center lg:mt-0 mt-[260px] ml-8 lg:ml-0 lg:top-[140px]">
           <div className="flex mx-2 lg:mx-[10px] lg:w-[45px] w-[30px] group">
-            <a href="#" className="">
+            <a href="https://instagram.com/blastout2023?igshid=YmMyMTA2M2Y=" className="">
               <img
                 src="./Group 11.svg"
                 className="group-hover:hidden block"
@@ -73,7 +73,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex mx-2 lg:mx-[10px] lg:w-[45px] w-[30px] group">
-            <a href="#" className="">
+            <a href="https://wa.me/6282243337608" className="">
               <img
                 src="./Group 12.svg"
                 className="group-hover:hidden block"
