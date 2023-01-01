@@ -26,12 +26,12 @@ const Penjelasan = () => {
               <div class="border-[#D9D9D9] border-t-2 px-[60px] block my-auto mobile:hidden sm:hidden lg:block" />
             </div>
             <p class="lg:w-1/2 text-[#D9D9D9] font-inter text-sm w-full lg:text-2xl py-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae
-              imperdiet quam. Pellentesque volutpat fringilla ultricies. Donec
-              neque eros, porta a varius vel, luctus eget ex. Cras non
-              pellentesque diam. Ut at arcu urna. Mauris tempor ex vitae libero
-              placerat commodo. Suspendisse consectetur non nunc egestas
-              aliquam.
+              Try Out (TO) yang diadakan oleh Balairung Klass UGM merupakan
+              serangkaian kegiatan pelatihan ujian masuk perguruan tinggi yang
+              ditujukan kepada siswa-siswi SMA/SMK Sederajat di seluruh
+              Kabupaten Klaten. Kegiatan ini bertujuan agar siswa-siswi SMA/SMK
+              Sederajat yang ingin melanjutkan pendidikan ke perguruan tinggi
+              memiliki bekal materi dan sistem ujian yang akan mereka hadapi.
             </p>
           </div>
           <div class="flex justify-center py-28 lg:pr-[300px]">
