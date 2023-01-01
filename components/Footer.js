@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="lg:top-[80px] lg:mt-0 absolute lg:flex z-[10] mt-[120px] ml-[25px]">
           <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="./beranda"
+              href="./"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               BERANDA

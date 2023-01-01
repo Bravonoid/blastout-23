@@ -9,7 +9,7 @@ const Beranda = () => {
   return (
     <>
       <Head>
-        <title>Tentang . Blastout 2023</title>
+        <title>Tentang | Blastout 2023</title>
       </Head>
       <Navbar />
       <Penjelasan />
