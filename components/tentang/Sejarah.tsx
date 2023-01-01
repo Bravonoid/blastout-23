@@ -100,7 +100,7 @@ function Sejarah() {
           />
         </div>
       </div>
-      <div className="container sm:max-w-8xl sm:h-screen flex flex-col pt-8 space-y-3 sm:space-y-5 text-white mx-auto mb-12 sm:mb-0">
+      <div className="container sm:max-w-8xl sm:h-screen flex flex-col pt-8 space-y-3 sm:space-y-5 text-white mx-auto mb-12 sm:mb-0 font-inter">
         <h1 className="font-bold shadow-[#9830D9] drop-shadow text-[#CB18A6] text-4xl sm:text-7xl text-center">
           KILAS LAMPAU
         </h1>
