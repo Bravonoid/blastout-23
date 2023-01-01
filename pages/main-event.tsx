@@ -1,6 +1,5 @@
-// import Timeline from "../components/Beranda/Timeline";
 import Hero from "../components/MainEvent/Hero";
-import Lokasi from "../components/MainEvent/Lokasi";
+import Lokasi2 from "../components/MainEvent/Lokasi2";
 import WhatsInside from "../components/MainEvent/WhatsInside";
 import Navbar from "../components/Navbar";
 import TombolDaftar from "../components/MainEvent/TombolDaftar";
@@ -14,6 +13,12 @@ function mainEvent() {
     <>
       <Head>
         <title>Main Event | Blastout 2023</title>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossOrigin=""
+        />
       </Head>
       <Navbar />
       <div className="bg-blastoutdarkpurple overflow-hidden">
@@ -22,7 +27,7 @@ function mainEvent() {
         <WhatsInside />
         <ComingSoon title={"GUEST STAR"} bgColor="#0F0B36" />
         <Timeline pageNumber={3} />
-        <Lokasi />
+        <Lokasi2 />
         <TombolDaftar />
       </div>
       <Footer />

@@ -104,13 +104,13 @@ const Acara = () => {
 
   return (
     <div className="bg-[#0F0B36] h-[110vh] sm:h-[70vh]">
-      <div className="flex justify-center font-bold text-3xl sm:text-5xl w-full text-[#EEEEEE] py-[3vh] sm:py-[7vh]">
+      <div className="flex justify-center font-bold text-3xl sm:text-[50px] w-full text-[#EEEEEE] py-[3vh] sm:py-[7vh]">
         <p
           style={{
             textShadow:
               "4px 0px 8px rgba(185, 35, 69, 0.5), -4px 0px 8px rgba(199, 126, 19, 0.4)",
           }}
-          className="m-0 p-0"
+          className="text-5xl font-bold m-0 p-0"
         >
           RANGKAIAN ACARA
         </p>
@@ -150,25 +150,6 @@ const Acara = () => {
                   background:
                     "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
                 };
-            const bg = state[i]
-              ? {
-                  background:
-                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-                }
-              : {
-                  background:
-                    "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-                };
-            const bgsm = state[i]
-              ? {
-                  background:
-                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-                }
-              : {
-                  background:
-                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-                };
-
             return (
               <>
                 <div
@@ -192,16 +173,15 @@ const Acara = () => {
                     {item.desc}
                   </div>
                   <div
-                    key={item.no + 30}
                     className="left-0 absolute h-[30vh] w-full"
                     style={{ top: "50%", transform: "translateY(-50%)" }}
                   >
-                    <div className={item.bgsm}></div>
+                    <div className={item.bg}></div>
                   </div>
                   <div
-                    key={item.no + 35}
+                    key={item.no + 45}
                     className="h-full w-full absolute z-[5] bottom-0 left-0"
-                    style={bgsm}
+                    style={bg}
                   ></div>
                 </div>
                 <div
@@ -230,17 +210,11 @@ const Acara = () => {
                     {item.desc}
                   </div>
                   <div
-                    key={item.no + 40}
                     className="bottom-0 absolute w-[27vw] flex flex-row justify-center h-full shrink-0"
                     style={{ left: "50%", transform: "translateX(-50%)" }}
                   >
-                    <div className={item.bg}></div>
+                    <div className={item.bgsm}></div>
                   </div>
-                  <div
-                    key={item.no + 45}
-                    className="h-full w-full absolute z-[5] bottom-0 left-0"
-                    style={bg}
-                  ></div>
                 </div>
               </>
             );

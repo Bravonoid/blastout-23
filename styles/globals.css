@@ -7,6 +7,11 @@
   --shadow-gold: hsla(36, 83%, 43%, 0.4);
 }
 
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
 .text-glow {
   text-shadow: 4px 0 8px var(--shadow-pink), -4px 0 8px var(--shadow-gold);
 }

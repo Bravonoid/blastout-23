@@ -16,6 +16,12 @@
     "incremental": true,
     "noImplicitAny": false
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/mainevent/Lokasi.js",
+    "components/mainevent/Lokasi2.js"
+  ],
   "exclude": ["node_modules"]
 }
