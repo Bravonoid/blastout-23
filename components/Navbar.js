@@ -49,6 +49,8 @@ const Navbar = () => {
             </div>
             <div className="mx-5 flex bg-[#FBDF97] px-[10px] py-[3px] rounded-xl hover:bg-[#b5a16d] transition-all duration-300">
               <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://bit.ly/PendaftaranBlastOut2023"
                 className="text-[#0A0823] text-lg font-inter font-semibold"
               >
@@ -88,8 +90,8 @@ const Navbar = () => {
             id="nav-menu"
             className={
               isActive
-                ? "absolute py-5 bg-[#201D41] w-full max-w-full h-[70vw] top-[0px] left-0 translate-y-[60px] transition duration-300 ease-in-out z-[100]"
-                : "invisible absolute py-5 bg-[#201D41] w-full max-w-full h-[70vw] top-[0px] left-0 z-[100]"
+                ? "absolute py-5 bg-[#201D41] w-full max-w-full pb-[20px] top-[0px] left-0 translate-y-[60px] transition duration-300 ease-in-out z-[100]"
+                : "invisible absolute py-5 bg-[#201D41] w-full max-w-full pb-[20px] top-[0px] left-0 z-[100]"
             }
           >
             <div className="flex justify-center mb-3">
@@ -126,6 +128,8 @@ const Navbar = () => {
             </div>
             <div className="flex justify-center my-4">
               <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://bit.ly/PendaftaranBlastOut2023"
                 className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
