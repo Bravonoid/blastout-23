@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
           <div className="py-4 right-4 top-full max-w-full flex mr-8 items-center">
             <div className="mx-5 flex">
               <a
-                href="#"
+                href="./beranda"
                 className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
               >
                 BERANDA
@@ -22,7 +23,7 @@ const Navbar = () => {
             </div>
             <div className="mx-5 flex">
               <a
-                href="#"
+                href="./tentang"
                 className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
               >
                 TENTANG
@@ -30,7 +31,7 @@ const Navbar = () => {
             </div>
             <div className="mx-5 flex">
               <a
-                href="#"
+                href="./tryout"
                 className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
               >
                 TRYOUT
@@ -38,7 +39,7 @@ const Navbar = () => {
             </div>
             <div className="mx-5 flex">
               <a
-                href="#"
+                href="./main-event"
                 className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d]"
               >
                 MAIN EVENT
@@ -85,7 +86,7 @@ const Navbar = () => {
           >
             <div className="flex justify-center mb-3">
               <a
-                href="#"
+                href="./beranda"
                 className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 BERANDA
@@ -93,7 +94,7 @@ const Navbar = () => {
             </div>
             <div className="flex justify-center my-4">
               <a
-                href="#"
+                href="./tentang"
                 className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 TENTANG
@@ -101,7 +102,7 @@ const Navbar = () => {
             </div>
             <div className="flex justify-center my-4">
               <a
-                href="#"
+                href="./tryout"
                 className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 TRY OUT
@@ -109,7 +110,7 @@ const Navbar = () => {
             </div>
             <div className="flex justify-center my-4">
               <a
-                href="#"
+                href="./main-event"
                 className="text-[#FBDF97] text-md font-inter font-bold active:text-[#b5a16d]"
               >
                 MAIN EVENT
