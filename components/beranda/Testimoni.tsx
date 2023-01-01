@@ -85,18 +85,18 @@ function Testimoni() {
   ];
 
   return (
-    <section className="sm:h-screen bg-[#0F0B36] text-white font-inter pt-12 flex items-start sm:items-center">
-      <div className="container sm:max-w-8xl mx-auto sm:h-full flex flex-col items-center">
+    <section className="xl:h-screen bg-[#0F0B36] text-white font-inter pt-12 flex items-start xl:items-center">
+      <div className="container xl:max-w-8xl mx-auto xl:h-full flex flex-col items-center">
         <h1
           style={{
             textShadow:
               "4px 0px 8px rgba(185, 35, 69, 0.5), -4px 0px 8px rgba(199, 126, 19, 0.4)",
           }}
-          className="text-2xl sm:text-5xl font-bold mb-12 mt-12"
+          className="text-2xl xl:text-5xl font-bold mb-12 mt-12"
         >
           TESTIMONI
         </h1>
-        <div className="flex justify-center items-center w-full px-2 sm:px-0 sm:w-5/6 h-full">
+        <div className="flex justify-center items-center w-full px-2 xl:px-0 xl:w-5/6 h-full">
           <Button
             onClick={() => swiperRef.current?.slidePrev()}
             image="/beranda/testimoni/arrow.svg"
@@ -122,7 +122,7 @@ function Testimoni() {
             position="right"
           />
         </div>
-        <div className="relative mx-10 sm:hidden mb-12">
+        <div className="relative mx-10 xl:hidden mb-12">
           <Image
             src="/beranda/testimoni/quote.svg"
             width={25}
@@ -203,7 +203,7 @@ const CardCarousel = ({
 }: CardCarouselProps) => {
   return (
     <div className="flex w-full h-5/6 justify-center items-center">
-      <div className="flex flex-col w-full sm:w-4/12 h-full sm:pl-12">
+      <div className="flex flex-col w-full xl:w-4/12 h-full xl:pl-12 justify-center items-center">
         {/* <div className="bg-gray-500 aspect-square">INI FOTO GAN</div> */}
         <Image
           src={image}
@@ -213,13 +213,13 @@ const CardCarousel = ({
           quality={100}
           alt=""
         />
-        <div className="sm:mt-auto text-center mt-2">
-          <h1 className="font-bold text-2xl sm:text-4xl">{nama}</h1>
-          <p className="font-medium text-lg sm:text-2xl">{fakultas}</p>
-          <p className="font-medium text-lg sm:text-2xl">{blastout}</p>
+        <div className="xl:mt-auto text-center mt-2">
+          <h1 className="font-bold text-2xl xl:text-4xl">{nama}</h1>
+          <p className="font-medium text-lg xl:text-2xl">{fakultas}</p>
+          <p className="font-medium text-lg xl:text-2xl">{blastout}</p>
         </div>
       </div>
-      <div className="hidden sm:flex justify-center h-full items-center w-8/12 p-12">
+      <div className="hidden xl:flex justify-center h-full items-center w-8/12 p-12">
         <div className="relative h-3/4 flex items-center justify-center">
           <div
             className={`text-justify flex justify-center flex-col h-full text-3xl`}
