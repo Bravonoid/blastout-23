@@ -19,7 +19,7 @@ const Sekilas = ({ onClick, image, position }) => {
             <h1 class="font-bold text-6xl font-TransAmerica text-center mobile:text-3xl">
               BLASTOUT
             </h1>
-            <Link href="./Tentang">
+            <Link href="./tentang">
               <div
                 className="transition-all"
                 onMouseOver={() => setHover(true)}
