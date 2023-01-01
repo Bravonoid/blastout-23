@@ -51,6 +51,14 @@ function Testimoni() {
     //   image: "/beranda/testimoni/hidayat.png",
     // },
     {
+      nama: "Rangga Mahardhika Indarta",
+      fakultas: "Teknik Pertanian 2022",
+      blastout: "Blastout 2022",
+      testimoni:
+        "Blastout tahun lalu seru dan bermanfaat banget. Meskipun online, rangkaian acaranya tetep bagusss. Ada tryout yang soalnya bener² bermanfaat dan talkshownya juga bermanfaat bangett.",
+      image: "/beranda/testimoni/rangga.png",
+    },
+    {
       nama: "Hidayat Syaifudin",
       fakultas: "Teknik Sipil 2022",
       blastout: "Blastout 2020",
@@ -74,14 +82,6 @@ function Testimoni() {
         "TO blastout kemarin cukup membantu buat nyiapin utbk, karena bisa nambah perbendaharaan soal-soal juga, selain itu kita dikasih urutan ranking hasil TO nya jadi sekalian bisa buat patokan sejauh mana kita paham tentang materi utbk kemarin",
       image: "/beranda/testimoni/salva.png",
     },
-    // {
-    //   nama: "Rangga Mahardhika Indarta",
-    //   fakultas: "Teknik Pertanian 2022",
-    //   blastout: "Blastout 2022",
-    //   testimoni:
-    //     "Blastout tahun lalu seru dan bermanfaat banget. Meskipun online, rangkaian acaranya tetep bagusss. Ada tryout yang soalnya bener² bermanfaat dan talkshownya juga bermanfaat bangett.",
-    //   image: "",
-    // },
   ];
 
   return (
