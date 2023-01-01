@@ -7,6 +7,7 @@ import TombolDaftar from "../components/MainEvent/TombolDaftar";
 import Footer from "../components/Footer";
 import ComingSoon from "../components/ComingSoon";
 import Head from "next/head";
+import Timeline from "../components/Tryout/Timeline";
 
 function mainEvent() {
   return (
@@ -20,6 +21,7 @@ function mainEvent() {
         {/* <Timeline /> */}
         <WhatsInside />
         <ComingSoon title={"GUEST STAR"} bgColor="#0F0B36" />
+        <Timeline pageNumber={3} />
         <Lokasi />
         <TombolDaftar />
       </div>

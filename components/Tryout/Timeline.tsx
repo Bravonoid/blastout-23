@@ -2,32 +2,36 @@ import Image from "next/image";
 import React from "react";
 import styles from "./Timeline.module.css";
 
-function Timeline() {
+type Timeline = {
+  pageNumber: number;
+};
+
+function Timeline({ pageNumber }: Timeline) {
   const data = [
     {
       id: 1,
-      date: "7 Januari",
-      desc: "Lorem ipsum",
+      date: "3 - 20 Januari",
+      desc: "Briefing",
     },
     {
       id: 2,
-      date: "8 Januari",
-      desc: "Lorem ipsum",
+      date: "4 Februari",
+      desc: "Tryout",
     },
     {
       id: 3,
-      date: "9 Januari",
-      desc: "Lorem ipsum",
+      date: "5 Febuari",
+      desc: "Talk Show",
     },
     {
       id: 4,
-      date: "10 Januari",
-      desc: "Lorem ipsum",
+      date: "5 Februari",
+      desc: "Faculty Fair",
     },
     {
       id: 5,
-      date: "11 Januari",
-      desc: "Lorem ipsum",
+      date: "5 Februari",
+      desc: "Hiburan",
     },
   ];
 
@@ -131,8 +135,8 @@ function Timeline() {
         </h1>
         <div className={styles.stepperWrapper}>
           {data.map(({ id, date, desc }) => {
-            const completed = id < 3;
-            const active = id == 3;
+            const completed = id < pageNumber;
+            const active = id == pageNumber;
             const odd = id % 2 == 0;
 
             return (
@@ -170,7 +174,7 @@ function Timeline() {
                     {desc}
                   </div>
                 </div>
-                <button
+                <div
                   className={`${styles.stepCounter} ${
                     active ? styles.stepCounterActive : ""
                   } ${completed ? styles.stepCounterCompleted : ""}`}
@@ -182,7 +186,7 @@ function Timeline() {
                   >
                     {id}
                   </p>
-                </button>
+                </div>
                 <div
                   className={`text-xl mt-3 md:text-2xl lg:text-3xl xl:text-4xl font-bold hidden sm:block ${
                     active
