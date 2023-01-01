@@ -8,6 +8,7 @@ import Link from "next/link";
 import Timeline from "../components/Beranda/Timeline";
 import Testimoni from "../components/Beranda/Testimoni";
 import Footer from "../components/Footer";
+
 const Beranda = () => {
   return (
     <div className="bg-blastoutdarkpurple">
