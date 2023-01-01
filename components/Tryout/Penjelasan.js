@@ -17,7 +17,7 @@ const Penjelasan = () => {
           class="absolute xl:w-[500px] xl:top-[10px] left-0 mobile:top-[30px] mobile:w-[250px] sm:top-[30px] sm:w-[300px]"
         />
         <div class="flex lg:flex-row mobile:flex-col-reverse sm:flex-col-reverse mobile:pt-20">
-          <div class="flex flex-col text-justify font-Inter pt-60 pb-20 pl-20 mobile:px-[60px] sm:px-[60px]">
+          <div class="flex flex-col text-justify font-inter pt-60 pb-20 pl-20 mobile:px-[60px] sm:px-[60px]">
             <div class="flex flex-row gap-x-6">
               <h1 class="font-bold text-6xl text-[#F0F0F0] mobile:text-3xl mobile:block mobile:mx-auto sm:text-6xl sm:block sm:mx-auto lg:mx-0">
                 TRYOUT <span class="bg-[#FFBD0C] text-black p-2">DAY 1</span>
