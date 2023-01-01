@@ -6,11 +6,8 @@ import Arrow from "../../assets/Beranda/arrow.png";
 import ArrowGlow from "../../assets/Beranda/arrow_glow.png";
 import Text from "../../assets/Beranda/text.png";
 import { useState, useEffect } from "react";
-const Sekilas = ({ onClick, image, position }) => {
+const Sekilas = () => {
   const [isHover, setHover] = useState(false);
-  useEffect(() => {
-    console.log(isHover);
-  }, [isHover]);
   return (
     <>
       <div class="overflow-hidden bg-blastoutdarkpurple text-[#FFFFFF] py-20">
@@ -28,15 +25,13 @@ const Sekilas = ({ onClick, image, position }) => {
                 {isHover ? (
                   <Image
                     src={ArrowGlow}
-                    alt=""
-                    onClick={onClick}
+                    alt="arrow"
                     className="cursor-pointer w-[50px] scale-125 mobile:"
                   />
                 ) : (
                   <Image
                     src={Arrow}
-                    alt=""
-                    onClick={onClick}
+                    alt="arrow"
                     className="cursor-pointer mobile:w-[25px] w-[48px]"
                   />
                 )}

@@ -6,7 +6,7 @@ import Sekilas from "../components/Beranda/Sekilas";
 import Sekilas1 from "../components/Beranda/Sekilas1";
 import Acara from "../components/Beranda/Acara";
 import Link from "next/link";
-import Testimoni from "../components/Beranda/Testimoni";
+import Testimoni from "../components/beranda/Testimoni";
 import Footer from "../components/Footer";
 const Beranda = () => {
   return (
