@@ -92,7 +92,7 @@ function Testimoni() {
             textShadow:
               "4px 0px 8px rgba(185, 35, 69, 0.5), -4px 0px 8px rgba(199, 126, 19, 0.4)",
           }}
-          className="text-5xl font-bold mb-12 mt-12"
+          className="text-2xl sm:text-5xl font-bold mb-12 mt-12"
         >
           TESTIMONI
         </h1>
@@ -123,11 +123,27 @@ function Testimoni() {
           />
         </div>
         <div className="relative mx-10 sm:hidden mb-12">
+          <Image
+            src="/beranda/testimoni/quote.svg"
+            width={25}
+            height={22}
+            alt=""
+          />
           <h2
-            className={`font-medium text-justify text-xl before:content-['“'] before:-scale-x-100 before:absolute before:-mt-2 before:-ml-5 after:content-['“'] after:absolute after:-right-5 after:-bottom-5 after:text-3xl after:font-bold before:text-3xl before:font-bold mt-6`}
+            // className={`font-medium text-justify text-xl before:content-['“'] before:-scale-x-100 before:absolute before:-mt-2 before:-ml-5 after:content-['“'] after:absolute after:-right-5 after:-bottom-5 after:text-3xl after:font-bold before:text-3xl before:font-bold mt-6`}
+            className={`font-medium text-center text-xl`}
           >
             {data[swiperIndex].testimoni}
           </h2>
+          <div className="w-full">
+            <Image
+              src="/beranda/testimoni/quote.svg"
+              width={25}
+              height={22}
+              alt=""
+              className="-rotate-180 ml-auto"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -197,7 +213,7 @@ const CardCarousel = ({
           quality={100}
           alt=""
         />
-        <div className="mt-auto text-center">
+        <div className="sm:mt-auto text-center mt-2">
           <h1 className="font-bold text-2xl sm:text-4xl">{nama}</h1>
           <p className="font-medium text-lg sm:text-2xl">{fakultas}</p>
           <p className="font-medium text-lg sm:text-2xl">{blastout}</p>
