@@ -11,6 +11,7 @@ type Data = {
   blastout: string;
   testimoni: string;
   image: string;
+  scroll?: boolean;
 };
 
 function Testimoni() {
@@ -33,6 +34,7 @@ function Testimoni() {
       testimoni:
         "Blassout jadi acara try out yang udah aku tunggu se masa SMA, kenapa sangat tertarik dengan acara ini, yang pertama karena dari penyelenggara nya adalah mahasiswa dari Universitas Gadjah Mada, dimana menjadi universitas impian banyak orang termasuk aku. Yang kedua, dilihat dari rangkaian acara bener bener real dengan UTBK di tahunku dulu, dari proses pendaftaran, pengumuman lokasi ujian, tata cara berpakaian saat ujian sampai pengumuman bener bener reall dengan pelaksanaan utbk. Yang ketiga guestar nya juga keren, feby putri dan mas fathur wkwkwkw.Kalo dari aku sih rating nya 100000000/10 buat acara blassout.",
       image: "/beranda/testimoni/dinda.png",
+      scroll: true,
     },
     {
       nama: "Naufal Majid N",
@@ -51,7 +53,7 @@ function Testimoni() {
     //   image: "/beranda/testimoni/hidayat.png",
     // },
     {
-      nama: "Rangga Mahardhika Indarta",
+      nama: "Rangga Mahardhika",
       fakultas: "Teknik Pertanian 2022",
       blastout: "Blastout 2022",
       testimoni:
@@ -87,15 +89,25 @@ function Testimoni() {
   return (
     <section className="xl:h-screen bg-[#0F0B36] text-white font-inter pt-12 flex items-start xl:items-center">
       <div className="container xl:max-w-8xl mx-auto xl:h-full flex flex-col items-center">
-        <h1
-          style={{
-            textShadow:
-              "4px 0px 8px rgba(185, 35, 69, 0.5), -4px 0px 8px rgba(199, 126, 19, 0.4)",
-          }}
-          className="text-2xl xl:text-5xl font-bold mb-12 mt-12"
-        >
-          TESTIMONI
-        </h1>
+        <div className="flex flex-col justify-center items-center mt-12 mb-12">
+          <h1
+            style={{
+              textShadow:
+                "4px 0px 8px rgba(185, 35, 69, 0.5), -4px 0px 8px rgba(199, 126, 19, 0.4)",
+            }}
+            className="text-2xl xl:text-5xl font-bold mb-2"
+          >
+            TESTIMONI
+          </h1>
+          <Image
+            src="/beranda/testimoni/union.svg"
+            width={345}
+            height={13}
+            alt=""
+            className="h-[5px] xl:h-2.5"
+          />
+        </div>
+
         <div className="flex justify-center items-center w-full px-2 xl:px-0 xl:w-5/6 h-full">
           <Button
             onClick={() => swiperRef.current?.slidePrev()}
@@ -122,7 +134,7 @@ function Testimoni() {
             position="right"
           />
         </div>
-        <div className="relative mx-10 xl:hidden mb-12">
+        <div className="relative mx-10 mt-6 xl:hidden mb-12">
           <Image
             src="/beranda/testimoni/quote.svg"
             width={25}
@@ -131,7 +143,7 @@ function Testimoni() {
           />
           <h2
             // className={`font-medium text-justify text-xl before:content-['“'] before:-scale-x-100 before:absolute before:-mt-2 before:-ml-5 after:content-['“'] after:absolute after:-right-5 after:-bottom-5 after:text-3xl after:font-bold before:text-3xl before:font-bold mt-6`}
-            className={`font-medium text-center text-xl`}
+            className={`text-sm`}
           >
             {data[swiperIndex].testimoni}
           </h2>
@@ -185,7 +197,9 @@ const Button = ({ onClick, image, position }: ButtonProps) => {
           width={45}
           height={60}
           onClick={onClick}
-          className={`${position == "left" ? "rotate-180" : ""} cursor-pointer`}
+          className={`${
+            position == "left" ? "rotate-180" : ""
+          } h-8 sm:h-full cursor-pointer`}
         />
       )}
     </div>
@@ -200,37 +214,50 @@ const CardCarousel = ({
   fakultas,
   testimoni,
   image,
+  scroll,
 }: CardCarouselProps) => {
   return (
     <div className="flex w-full h-5/6 justify-center items-center">
-      <div className="flex flex-col w-full xl:w-4/12 h-full xl:pl-12 justify-center items-center">
+      <div className="flex flex-col sm:w-full xl:w-5/12 h-full justify-center items-center">
         {/* <div className="bg-gray-500 aspect-square">INI FOTO GAN</div> */}
         <Image
           src={image}
           width={303}
           height={438}
-          className="aspect-square h-full object-contain"
+          className="aspect-square w-3/5 xl:w-full object-contain"
           quality={100}
           alt=""
         />
-        <div className="xl:mt-auto text-center mt-2">
-          <h1 className="font-bold text-2xl xl:text-4xl">{nama}</h1>
-          <p className="font-medium text-lg xl:text-2xl">{fakultas}</p>
-          <p className="font-medium text-lg xl:text-2xl">{blastout}</p>
+        <div className="text-center mt-2 xl:mt-4">
+          <h1 className="font-bold text-lg sm:text-2xl xl:text-4xl">{nama}</h1>
+          <p className="font-medium text-xs sm:text-lg xl:text-2xl">
+            {fakultas}
+          </p>
+          <p className="font-medium text-xs sm:text-lg xl:text-2xl">
+            {blastout}
+          </p>
         </div>
       </div>
-      <div className="hidden xl:flex justify-center h-full items-center w-8/12 p-12">
+      <div
+        className={`hidden xl:flex justify-center h-full items-center w-7/12 py-12 ${
+          scroll ? "pr-4" : "pr-12"
+        } `}
+      >
         <div className="relative h-3/4 flex items-center justify-center">
-          <div
-            className={`text-justify flex justify-center flex-col h-full text-3xl`}
-          >
+          <div className={`flex justify-center flex-col h-full text-3xl`}>
             <Image
               src="/beranda/testimoni/quote.svg"
               width={80}
               height={70}
               alt=""
             />
-            <p className="h-auto overflow-y-visible">{testimoni}</p>
+            <p
+              className={`h-auto ${
+                scroll ? "overflow-y-scroll pr-3" : ""
+              } text-justify`}
+            >
+              {testimoni}
+            </p>
           </div>
         </div>
       </div>
