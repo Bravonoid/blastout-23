@@ -2,29 +2,48 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Line from "../../assets/Beranda/Vector 2.png";
-import Arrow from "../../assets/Beranda/arrow.svg";
+import Arrow from "../../assets/Beranda/arrow.png";
+import ArrowGlow from "../../assets/Beranda/arrow_glow.png";
 import Text from "../../assets/Beranda/text.png";
-import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 const Sekilas = () => {
-  const router = useRouter();
+  const [isHover, setHover] = useState(false);
   return (
     <>
-      <div class="h-screen  overflow-hidden bg-blastoutdarkpurple text-[#FFFFFF] py-20">
+      <div class="overflow-hidden bg-blastoutdarkpurple text-[#FFFFFF] py-20">
         <div class="relative flex flex-col gap-y-2">
-          <div class="flex flex-row justify-center">
-            <h1 class="font-bold text-6xl font-TransAmerica text-center">
+          <div class="flex flex-row justify-center gap-x-5">
+            <h1 class="font-bold text-6xl font-TransAmerica text-center mobile:text-3xl">
               BLASTOUT
             </h1>
-            <Link href="./Tentang">
-              <Image
-                src={Arrow}
-                alt="arrow"
-                class="w-[100px] flex justify-center hover:shadow-[50px_50px_25px_24px_#FFBD0C] duration-300 text-[#FFBD0C] p-0"
-              />
+            <Link href="./tentang">
+              <div
+                className="transition-all"
+                onMouseOver={() => setHover(true)}
+                onMouseOut={() => setHover(false)}
+              >
+                {isHover ? (
+                  <Image
+                    src={ArrowGlow}
+                    alt="arrow"
+                    className="cursor-pointer w-[50px] scale-125 mobile:"
+                  />
+                ) : (
+                  <Image
+                    src={Arrow}
+                    alt="arrow"
+                    className="cursor-pointer mobile:w-[25px] w-[48px]"
+                  />
+                )}
+              </div>
             </Link>
           </div>
-          <Image src={Line} alt="line" class="block mx-auto pt-5 w-[500px]" />
-          <p class="text-center px-[200px] font-Poppins text-[36px] pt-12">
+          <Image
+            src={Line}
+            alt="line"
+            class="block mx-auto pt-5 w-[500px] mobile:w-[300px]"
+          />
+          <p class="text-center px-[200px] font-Poppins lg:text-xl pt-12 mobile:px-5 mobile:text-sm sm:text-lg">
             BlastOut merupakan program kerja dari Balairung Klass, organisasi
             mahasiswa daerah dengan anggota mahasiswa UGM yang berdomisili di
             Klaten. BlastOut terdiri dari rangkaian acara briefing ke SMA di

@@ -1,8 +1,10 @@
+/* eslint-disable */
+/* eslint-disable */
 import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#0A0823] lg:justify-center lg:items-center w-[100vw] lg:h-[280px] h-[400px] flex relative my-[200px]">
+      <div className="bg-[#0A0823] lg:justify-center lg:items-center w-[100vw] lg:h-[280px] h-[400px] flex relative">
         <div className="w-[100vw] bottom-0 absolute invisible lg:visible">
           <img src="./Group 5908.svg" alt="" className=""></img>
         </div>
@@ -26,7 +28,7 @@ const Footer = () => {
         <div className="lg:top-[80px] lg:mt-0 absolute lg:flex z-[10] mt-[120px] ml-[25px]">
           <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="#"
+              href="./"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               BERANDA
@@ -34,7 +36,7 @@ const Footer = () => {
           </div>
           <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="#"
+              href="/tentang"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               TENTANG
@@ -42,7 +44,7 @@ const Footer = () => {
           </div>
           <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="#"
+              href="./tryout"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               TRYOUT
@@ -50,7 +52,7 @@ const Footer = () => {
           </div>
           <div className="mx-[18px] my-2 lg:flex">
             <a
-              href="#"
+              href="./main-event"
               className="text-[#FBDF97] text-md lg:text-lg font-inter hover:font-bold"
             >
               MAIN EVENT

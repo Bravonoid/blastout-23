@@ -8,10 +8,13 @@ module.exports = {
     "./lib/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    backgroundImage: {
-      "background-tema": "url('/assets/Tentang/asset_tema.png')",
-    },
     extend: {
+      backgroundImage: {
+        "background-tema": "url('/assets/Tentang/asset_tema.png')",
+      },
+      screens: {
+        mobile: { MIN: "360px", max: "639px" },
+      },
       fontFamily: {
         Inter: ["Inter"],
         Universal: ["Universal"],
