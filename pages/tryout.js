@@ -20,6 +20,19 @@ const Beranda = () => {
           integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
           crossOrigin=""
         />
+        <meta
+          name="description"
+          content="Try Out (TO) yang diadakan oleh Balairung Klass UGM merupakan serangkaian kegiatan pelatihan ujian masuk perguruan tinggi yang ditujukan kepada siswa-siswi SMA/SMK Sederajat di seluruh Kabupaten Klaten. Kegiatan ini bertujuan agar siswa-siswi SMA/SMK Sederajat yang ingin melanjutkan pendidikan ke perguruan tinggi memiliki bekal materi dan sistem ujian yang akan mereka hadapi."
+        />
+        <meta
+          property="og:URL"
+          content="https://blastout.balairungklass.com/tryout"
+        />
+        <meta property="og:title" content="Tryout | Blastout 2023" />
+        <meta
+          property="og:description"
+          content="Try Out (TO) yang diadakan oleh Balairung Klass UGM merupakan serangkaian kegiatan pelatihan ujian masuk perguruan tinggi yang ditujukan kepada siswa-siswi SMA/SMK Sederajat di seluruh Kabupaten Klaten. Kegiatan ini bertujuan agar siswa-siswi SMA/SMK Sederajat yang ingin melanjutkan pendidikan ke perguruan tinggi memiliki bekal materi dan sistem ujian yang akan mereka hadapi."
+        />
       </Head>
       <Navbar />
       <Penjelasan />
