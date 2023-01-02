@@ -23,6 +23,10 @@ const Navbar = () => {
     // console.log(x);
   };
 
+  const mouseOut = () => {
+    setSt({ transform: "translateX(-100%)" });
+  }
+
   const clickHandler = () => {
     setIsActive(!isActive);
   };
@@ -45,6 +49,7 @@ const Navbar = () => {
                     key={i}
                     className="mx-1 flex justify-center relative group w-[120px]"
                     onMouseOver={hovering}
+                    onMouseOut={mouseOut}
                   >
                     <Link
                       href="/"
