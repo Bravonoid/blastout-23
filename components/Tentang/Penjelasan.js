@@ -11,7 +11,8 @@ import "aos/dist/aos.css";
 const Penjelasan = () => {
   React.useEffect(() => {
     AOS.init({
-       duration: 1000 });
+      duration: 1000,
+    });
   }, []);
   return (
     <>
@@ -28,7 +29,10 @@ const Penjelasan = () => {
           class="mobile:hidden sm:py-12 sm:px-[62px] sm:w-[600px]"
           data-aos="fade-down"
         />
-        <h1 class="mobile:block drop-shadow-2xl shadow-yellow-500 text-white text-4xl font-bold pl-12 pt-12 pb-12 z-50 sm:hidden" data-aos="fade-down">
+        <h1
+          class="mobile:block drop-shadow-2xl shadow-yellow-500 text-white text-4xl font-bold pl-12 pt-12 pb-12 z-50 sm:hidden"
+          data-aos="fade-down"
+        >
           TENTANG
         </h1>
         <div class="flex justify-center" data-aos="fade-up">

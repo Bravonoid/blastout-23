@@ -23,7 +23,7 @@ const Navbar = () => {
               >
                 BERANDA
               </Link>
-              <div className="lg:w-[85px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0"></div>
+              <div className="lg:w-[85px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0 group-hover:translate-x-3"></div>
             </div>
             <div className="mx-1 flex justify-center relative group w-[120px]">
               <Link
