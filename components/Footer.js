@@ -65,7 +65,7 @@ const Footer = () => {
             <a
               href="https://instagram.com/blastout2023?igshid=YmMyMTA2M2Y="
               target="_blank"
-              className="relative lg:w-[45px]"
+              className="relative w-[45px]"
             >
               <img
                 src="./Group 11.svg"
@@ -78,7 +78,11 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex mx-2 lg:mx-[10px] lg:w-[45px] w-[30px] group">
-            <a href="https://wa.me/6282243337608" target="_blank" className="relative lg:w-[45px]">
+            <a
+              href="https://wa.me/6282243337608"
+              target="_blank"
+              className="relative w-[45px]"
+            >
               <img
                 src="./Group 12.svg"
                 className="group-hover:opacity-0 opacity-100 transition duration-200 absolute"
