@@ -2,10 +2,16 @@
 /* eslint-disable */
 import React from "react";
 import Link from "next/link";
-const Footer = () => {
+const Footer = ({ isButtonExist = false }) => {
   return (
     <>
-      <div className="from-[#0A0823] bg-gradient-to-t to-blastoutdarkpurple lg:justify-center lg:items-center w-[100vw] lg:h-[280px] h-[400px] flex relative lg:py-40">
+      <div
+        className={`${
+          isButtonExist
+            ? "bg-[#0A0823]"
+            : "from-[#0A0823] bg-gradient-to-t to-blastoutdarkpurple"
+        } lg:justify-center lg:items-center w-[100vw] lg:h-[280px] h-[400px] flex relative lg:py-40`}
+      >
         <div className="w-screen bottom-0 absolute invisible lg:visible">
           <img src="./Group 5908.svg" alt="" className="w-screen"></img>
         </div>

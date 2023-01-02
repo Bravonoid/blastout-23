@@ -140,7 +140,7 @@ function Sejarah() {
 
         <div className="relative flex flex-col w-4/5 mx-auto h-full sm:h-3/4 sm:justify-between space-y-10">
           <div className="w-full h-48 sm:h-full rounded-xl bg-[#D9D9D9]"></div>
-          <div className="sm:absolute border-4 transition-all text-xs sm:text-base sm:border-8 border-[#9830D9] bg-[#E943B6] rounded-xl sm:rounded-3xl flex justify-center text-black items-start text-justify w-5/6 p-3 sm:p-3 sm:w-2/5  left-0 right-0 mx-auto top-44  sm:left-auto sm:mx-0 sm:bottom-0 sm:top-auto sm:right-14">
+          <div className="sm:absolute border-4 transition-all text-xs sm:text-base sm:border-8 border-[#9830D9] bg-[#E943B6] rounded-xl sm:rounded-3xl flex justify-center text-black font-bold items-start text-justify w-5/6 p-3 sm:p-3 sm:w-2/5  left-0 right-0 mx-auto top-44  sm:left-auto sm:mx-0 sm:bottom-0 sm:top-auto sm:right-14">
             {data.map(({ description }, i) => (
               <p
                 className={`${

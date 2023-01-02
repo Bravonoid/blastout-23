@@ -30,7 +30,7 @@ function mainEvent() {
         <Lokasi2 />
         <TombolDaftar />
       </div>
-      <Footer />
+      <Footer isButtonExist={true} />
     </>
   );
 }

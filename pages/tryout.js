@@ -7,6 +7,7 @@ import Lokasi from "../components/mainevent/Lokasi";
 import Footer from "../components/Footer";
 import ComingSoon from "../components/ComingSoon";
 import Lokasi2 from "../components/mainevent/Lokasi2";
+import TombolDaftar from "../components/MainEvent/TombolDaftar";
 
 const Beranda = () => {
   return (
@@ -22,11 +23,12 @@ const Beranda = () => {
       </Head>
       <Navbar />
       <Penjelasan />
-      {/* <ComingSoon title="SISTEM" bgColor="#0F0B36" /> */}
-      <Sistem />
+      <ComingSoon title="SISTEM" bgColor="#0F0B36" />
+      {/* <Sistem /> */}
       <Timeline pageNumber={2} />
       <Lokasi2 />
-      <Footer />
+      <TombolDaftar />
+      <Footer isButtonExist={true} />
     </div>
   );
 };

@@ -42,16 +42,16 @@ const Penjelasan = () => {
                 alt="blastout"
                 class="w-1/2 mobile:hidden sm:w-[300px] sm:hidden lg:block pb-12"
               />
-              <p class="text-justify font-inter text-[#FFFFFF] mobile:px-5 z-50 mobile:pt-5 mobile:text-sm sm:text-sm mb-8">
+              <p class="text-justify font-inter text-[#FFFFFF] mobile:px-5 z-50 mobile:pt-5 text-base lg:text-xl mb-8">
                 BlastOut merupakan program kerja tahunan dari Balairung Klass,
                 organisasi mahasiswa daerah dengan anggota mahasiswa UGM yang
                 berdomisili di Klaten. Acara ini dilakukan secara offline selama
                 2 hari, yaitu Sabtu - Minggu, 4 - 5 Februari 2023.{" "}
               </p>
-              <p class="text-justify font-inter text-[#FFFFFF] mobile:px-5 z-50 mobile:text-sm sm:text-sm">
+              <p class="text-justify font-inter text-[#FFFFFF] mobile:px-5 z-50 text-base lg:text-xl">
                 BlastOut terdiri dari rangkaian acara inti, yaitu:
               </p>
-              <ol class="text-justify font-inter text-[#FFFFFF] mobile:px-5 z-50 mobile:text-sm sm:text-sm list-disc pl-5 mobile:pl-10 mb-4">
+              <ol class="text-justify font-inter text-[#FFFFFF] mobile:px-5 z-50 text-base lg:text-xl list-disc pl-5 mobile:pl-10 mb-4">
                 <li>briefing ke SMA di Kab. Klaten</li>
                 <li>tryout beserta pembahasan soal</li>
                 <li>talkshow oleh pembicara inspiratif</li>
