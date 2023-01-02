@@ -17,7 +17,7 @@ const Penjelasan = () => {
           class="absolute xl:w-[500px] xl:top-[10px] left-0 mobile:top-[30px] mobile:w-[250px] sm:top-[30px] sm:w-[300px]"
         />
         <div class="flex lg:flex-row mobile:flex-col-reverse sm:flex-col-reverse mobile:pt-20">
-          <div class="flex flex-col text-justify font-inter pt-60 pb-20 pl-20 px-[60px] lg:px-60 2xl:pl-80">
+          <div class="flex flex-col text-justify font-inter pt-48 lg:pt-80 pb-20 pl-20 px-[60px] lg:px-60 2xl:pl-80">
             <div class="flex flex-row items-center justify-center lg:justify-start gap-x-4">
               <h1 class="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl uppercase font-inter flex items-center justify-center">
                 TRYOUT{" "}
