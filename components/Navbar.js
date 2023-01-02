@@ -23,8 +23,7 @@ const Navbar = () => {
               >
                 BERANDA
               </Link>
-              <div className="lg:w-[85px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0">
-              </div>
+              <div className="lg:w-[85px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0"></div>
             </div>
             <div className="mx-1 flex justify-center relative group w-[120px]">
               <Link
@@ -33,8 +32,7 @@ const Navbar = () => {
               >
                 TENTANG
               </Link>
-              <div className="lg:w-[80px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0">
-              </div>
+              <div className="lg:w-[80px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0"></div>
             </div>
             <div className="mx-1 flex justify-center relative group w-[120px]">
               <Link
@@ -43,8 +41,7 @@ const Navbar = () => {
               >
                 TRYOUT
               </Link>
-              <div className="lg:w-[75px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0">
-              </div>
+              <div className="lg:w-[75px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0"></div>
             </div>
             <div className="mx-1 flex justify-center relative group w-[120px]">
               <Link
@@ -53,8 +50,7 @@ const Navbar = () => {
               >
                 MAIN EVENT
               </Link>
-              <div className="lg:w-[110px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0">
-              </div>
+              <div className="lg:w-[110px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0"></div>
             </div>
             <div className="ml-5 mr-1 flex bg-[#FBDF97] px-[10px] py-[3px] rounded-xl hover:bg-[#0A0823] transition-all duration-300 text-[#0A0823] hover:text-[#FBDF97] hover:font-semibold w-[95px]">
               <a
