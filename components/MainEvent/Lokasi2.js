@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
-// import { MapContainer, TileLayer } from "react-leaflet"
 const Map = dynamic(() => import("./lokasi/Map"), { ssr: false });
 
 export default function Lokasi2() {
