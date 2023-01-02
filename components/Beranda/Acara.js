@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Acara = () => {
   const [state, setState] = useState([
@@ -109,13 +108,17 @@ const Acara = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false
-    })
-  }, [])
+      once: false,
+    });
+  }, []);
 
   return (
     <div className="bg-[#0F0B36] h-[110vh] sm:h-[80vh]">
-      <div className="flex flex-col items-center justify-center font-bold text-3xl sm:text-5xl w-full text-[#EEEEEE] py-[3vh] sm:py-[7vh]" data-aos="fade-down" data-aos-anchor-placement="center-center">
+      <div
+        className="flex flex-col items-center justify-center font-bold text-3xl sm:text-5xl w-full text-[#EEEEEE] py-[3vh] sm:py-[7vh]"
+        data-aos="fade-down"
+        data-aos-anchor-placement="center-center"
+      >
         <p
           style={{
             textShadow:
@@ -133,7 +136,12 @@ const Acara = () => {
           className="scale-x-[0.66] sm:scale-x-[1] scale-y-[0.3] sm:scale-y-[0.5] my-0 sm:my-[5px]"
         />
       </div>
-      <div className="h-[100vh] sm:h-[50vh] flex flex-col sm:flex-row justify-evenly items-center mb-[200px] px-[5vw]" data-aos="slide-left" data-aos-delay={500} data-aos-anchor-placement="top-center">
+      <div
+        className="h-[100vh] sm:h-[50vh] flex flex-col sm:flex-row justify-evenly items-center mb-[200px] px-[5vw]"
+        data-aos="slide-left"
+        data-aos-delay={500}
+        data-aos-anchor-placement="top-center"
+      >
         {rangkaian &&
           rangkaian.map((item, i) => {
             const width = state[i] ? active.w : normal.w;
@@ -144,48 +152,48 @@ const Acara = () => {
             const fontSize = state[i] ? active.titleSize : normal.titleSize;
             const st = state[i]
               ? {
-                width: width,
-                background:
-                  "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-                filter:
-                  "drop-shadow(-2px 0 3px rgb(131 56 237 / 1)) drop-shadow(2px 0 3px rgb(255 0 112 / 1))",
-              }
+                  width: width,
+                  background:
+                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                  filter:
+                    "drop-shadow(-2px 0 3px rgb(131 56 237 / 1)) drop-shadow(2px 0 3px rgb(255 0 112 / 1))",
+                }
               : {
-                width: width,
-                background:
-                  "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-              };
+                  width: width,
+                  background:
+                    "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                };
             const stsm = state[i]
               ? {
-                height: height,
-                background:
-                  "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-                filter:
-                  "drop-shadow(-2px 0 3px rgb(131 56 237 / 1)) drop-shadow(2px 0 3px rgb(255 0 112 / 1))",
-              }
+                  height: height,
+                  background:
+                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                  filter:
+                    "drop-shadow(-2px 0 3px rgb(131 56 237 / 1)) drop-shadow(2px 0 3px rgb(255 0 112 / 1))",
+                }
               : {
-                height: height,
-                background:
-                  "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-              };
+                  height: height,
+                  background:
+                    "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                };
             const bg = state[i]
               ? {
-                background:
-                  "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-              }
+                  background:
+                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                }
               : {
-                background:
-                  "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-              };
+                  background:
+                    "linear-gradient(270deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                };
             const bgsm = state[i]
               ? {
-                background:
-                  "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-              }
+                  background:
+                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                }
               : {
-                background:
-                  "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
-              };
+                  background:
+                    "linear-gradient(180deg, rgba(37, 37, 37, 0) 30%, rgba(0, 0, 0, 0.8) 120%)",
+                };
 
             return (
               <>

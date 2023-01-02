@@ -1,9 +1,8 @@
 import { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperClass from "swiper";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "swiper/css";
 import Image from "next/image";
@@ -24,9 +23,9 @@ function Testimoni() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false
-    })
-  }, [])
+      once: false,
+    });
+  }, []);
 
   const data: Data[] = [
     {
@@ -99,7 +98,13 @@ function Testimoni() {
   return (
     <section className="xl:h-screen bg-[#0F0B36] text-white font-inter pt-12 flex items-start xl:items-center">
       <div className="container xl:max-w-8xl mx-auto xl:h-full flex flex-col items-center">
-        <div className="flex flex-col justify-center items-center mt-12 mb-12" id="testimoni" data-aos="fade-down" data-aos-anchor="#testimoni" data-aos-anchor-placement="top-center">
+        <div
+          className="flex flex-col justify-center items-center mt-12 mb-12"
+          id="testimoni"
+          data-aos="fade-down"
+          data-aos-anchor="#testimoni"
+          data-aos-anchor-placement="top-center"
+        >
           <h1
             style={{
               textShadow:
@@ -144,7 +149,11 @@ function Testimoni() {
             position="right"
           />
         </div>
-        <div className="relative mx-10 mt-6 xl:hidden mb-12" data-aos="fade" data-aos-delay={400}>
+        <div
+          className="relative mx-10 mt-6 xl:hidden mb-12"
+          data-aos="fade"
+          data-aos-delay={400}
+        >
           <Image
             src="/beranda/testimoni/quote.svg"
             width={25}
@@ -188,7 +197,8 @@ const Button = ({ onClick, image, position }: ButtonProps) => {
       className="transition-all"
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
-      data-aos={position == "right" ? `fade-right` : `fade-left`} data-aos-delay={1000}
+      data-aos={position == "right" ? `fade-right` : `fade-left`}
+      data-aos-delay={1000}
     >
       {isHover ? (
         <Image
@@ -197,8 +207,9 @@ const Button = ({ onClick, image, position }: ButtonProps) => {
           width={45}
           height={60}
           onClick={onClick}
-          className={`${position == "left" ? "rotate-180" : ""
-            } scale-150 cursor-pointer`}
+          className={`${
+            position == "left" ? "rotate-180" : ""
+          } scale-150 cursor-pointer`}
         />
       ) : (
         <Image
@@ -207,8 +218,9 @@ const Button = ({ onClick, image, position }: ButtonProps) => {
           width={45}
           height={60}
           onClick={onClick}
-          className={`${position == "left" ? "rotate-180" : ""
-            } h-8 sm:h-full cursor-pointer`}
+          className={`${
+            position == "left" ? "rotate-180" : ""
+          } h-8 sm:h-full cursor-pointer`}
         />
       )}
     </div>
@@ -236,10 +248,16 @@ const CardCarousel = ({
           className="aspect-square w-3/5 xl:w-full object-contain"
           quality={100}
           alt=""
-          data-aos="fade-up" data-aos-delay={100}
-          data-aos-anchor="#testimoni" data-aos-anchor-placement="center-center"
+          data-aos="fade-up"
+          data-aos-delay={100}
+          data-aos-anchor="#testimoni"
+          data-aos-anchor-placement="center-center"
         />
-        <div className="text-center mt-2 xl:mt-4" data-aos="fade-down" data-aos-delay={250} >
+        <div
+          className="text-center mt-2 xl:mt-4"
+          data-aos="fade-down"
+          data-aos-delay={250}
+        >
           <h1 className="font-bold text-lg sm:text-2xl xl:text-4xl">{nama}</h1>
           <p className="font-medium text-xs sm:text-lg xl:text-2xl">
             {fakultas}
@@ -250,9 +268,11 @@ const CardCarousel = ({
         </div>
       </div>
       <div
-        className={`hidden xl:flex justify-center h-full items-center w-7/12 py-12 ${scroll ? "pr-4" : "pr-12"
-          } `}
-        data-aos="fade-right" data-aos-delay={1500}
+        className={`hidden xl:flex justify-center h-full items-center w-7/12 py-12 ${
+          scroll ? "pr-4" : "pr-12"
+        } `}
+        data-aos="fade-right"
+        data-aos-delay={1500}
       >
         <div className="relative h-3/4 flex items-center justify-center">
           <div className={`flex justify-center flex-col h-full text-3xl`}>
@@ -263,8 +283,9 @@ const CardCarousel = ({
               alt=""
             />
             <p
-              className={`h-auto ${scroll ? "overflow-y-scroll pr-3" : ""
-                } text-justify`}
+              className={`h-auto ${
+                scroll ? "overflow-y-scroll pr-3" : ""
+              } text-justify`}
             >
               {testimoni}
             </p>
