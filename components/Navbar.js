@@ -15,45 +15,53 @@ const Navbar = () => {
               <img src="BLASTOUT 2023.png" alt="" className="h-[20px]"></img>
             </Link>
           </div>
-          <div className="py-4 right-4 top-full max-w-full flex mr-8 items-center">
-            <div className="mx-5 flex">
+          <div className="py-4 right-4 top-full max-w-full flex mr-[70px] items-center justify-evenly">
+            <div className="mx-1 flex justify-center relative group w-[120px]">
               <Link
                 href="/"
-                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d] transition-all duration-200"
+                className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
               >
                 BERANDA
               </Link>
+              <div className="lg:w-[85px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0">
+              </div>
             </div>
-            <div className="mx-5 flex">
+            <div className="mx-1 flex justify-center relative group w-[120px]">
               <Link
                 href="/tentang"
-                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d] transition-all duration-200"
+                className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
               >
                 TENTANG
               </Link>
+              <div className="lg:w-[80px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0">
+              </div>
             </div>
-            <div className="mx-5 flex">
+            <div className="mx-1 flex justify-center relative group w-[120px]">
               <Link
                 href="/tryout"
-                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d] transition-all duration-200"
+                className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
               >
                 TRYOUT
               </Link>
+              <div className="lg:w-[75px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0">
+              </div>
             </div>
-            <div className="mx-5 flex">
+            <div className="mx-1 flex justify-center relative group w-[120px]">
               <Link
                 href="/main-event"
-                className="text-[#FBDF97] text-lg font-inter font-semibold hover:text-[#b5a16d] transition-all duration-200"
+                className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
               >
                 MAIN EVENT
               </Link>
+              <div className="lg:w-[110px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0">
+              </div>
             </div>
-            <div className="mx-5 flex bg-[#FBDF97] px-[10px] py-[3px] rounded-xl hover:bg-[#b5a16d] transition-all duration-300">
+            <div className="ml-5 mr-1 flex bg-[#FBDF97] px-[10px] py-[3px] rounded-xl hover:bg-[#0A0823] transition-all duration-300 text-[#0A0823] hover:text-[#FBDF97] hover:font-semibold w-[95px]">
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://bit.ly/PendaftaranBlastOut2023"
-                className="text-[#0A0823] text-lg font-inter font-semibold"
+                className="text-lg font-inter"
               >
                 DAFTAR
               </a>
