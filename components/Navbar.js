@@ -3,6 +3,12 @@ import React, { useState } from "react";
 import Link from "next/link";
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
+  const [isHover, setIsHover] = useState(0);
+  const hovering = (e) => {
+    let a = document.createElement("div");
+     a.innerHTML = e.target + "";
+    console.log(a);
+  };
   const clickHandler = () => {
     setIsActive(!isActive);
   };
@@ -15,44 +21,40 @@ const Navbar = () => {
               <img src="BLASTOUT 2023.png" alt="" className="h-[20px]"></img>
             </Link>
           </div>
-          <div className="py-4 right-4 top-full max-w-full flex mr-[70px] items-center justify-evenly">
-            <div className="mx-1 flex justify-center relative group w-[120px]">
+          <div className="py-4 right-4 top-full max-w-full flex mr-[70px] items-center justify-evenly relative">
+            <div key="1" className="mx-1 flex justify-center relative group w-[120px]" onMouseOver={hovering}>
               <Link
                 href="/"
                 className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
               >
                 BERANDA
               </Link>
-              <div className="lg:w-[85px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0 group-hover:translate-x-3"></div>
             </div>
-            <div className="mx-1 flex justify-center relative group w-[120px]">
+            <div className="mx-1 flex justify-center relative group w-[120px]" onMouseOver={hovering}>
               <Link
                 href="/tentang"
                 className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
               >
                 TENTANG
               </Link>
-              <div className="lg:w-[80px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0"></div>
             </div>
-            <div className="mx-1 flex justify-center relative group w-[120px]">
+            <div className="mx-1 flex justify-center relative group w-[120px]" onMouseOver={hovering}>
               <Link
                 href="/tryout"
                 className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
               >
                 TRYOUT
               </Link>
-              <div className="lg:w-[75px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0"></div>
             </div>
-            <div className="mx-1 flex justify-center relative group w-[120px]">
+            <div className="mx-1 flex justify-center relative group w-[120px]" onMouseOver={hovering}>
               <Link
                 href="/main-event"
                 className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
               >
                 MAIN EVENT
               </Link>
-              <div className="lg:w-[110px] lg:h-[3px] transition duration-200 absolute pt-8 border-b-2 border-[#b5a16d] group-hover:opacity-100 opacity-0"></div>
             </div>
-            <div className="ml-5 mr-1 flex bg-[#FBDF97] px-[10px] py-[3px] rounded-xl hover:bg-[#0A0823] transition-all duration-300 text-[#0A0823] hover:text-[#FBDF97] hover:font-semibold w-[95px]">
+            <div className="ml-5 mr-1 flex bg-[#FBDF97] px-[10px] py-[3px] rounded-xl hover:bg-[#0A0823] transition-all duration-300 text-[#0A0823] hover:text-[#FBDF97] hover:font-semibold w-[87px]">
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -61,6 +63,11 @@ const Navbar = () => {
               >
                 DAFTAR
               </a>
+            </div>
+            <div className="h-[4px] absolute bottom-2 inset-x-0">
+              <div className="bg-[#b5a16d] h-[2px] w-[100px]">
+
+              </div>
             </div>
           </div>
         </div>
