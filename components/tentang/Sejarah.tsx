@@ -50,6 +50,8 @@ function Sejarah() {
             width={596}
             height={320.5}
             className="max-h-28 sm:max-h-[320px] opacity-40"
+            data-aos="fade-left"
+            data-aos-delay="1000"
           />
         </div>
         <div className="relative -mt-[8%] sm:-mt-[25%] blur-[2px]">
@@ -59,6 +61,8 @@ function Sejarah() {
             width={596}
             height={320.5}
             className="max-h-28 sm:max-h-[320px]"
+            data-aos="fade-left"
+            data-aos-delay="900"
           />
         </div>
         <div className="relative -mt-[8%] sm:-mt-[25%] blur-[2px]">
@@ -68,6 +72,8 @@ function Sejarah() {
             width={596}
             height={320.5}
             className="max-h-28 sm:max-h-[320px] opacity-40"
+            data-aos="fade-left"
+            data-aos-delay="800"
           />
         </div>
       </div>
@@ -79,6 +85,8 @@ function Sejarah() {
             width={596}
             height={320.5}
             className="max-h-28 sm:max-h-[320px] opacity-40"
+            data-aos="fade-left"
+            data-aos-delay="700"
           />
         </div>
         <div className="relative -mt-[5%] sm:-mt-[25%]">
@@ -88,6 +96,8 @@ function Sejarah() {
             width={596}
             height={320.5}
             className="max-h-28 sm:max-h-[320px]"
+            data-aos="fade-left"
+            data-aos-delay="600"
           />
         </div>
         <div className="relative -mt-[8%] sm:-mt-[20%]">
@@ -97,14 +107,15 @@ function Sejarah() {
             width={596}
             height={320.5}
             className="max-h-28 sm:max-h-[320px] opacity-40"
+            data-aos="fade-left"
           />
         </div>
       </div>
       <div className="container sm:max-w-8xl sm:h-screen flex flex-col pt-8 space-y-3 sm:space-y-5 text-white mx-auto mb-12 sm:mb-0 font-inter">
-        <h1 className="font-bold shadow-[#9830D9] drop-shadow text-[#CB18A6] text-4xl sm:text-7xl text-center">
+        <h1 className="font-bold shadow-[#9830D9] drop-shadow text-[#CB18A6] text-4xl sm:text-7xl text-center" data-aos="fade-down">
           KILAS LAMPAU
         </h1>
-        <h2 className="font-bold font-inter text-2xl sm:text-5xl text-center flex justify-center items-center">
+        <h2 className="font-bold font-inter text-2xl sm:text-5xl text-center flex justify-center items-center" data-aos="fade-down" data-aos-delay="300">
           <style jsx>{`
             @keyframes width-animate {
               0% {
@@ -139,8 +150,8 @@ function Sejarah() {
         </h2>
 
         <div className="relative flex flex-col w-4/5 mx-auto h-full sm:h-3/4 sm:justify-between space-y-10">
-          <div className="w-full h-48 sm:h-full rounded-xl bg-[#D9D9D9]"></div>
-          <div className="sm:absolute border-4 transition-all text-xs sm:text-base sm:border-8 border-[#9830D9] bg-[#E943B6] rounded-xl sm:rounded-3xl flex justify-center text-black font-bold items-start text-justify w-5/6 p-3 sm:p-3 sm:w-2/5  left-0 right-0 mx-auto top-44  sm:left-auto sm:mx-0 sm:bottom-0 sm:top-auto sm:right-14">
+          <div className="w-full h-48 sm:h-full rounded-xl bg-[#D9D9D9]" data-aos="zoom-in"></div>
+          <div className="sm:absolute border-4 transition-all text-xs sm:text-base sm:border-8 border-[#9830D9] bg-[#E943B6] rounded-xl sm:rounded-3xl flex justify-center text-black font-bold items-start text-justify w-5/6 p-3 sm:p-3 sm:w-2/5  left-0 right-0 mx-auto top-44  sm:left-auto sm:mx-0 sm:bottom-0 sm:top-auto sm:right-14" data-aos="fade-left" data-aos-delay="300">
             {data.map(({ description }, i) => (
               <p
                 className={`${
@@ -154,7 +165,7 @@ function Sejarah() {
               </p>
             ))}
           </div>
-          <div className="w-full sm:w-1/3 flex justify-between space-x-3 sm:space-x-8">
+          <div className="w-full sm:w-1/3 flex justify-between space-x-3 sm:space-x-8" data-aos="fade-up" data-aos-delay="300">
             {[...Array(3)].map((_, i) => (
               <button
                 onClick={() => setNumber(i)}
