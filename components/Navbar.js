@@ -25,7 +25,7 @@ const Navbar = () => {
 
   const mouseOut = () => {
     setSt({ transform: "translateX(-100%)" });
-  }
+  };
 
   const clickHandler = () => {
     setIsActive(!isActive);
