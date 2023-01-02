@@ -17,21 +17,25 @@ const Tema = () => {
           src={cloud}
           alt="cloud"
           class="absolute w-[35%] sm:-top-10 lg:-top-16 xl:-top-24 left-0 mobile:-top-6 mobile:w-[150px]"
+          data-aos="fade-right"
         />
         <Image
           src={tema}
           alt="tema"
           class="px-[115px] mobile:hidden relative z-50"
+          data-aos="zoom-in"
         />
         <Image
           src={tema_mobile}
           alt="tema"
           class="mobile:block sm:hidden relative px-5 z-50"
+          data-aos="zoom-in"
         />
         <Image
           src={cloud2}
           alt="cloud"
           class="absolute right-0 w-1/3 mobile:bottom-6 sm:bottom-0 xl:-bottom-16 2xl:-bottom-20 z-40"
+          data-aos="fade-left"
         />
       </div>
     </>

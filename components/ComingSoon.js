@@ -8,7 +8,7 @@ const ComingSoon = ({ title, bgColor }) => {
         </h2>
         <div className={`block lg:hidden`}>
           <div
-            className={`w-[100vw] h-[700px] flex justify-center items-center`}
+            className={`w-[100vw] h-[500px] flex justify-center items-center`}
           >
             <div className="absolute flex z-[10] text-6xl mb-[340px] text-black font-extrabold font-outline-4 font-inter opacity-20">
               COMING
