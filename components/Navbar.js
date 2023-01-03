@@ -8,10 +8,10 @@ const Navbar = () => {
 
   // const konten = ["BERANDA", "TENTANG", "TRYOUT", "MAIN EVENT"];
   const konten = [
-    { title: "BERANDA" },
-    { title: "TENTANG" },
-    { title: "TRYOUT" },
-    { title: "MAIN EVENT" },
+    { title: "BERANDA", link: "/" },
+    { title: "TENTANG", link: "/tentang" },
+    { title: "TRYOUT", link: "/tryout" },
+    { title: "MAIN EVENT", link: "/main-event" },
   ];
 
   const hovering = (e) => {
@@ -52,7 +52,7 @@ const Navbar = () => {
                     onMouseOut={mouseOut}
                   >
                     <Link
-                      href="/"
+                      href={item.link}
                       className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
                     >
                       {item.title}
