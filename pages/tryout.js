@@ -8,8 +8,17 @@ import Footer from "../components/Footer";
 import ComingSoon from "../components/ComingSoon";
 import Lokasi2 from "../components/mainEvent/Lokasi2";
 import TombolDaftar from "../components/mainEvent/TombolDaftar";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Beranda = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
+  
   return (
     <div className="bg-blastoutdarkpurple">
       <Head>
