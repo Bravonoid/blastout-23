@@ -21,7 +21,7 @@ const Penjelasan = () => {
           src={blastout_side}
           alt="text"
           class="sm:h-[800px] sm:w-[200px] lg:h-[700px] mobile:h-full absolute right-0 -top-8 mobile:w-[175px] -z-0"
-          data-aos="fade-left"
+          data-aos="fade-right"
         />
         <Image
           src={text}
