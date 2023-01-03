@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Acara = () => {
   const [state, setState] = useState([
@@ -109,13 +108,17 @@ const Acara = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false
-    })
-  }, [])
+      once: false,
+    });
+  }, []);
 
   return (
     <div className="bg-[#0F0B36] h-[110vh] sm:h-[80vh]">
-      <div className="flex flex-col items-center justify-center font-bold text-3xl sm:text-5xl w-full text-[#EEEEEE] py-[3vh] sm:py-[7vh]" data-aos="fade-down" data-aos-anchor-placement="center-center">
+      <div
+        className="flex flex-col items-center justify-center font-bold text-3xl sm:text-5xl w-full text-[#EEEEEE] py-[3vh] sm:py-[7vh]"
+        data-aos="fade-down"
+        data-aos-anchor-placement="center-center"
+      >
         <p
           style={{
             textShadow:
@@ -133,7 +136,12 @@ const Acara = () => {
           className="scale-x-[0.66] sm:scale-x-[1] scale-y-[0.3] sm:scale-y-[0.5] my-0 sm:my-[5px]"
         />
       </div>
-      <div className="h-[100vh] sm:h-[50vh] flex flex-col sm:flex-row justify-evenly items-center mb-[200px] px-[5vw]" data-aos="slide-left" data-aos-delay={500} data-aos-anchor-placement="-center">
+      <div
+        className="h-[100vh] sm:h-[50vh] flex flex-col sm:flex-row justify-evenly items-center mb-[200px] px-[5vw]"
+        data-aos="slide-left"
+        data-aos-delay={500}
+        data-aos-anchor-placement="bottom-bottom"
+      >
         {rangkaian &&
           rangkaian.map((item, i) => {
             const width = state[i] ? active.w : normal.w;

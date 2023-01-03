@@ -173,18 +173,21 @@ function Event(title, bottom) {
       data-aos-delay={100}
     >
       <div
-        className={`relative w-full h-full ${!bottom ? "row-start-2" : "row-start-1"
-          }`}
+        className={`relative w-full h-full ${
+          !bottom ? "row-start-2" : "row-start-1"
+        }`}
       >
         <div className="hidden lg:inline-block absolute top-0 left-0 h-full w-[4px] 2xl:w-[6px] bg-blastoutpink" />
         <div
-          className={`hidden lg:inline-block absolute left-0 h-[4px] 2xl:h-[6px] w-full bg-blastoutpink ${!bottom ? "top-0" : "bottom-0"
-            }`}
+          className={`hidden lg:inline-block absolute left-0 h-[4px] 2xl:h-[6px] w-full bg-blastoutpink ${
+            !bottom ? "top-0" : "bottom-0"
+          }`}
         />
       </div>
       <div
-        className={`font-inter font-extrabold text-sm lg:text-lg 2xl:text-3xl 2xl:my-2 text-blastoutwhite uppercase flex justify-center whitespace-nowrap ${!bottom ? "items-end row-start-1" : "row-start-2"
-          }`}
+        className={`font-inter font-extrabold text-sm lg:text-lg 2xl:text-3xl 2xl:my-2 text-blastoutwhite uppercase flex justify-center whitespace-nowrap ${
+          !bottom ? "items-end row-start-1" : "row-start-2"
+        }`}
       >
         {title}
       </div>

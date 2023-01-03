@@ -8,7 +8,7 @@ const smk = new Icon({
 
 export default function Map({ tryout }) {
   const center = [-7.689032498489004, 110.63463513292615];
-  const center2 = [-7.704827264647206, 110.59487347116398]
+  const center2 = [-7.704827264647206, 110.59487347116398];
 
   return (
     <>
@@ -25,7 +25,7 @@ export default function Map({ tryout }) {
         <Marker key={1} position={tryout ? center : center2} icon={smk}>
           <Popup>
             <span className="text-2xl">
-              {tryout ? 'SMK Negeri 4 Klaten' : 'Al Hakim Convention Hall'}
+              {tryout ? "SMK Negeri 4 Klaten" : "Al Hakim Convention Hall"}
             </span>
           </Popup>
         </Marker>
