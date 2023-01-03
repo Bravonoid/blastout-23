@@ -102,8 +102,6 @@ function Testimoni() {
           className="flex flex-col justify-center items-center mt-12 mb-12"
           id="testimoni"
           data-aos="fade-down"
-          data-aos-anchor="#testimoni"
-          data-aos-anchor-placement="top-center"
         >
           <h1
             style={{
@@ -152,7 +150,7 @@ function Testimoni() {
         <div
           className="relative mx-10 mt-6 xl:hidden mb-12"
           data-aos="fade"
-          data-aos-delay={200}
+          // data-aos-delay={200}
         >
           <Image
             src="/beranda/testimoni/quote.svg"
@@ -198,7 +196,7 @@ const Button = ({ onClick, image, position }: ButtonProps) => {
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
       data-aos={position == "right" ? `fade-right` : `fade-left`}
-      data-aos-delay={400}
+      // data-aos-delay={400}
     >
       {isHover ? (
         <Image
@@ -249,14 +247,14 @@ const CardCarousel = ({
           quality={100}
           alt=""
           data-aos="fade-up"
-          data-aos-delay={100}
-          data-aos-anchor="#testimoni"
-          data-aos-anchor-placement="center-center"
+          // data-aos-delay={100}
+          // data-aos-anchor="#testimoni"
+          // data-aos-anchor-placement="center-center"
         />
         <div
           className="text-center mt-2 xl:mt-4"
           data-aos="fade-down"
-          data-aos-delay={200}
+          // data-aos-delay={200}
         >
           <h1 className="font-bold text-lg sm:text-2xl xl:text-4xl">{nama}</h1>
           <p className="font-medium text-xs sm:text-lg xl:text-2xl">
@@ -272,9 +270,9 @@ const CardCarousel = ({
           scroll ? "pr-4" : "pr-12"
         } `}
         data-aos="fade-right"
-        data-aos-delay={300}
-        data-aos-anchor="#testimoni"
-        data-aos-anchor-placement="center-center"
+        // data-aos-delay={300}
+        // data-aos-anchor="#testimoni"
+        // data-aos-anchor-placement="center-center"
       >
         <div className="relative h-3/4 flex items-center justify-center">
           <div className={`flex justify-center flex-col h-full text-3xl`}>

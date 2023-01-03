@@ -139,8 +139,8 @@ const Acara = () => {
       <div
         className="h-[100vh] sm:h-[50vh] flex flex-col sm:flex-row justify-evenly items-center mb-[200px] px-[5vw]"
         data-aos="slide-left"
-        data-aos-delay={500}
-        data-aos-anchor-placement="-center"
+        // data-aos-delay={500}
+        data-aos-anchor-placement="bottom-bottom"
       >
         {rangkaian &&
           rangkaian.map((item, i) => {
