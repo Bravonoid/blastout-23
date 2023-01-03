@@ -58,6 +58,7 @@ function Hero() {
               width={1000}
               height={1000}
               alt="blastout title"
+              priority
               className="w-[120%] z-10"
             />
           </div>
@@ -119,6 +120,7 @@ function Hero() {
           src="/mainevent/hero_whats-paper.svg"
           width={1000}
           height={1000}
+          priority
           alt="bg"
           data-aos="fade-up"
           style={{ rotate: "-168deg" }}
