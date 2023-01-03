@@ -207,8 +207,9 @@ const Button = ({ onClick, image, position }: ButtonProps) => {
           width={45}
           height={60}
           onClick={onClick}
-          className={`${position == "left" ? "rotate-180" : ""
-            } scale-150 cursor-pointer`}
+          className={`${
+            position == "left" ? "rotate-180" : ""
+          } scale-150 cursor-pointer`}
         />
       ) : (
         <Image
@@ -217,8 +218,9 @@ const Button = ({ onClick, image, position }: ButtonProps) => {
           width={45}
           height={60}
           onClick={onClick}
-          className={`${position == "left" ? "rotate-180" : ""
-            } h-8 sm:h-full cursor-pointer`}
+          className={`${
+            position == "left" ? "rotate-180" : ""
+          } h-8 sm:h-full cursor-pointer`}
         />
       )}
     </div>
@@ -266,8 +268,9 @@ const CardCarousel = ({
         </div>
       </div>
       <div
-        className={`hidden xl:flex justify-center h-full items-center w-7/12 py-12 ${scroll ? "pr-4" : "pr-12"
-          } `}
+        className={`hidden xl:flex justify-center h-full items-center w-7/12 py-12 ${
+          scroll ? "pr-4" : "pr-12"
+        } `}
         data-aos="fade-right"
         data-aos-delay={300}
         data-aos-anchor="#testimoni"
@@ -282,8 +285,9 @@ const CardCarousel = ({
               alt=""
             />
             <p
-              className={`h-auto ${scroll ? "overflow-y-scroll pr-3" : ""
-                } text-justify`}
+              className={`h-auto ${
+                scroll ? "overflow-y-scroll pr-3" : ""
+              } text-justify`}
             >
               {testimoni}
             </p>
