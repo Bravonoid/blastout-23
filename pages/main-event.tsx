@@ -50,7 +50,7 @@ function MainEvent() {
         <WhatsInside />
         <ComingSoon title={"GUEST STAR"} bgColor="#0F0B36" />
         <Timeline pageNumber={3} />
-        <Lokasi2 />
+        <Lokasi2 tryout={false} />
         <TombolDaftar />
       </div>
       <Footer isButtonExist={true} />
