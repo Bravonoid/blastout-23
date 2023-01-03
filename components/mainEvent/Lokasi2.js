@@ -7,6 +7,7 @@ export default function Lokasi2({ tryout }) {
     <>
       <div className="w-screen h-full flex flex-col items-center justify-center pt-20 pb-40 md:mb-52 lg:mt-32 lg:mb-64 xl:mb-80 relative">
         <h2
+          id="lokasi"
           data-aos="zoom-out"
           className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl mb-8 lg:mb-16 uppercase font-inter"
         >
@@ -14,6 +15,7 @@ export default function Lokasi2({ tryout }) {
         </h2>
         <div
           data-aos="zoom-in"
+          data-aos-anchor="#lokasi"
           data-aos-anchor-placement="top-bottom"
           className="relative 2xl:min-h-[20vh] mb-96"
         >
@@ -55,6 +57,7 @@ export default function Lokasi2({ tryout }) {
           alt="pins"
           data-aos-delay="1000"
           data-aos="zoom-out"
+          data-aos-anchor="#lokasi"
           data-aos-anchor-placement="top-bottom"
           height={1000}
           width={1000}

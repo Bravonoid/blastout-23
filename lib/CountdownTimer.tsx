@@ -5,7 +5,11 @@ import { useCountdown } from "./useCountdown";
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
     <>
-      <div data-aos="fade-up" className="flex justify-between font-bold">
+      <div
+        data-aos="fade-up"
+        id="timer"
+        className="flex justify-between font-bold"
+      >
         <DateTimeDisplay value={days} type={"Hari"} />
         <DateTimeDisplay value={hours} type={"Jam"} />
         <DateTimeDisplay value={minutes} type={"Menit"} />
