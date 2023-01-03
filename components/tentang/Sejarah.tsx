@@ -144,9 +144,9 @@ function Sejarah() {
             <div className="opacity-0 w-auto">0</div>
             {[...Array(3)].map((_, i) => (
               <div
-                className={`absolute overflow-hidden opacity-0  left-0 text-left transition-all duration-1000 ${
+                className={`absolute overflow-hidden  left-0 text-left transition-all duration-1000 ${
                   // i == number ? "animate-[width-animate_5.5s_ease-in-out]" : ""
-                  i == number ? "opacity-100" : ""
+                  i == number ? "opacity-100" : "opacity-0"
                 }`}
                 key={i}
               >
