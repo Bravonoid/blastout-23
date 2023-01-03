@@ -5,16 +5,20 @@ const Map = dynamic(() => import("./lokasi/Map"), { ssr: false });
 export default function Lokasi2({ tryout }) {
   return (
     <>
-      <div className="w-screen h-full flex flex-col items-center justify-center pt-20 pb-40 md:mb-52 lg:mt-32 lg:mb-64 xl:mb-80 relative">
+      <div
+        id="lokasi"
+        className="w-screen h-full flex flex-col items-center justify-center pt-20 pb-40 md:mb-52 lg:mt-32 lg:mb-64 xl:mb-80 relative"
+      >
         <h2
-          id="lokasi"
           data-aos="zoom-out"
+          data-aos-anchor-placement="top-bottom"
           className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl mb-8 lg:mb-16 uppercase font-inter"
         >
           Lokasi
         </h2>
         <div
           data-aos="zoom-in"
+          data-aos-delay="500"
           data-aos-anchor="#lokasi"
           data-aos-anchor-placement="top-bottom"
           className="relative 2xl:min-h-[20vh] mb-96"

@@ -36,9 +36,10 @@ function Timeline({ pageNumber }: Timeline) {
   ];
 
   return (
-    <section className="bg-[#0F0B36] font-inter relative">
+    <section id="paper" className="bg-[#0F0B36] font-inter relative">
       <Image
         src="/tryout/timeline/paper.svg"
+        data-aos-anchor="#paper"
         data-aos-anchor-placement="top-bottom"
         width={1985.99}
         height={200}
@@ -101,6 +102,7 @@ function Timeline({ pageNumber }: Timeline) {
         <div className="hidden lg:block h-full absolute left-0">
           <div
             data-aos="zoom-in"
+            data-aos-anchor="#paper"
             data-aos-anchor-placement="top-bottom"
             className="relative h-full"
           >
@@ -123,6 +125,7 @@ function Timeline({ pageNumber }: Timeline) {
         <div className="hidden lg:block h-full absolute right-0">
           <div
             data-aos="zoom-in"
+            data-aos-anchor="#paper"
             data-aos-anchor-placement="top-bottom"
             className="relative h-full"
           >
