@@ -12,7 +12,11 @@ export default function Lokasi2({ tryout }) {
         >
           Lokasi
         </h2>
-        <div data-aos="zoom-in" className="relative 2xl:min-h-[20vh] mb-96">
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          className="relative 2xl:min-h-[20vh] mb-96"
+        >
           <div className="w-[240px] h-[400px] sm:w-[80vw] sm:h-[50vh] lg:w-[70vw] lg:h-[50vh] xl:h-[60vh] 2xl:h-[70vh] absolute top-0 left-1/2 -translate-x-1/2 z-10">
             <Map tryout={tryout} />
             <div className="h-full w-full text-2xl lg:text-3xl 2xl:text-5xl text-blastoutwhite font-bold font-inter bg-blastoutdarkpink border-8 border-blastoutmustard absolute top-0 left-0 flex justify-center items-center">
@@ -29,10 +33,10 @@ export default function Lokasi2({ tryout }) {
             {/* detail kiri bawah */}
             <div className="w-[60%] md:w-[300px] lg:w-[48%] xl:w-[40%] lg:h-60 2xl:h-80 absolute -bottom-12 lg:-bottom-24 xl:-bottom-36 left-1/2 lg:-left-32 xl:-left-36 2xl:-left-44 -translate-x-1/2 lg:translate-x-0 flex flex-col justify-center py-2 px-3 lg:px-16 lg:-py-4 z-20 bg-[#E5E5E5] lg:bg-[url(/mainevent/lokasi-paper.svg)] bg-contain bg-no-repeat font-inter border-4 border-[#FF3234] drop-shadow-[0_0_12px_rgba(255,50,52,.25)] lg:border-transparent lg:bg-transparent lg:drop-shadow-none">
               <h4 className="text-[10px] lg:text-lg 2xl:text-xl">
-                {tryout ? 'Sabtu, 4 Februari 2023' : 'Minggu, 5 Februari 2003'}
+                {tryout ? "Sabtu, 4 Februari 2023" : "Minggu, 5 Februari 2003"}
               </h4>
               <h3 className="text-[14px] lg:text-2xl 2xl:text-3xl font-bold sm:mb-1 lg:my-2">
-                {tryout ? 'SMK Negeri 4 Klaten' : 'Al Hakim Convention Hall'}
+                {tryout ? "SMK Negeri 4 Klaten" : "Al Hakim Convention Hall"}
               </h3>
             </div>
             {/* foto + bg orange */}
