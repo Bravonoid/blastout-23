@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Penjelasan from "../components/Tryout/Penjelasan";
-import Timeline from "../components/Tryout/Timeline";
-import Sistem from "../components/Tryout/Sistem";
-import Lokasi from "../components/mainevent/Lokasi";
+import Penjelasan from "../components/tryout/Penjelasan";
+import Timeline from "../components/tryout/Timeline";
+import Sistem from "../components/tryout/Sistem";
+import Lokasi from "../components/mainEvent/Lokasi";
 import Footer from "../components/Footer";
 import ComingSoon from "../components/ComingSoon";
-import Lokasi2 from "../components/mainevent/Lokasi2";
-import TombolDaftar from "../components/MainEvent/TombolDaftar";
+import Lokasi2 from "../components/mainEvent/Lokasi2";
+import TombolDaftar from "../components/mainEvent/TombolDaftar";
 
 const Beranda = () => {
   return (

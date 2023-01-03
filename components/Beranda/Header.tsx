@@ -16,11 +16,11 @@ const Header = () => {
   return (
     <>
       <div
-        class="h-screen overflow-hidden shadow-inner-bottom bg-blastoutdarkpurple bg-center bg-cover flex justify-center items-center"
+        className="h-screen overflow-hidden shadow-inner-bottom bg-blastoutdarkpurple bg-center bg-cover flex justify-center items-center"
         style={{ backgroundImage: `url(${background1.src})` }}
       >
         <div
-          class="flex flex-col justify-center items-center"
+          className="flex flex-col justify-center items-center"
           data-aos="zoom-out"
         >
           <Image src={title} alt="title" />

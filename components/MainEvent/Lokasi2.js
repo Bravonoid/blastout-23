@@ -6,10 +6,17 @@ export default function Lokasi2({ tryout }) {
   return (
     <>
       <div className="w-screen h-full flex flex-col items-center justify-center pt-20 pb-40 md:mb-52 lg:mt-32 lg:mb-64 xl:mb-80 relative">
-        <h2 className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl mb-8 lg:mb-16 uppercase font-inter">
+        <h2
+          data-aos="zoom-out"
+          className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl mb-8 lg:mb-16 uppercase font-inter"
+        >
           Lokasi
         </h2>
-        <div className="relative 2xl:min-h-[20vh] mb-96">
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          className="relative 2xl:min-h-[20vh] mb-96"
+        >
           <div className="w-[240px] h-[400px] sm:w-[80vw] sm:h-[50vh] lg:w-[70vw] lg:h-[50vh] xl:h-[60vh] 2xl:h-[70vh] absolute top-0 left-1/2 -translate-x-1/2 z-10">
             <Map tryout={tryout} />
             <div className="h-full w-full text-2xl lg:text-3xl 2xl:text-5xl text-blastoutwhite font-bold font-inter bg-blastoutdarkpink border-8 border-blastoutmustard absolute top-0 left-0 flex justify-center items-center">
@@ -46,9 +53,12 @@ export default function Lokasi2({ tryout }) {
         <Image
           src="/mainevent/lokasi-pins.svg"
           alt="pins"
+          data-aos-delay="1000"
+          data-aos="zoom-out"
+          data-aos-anchor-placement="top-bottom"
           height={1000}
           width={1000}
-          className="hidden lg:inline-block absolute w-[90%] top-[12%] left-1/2 -translate-x-1/2  z-30 pointer-events-none"
+          className="hidden lg:inline-block absolute w-[90%] top-[12%] mx-auto z-30 pointer-events-none"
         />
       </div>
     </>

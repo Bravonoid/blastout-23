@@ -22,10 +22,18 @@ function WhatsInside() {
   return (
     <>
       <div className="font-inter flex flex-col justify-center items-center relative mt-24 md:mt-12">
-        <h2 className="uppercase text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl font-bold mb-12">
+        <h2
+          data-aos="zoom-out"
+          className="uppercase text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl font-bold mb-12"
+        >
           What's Inside
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 xl:gap-12 px-16 lg:px-0">
+        <div
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="z-30 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 xl:gap-12 px-16 lg:px-0"
+        >
           {events.map(({ title, desc, img }, i) => (
             <article
               key={i}
@@ -57,6 +65,7 @@ function WhatsInside() {
             alt="whats inside blastout"
             width={1000}
             height={1000}
+            data-aos="fade-right"
             className="w-32 sm:w-[200px] lg:w-[300px] 2xl:w-[400px] -ml-8"
           />
           {/* bg kanan bawah */}
@@ -65,6 +74,7 @@ function WhatsInside() {
             alt="whats inside blastout"
             width={1000}
             height={1000}
+            data-aos="fade-left"
             className="w-40 sm:w-[300px] lg:w-[400px] 2xl:w-[500px]"
           />
         </div>
@@ -74,6 +84,8 @@ function WhatsInside() {
           alt="whats inside blastout"
           width={1000}
           height={1000}
+          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-right"
           className="w-[224px] lg:w-[400px] xl:w-[624px] absolute left-0 top-24"
         />
         {/* blastout kiri bawah */}

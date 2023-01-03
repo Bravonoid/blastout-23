@@ -39,10 +39,13 @@ function Timeline({ pageNumber }: Timeline) {
     <section className="bg-[#0F0B36] font-inter relative">
       <Image
         src="/tryout/timeline/paper.svg"
+        data-aos-anchor-placement="top-bottom"
         width={1985.99}
         height={200}
         alt=""
-        className="absolute z-50 top-0 lg:-top-6 xl:-top-8 2xl:-top-10 scale-x-105"
+        data-aos="zoom-out"
+        data-aos-delay="500"
+        className="absolute z-50 -top-4 lg:-top-6 xl:-top-8 2xl:-top-14 scale-x-105"
       />
       <div className="relative overflow-hidden">
         <div className=" block lg:hidden w-full absolute left-0 -mt-[48%]">
@@ -96,7 +99,11 @@ function Timeline({ pageNumber }: Timeline) {
         </div>
 
         <div className="hidden lg:block h-full absolute left-0">
-          <div className="relative h-full">
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            className="relative h-full"
+          >
             <Image
               src="/tryout/timeline/ornamen.svg"
               height={1070}
@@ -114,7 +121,11 @@ function Timeline({ pageNumber }: Timeline) {
           </div>
         </div>
         <div className="hidden lg:block h-full absolute right-0">
-          <div className="relative h-full">
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            className="relative h-full"
+          >
             <Image
               src="/tryout/timeline/ornamen.svg"
               height={1070}
@@ -133,6 +144,8 @@ function Timeline({ pageNumber }: Timeline) {
         </div>
         <div className="z-50 relative max-w-8xl h-screen mx-auto flex flex-col justify-center items-center text-[#F0F0F0]">
           <h1
+            data-aos="zoom-out"
+            data-aos-anchor-placement="top-bottom"
             style={{
               textShadow:
                 "4px 0px 8px rgba(185, 35, 69, 0.5), -4px 0px 8px rgba(199, 126, 19, 0.4)",
@@ -141,7 +154,12 @@ function Timeline({ pageNumber }: Timeline) {
           >
             TIMELINE
           </h1>
-          <div className={styles.stepperWrapper}>
+          <div
+            data-aos="zoom-out"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="500"
+            className={styles.stepperWrapper}
+          >
             {data.map(({ id, date, desc }) => {
               const completed = id < pageNumber;
               const active = id == pageNumber;

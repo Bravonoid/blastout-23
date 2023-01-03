@@ -10,10 +10,10 @@ const Sekilas = () => {
   const [isHover, setHover] = useState(false);
   return (
     <>
-      <div class="overflow-hidden bg-blastoutdarkpurple text-[#FFFFFF] py-20">
-        <div class="relative flex flex-col gap-y-2">
-          <div class="flex flex-row justify-center gap-x-5">
-            <h1 class="font-bold text-6xl font-TransAmerica text-center mobile:text-3xl">
+      <div className="overflow-hidden bg-blastoutdarkpurple text-[#FFFFFF] py-20">
+        <div className="relative flex flex-col gap-y-2">
+          <div className="flex flex-row justify-center gap-x-5">
+            <h1 className="font-bold text-6xl font-TransAmerica text-center mobile:text-3xl">
               BLASTOUT
             </h1>
             <Link href="./tentang">
@@ -41,16 +41,16 @@ const Sekilas = () => {
           <Image
             src={Line}
             alt="line"
-            class="block mx-auto pt-5 w-[500px] mobile:w-[300px]"
+            className="block mx-auto pt-5 w-[500px] mobile:w-[300px]"
           />
-          <p class="text-center px-[200px] font-Poppins lg:text-xl pt-12 mobile:px-5 mobile:text-sm sm:text-lg">
+          <p className="text-center px-[200px] font-Poppins lg:text-xl pt-12 mobile:px-5 mobile:text-sm sm:text-lg">
             BlastOut merupakan program kerja dari Balairung Klass, organisasi
             mahasiswa daerah dengan anggota mahasiswa UGM yang berdomisili di
             Klaten. BlastOut terdiri dari rangkaian acara briefing ke SMA di
             Kab. Klaten, tryout beserta pembahasan soal, talkshow, expo kampus,
             dan penampilan hiburan.
           </p>
-          <Image src={Text} alt="text" class="pt-40" />
+          <Image src={Text} alt="text" className="pt-40" />
         </div>
       </div>
     </>
