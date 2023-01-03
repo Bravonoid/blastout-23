@@ -7,8 +7,18 @@ import Footer from "../components/Footer";
 import ComingSoon from "../components/ComingSoon";
 import Head from "next/head";
 import Timeline from "../components/Tryout/Timeline";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
-function mainEvent() {
+function MainEvent() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -48,4 +58,4 @@ function mainEvent() {
   );
 }
 
-export default mainEvent;
+export default MainEvent;
