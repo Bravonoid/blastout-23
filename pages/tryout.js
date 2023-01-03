@@ -18,7 +18,7 @@ const Beranda = () => {
       once: false,
     });
   }, []);
-  
+
   return (
     <div className="bg-blastoutdarkpurple">
       <Head>
