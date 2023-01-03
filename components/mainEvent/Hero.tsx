@@ -31,6 +31,7 @@ function Hero() {
               <h2
                 data-aos-delay="100"
                 data-aos="fade-up"
+                data-aos-anchor="#timer"
                 className="whitespace-nowrap border-y border-blastoutgold uppercase font-bold text-[32px] sm:text-4xl md:text-5xl 2xl:text-[4rem] text-center leading-none pt-2 lg:pt-3 pb-2 lg:pb-3 text-glow"
               >
                 Acara Utama
@@ -38,6 +39,7 @@ function Hero() {
               <Image
                 data-aos="fade-up"
                 data-aos-delay="200"
+                data-aos-anchor="#timer"
                 src="/mainevent/hero-days.svg"
                 alt="day counter"
                 height={1000}
@@ -47,13 +49,15 @@ function Hero() {
             </div>
           </div>
           {/* title */}
-          <div className="w-full max-w-xs md:max-w-lg lg:max-w-none mx-auto basis-[60%] flex justify-center items-center mt-28 mb-6">
+          <div
+            data-aos="fade-up"
+            className="w-full max-w-xs md:max-w-lg lg:max-w-none mx-auto basis-[60%] flex justify-center items-center mt-28 mb-6"
+          >
             <Image
               src="/mainevent/hero-title.png"
               width={1000}
               height={1000}
               alt="blastout title"
-              data-aos="fade-up"
               className="w-[120%] z-10"
             />
           </div>

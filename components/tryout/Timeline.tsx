@@ -146,6 +146,7 @@ function Timeline({ pageNumber }: Timeline) {
           <h1
             data-aos="zoom-out"
             data-aos-anchor-placement="top-bottom"
+            id="timeline"
             style={{
               textShadow:
                 "4px 0px 8px rgba(185, 35, 69, 0.5), -4px 0px 8px rgba(199, 126, 19, 0.4)",
@@ -158,6 +159,7 @@ function Timeline({ pageNumber }: Timeline) {
             data-aos="zoom-out"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="500"
+            data-aos-anchor="#timeline"
             className={styles.stepperWrapper}
           >
             {data.map(({ id, date, desc }) => {
