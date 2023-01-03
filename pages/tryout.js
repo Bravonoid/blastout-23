@@ -10,6 +10,7 @@ import Lokasi2 from "../components/mainEvent/Lokasi2";
 import TombolDaftar from "../components/mainEvent/TombolDaftar";
 import { useEffect } from "react";
 import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Beranda = () => {
   useEffect(() => {
