@@ -30,6 +30,7 @@ export default function Lokasi2({ tryout }) {
             </div>
             {/* logo blastout bulet */}
             <Image
+              priority
               src="/mainevent/lokasi-blastout.png"
               alt="blastout logo"
               height={1000}
@@ -48,6 +49,7 @@ export default function Lokasi2({ tryout }) {
             {/* foto + bg orange */}
             <div className="absolute w-2/3 h-1/2 bg-[#FB5507] -bottom-4 -left-4 lg:w-[32%] lg:aspect-square lg:bg-blastoutmustard lg:-bottom-16 lg:left-auto lg:-right-28 xl:-right-36 2xl:-right-48" />
             <Image
+              priority
               src="/mainevent/lokasi-foto.png"
               alt="foto"
               height={1000}
@@ -57,6 +59,7 @@ export default function Lokasi2({ tryout }) {
           </div>
         </div>
         <Image
+          priority
           src="/mainevent/lokasi-pins.svg"
           alt="pins"
           data-aos-delay="1000"

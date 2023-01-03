@@ -103,6 +103,7 @@ function Hero() {
           width={1000}
           height={1000}
           alt="bg"
+          priority
           data-aos="fade-down"
           className="absolute top-12 2xl:-top-0 w-[135px] md:w-[250px] lg:w-[300px] 2xl:w-[450px]"
         />
@@ -112,6 +113,7 @@ function Hero() {
           width={1000}
           height={1000}
           alt="bg"
+          priority
           data-aos="fade-right"
           className="absolute left-0 top-36 md:top-56 lg:top-[17rem] 2xl:top-[20rem] h-[26px] md:h-[48px] lg:h-[60px] 2xl:h-[80px] w-fit"
         />

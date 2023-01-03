@@ -38,6 +38,7 @@ function Timeline({ pageNumber }: Timeline) {
   return (
     <section id="paper" className="bg-[#0F0B36] font-inter relative">
       <Image
+        priority
         src="/tryout/timeline/paper.svg"
         data-aos-anchor="#paper"
         data-aos-anchor-placement="top-bottom"
@@ -107,6 +108,7 @@ function Timeline({ pageNumber }: Timeline) {
             className="relative h-full"
           >
             <Image
+              priority
               src="/tryout/timeline/ornamen.svg"
               height={1070}
               width={1350}
@@ -130,6 +132,7 @@ function Timeline({ pageNumber }: Timeline) {
             className="relative h-full"
           >
             <Image
+              priority
               src="/tryout/timeline/ornamen.svg"
               height={1070}
               width={1350}
