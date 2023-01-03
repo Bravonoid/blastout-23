@@ -1,12 +1,12 @@
-import Hero from "../components/MainEvent/Hero";
-import Lokasi2 from "../components/MainEvent/Lokasi2";
-import WhatsInside from "../components/MainEvent/WhatsInside";
+import Hero from "../components/mainEvent/Hero";
+import Lokasi2 from "../components/mainEvent/Lokasi2";
+import WhatsInside from "../components/mainEvent/WhatsInside";
 import Navbar from "../components/Navbar";
-import TombolDaftar from "../components/MainEvent/TombolDaftar";
+import TombolDaftar from "../components/mainEvent/TombolDaftar";
 import Footer from "../components/Footer";
 import ComingSoon from "../components/ComingSoon";
 import Head from "next/head";
-import Timeline from "../components/Tryout/Timeline";
+import Timeline from "../components/tryout/Timeline";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

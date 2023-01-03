@@ -20,8 +20,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/mainevent/Lokasi.js",
-    "components/mainevent/Lokasi2.js"
+    "components/mainEvent/Lokasi.js",
+    "components/mainEvent/Lokasi2.js",
+    "components/MainEvent/lokasi/Map.js"
   ],
   "exclude": ["node_modules"]
 }
