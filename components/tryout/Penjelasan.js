@@ -12,7 +12,7 @@ import { useEffect } from "react";
 const Penjelasan = () => {
   useEffect(() => {
     AOS.init({
-      once: true,
+      once: false,
       duration: 1000,
     });
   }, []);
