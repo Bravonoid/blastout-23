@@ -39,7 +39,7 @@ const Beranda = () => {
       <ComingSoon title="SISTEM" bgColor="#0F0B36" />
       {/* <Sistem /> */}
       <Timeline pageNumber={2} />
-      <Lokasi2 />
+      <Lokasi2 tryout />
       <TombolDaftar />
       <Footer isButtonExist={true} />
     </div>
