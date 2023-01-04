@@ -151,7 +151,8 @@ function Date(title, bottom) {
       className={`relative font-inter font-black text-[6vw] sm:text-[4vw] lg:text-2xl xl:text-[1.75rem] 2xl:text-4xl text-blastoutdarkpurple w-full h-full flex justify-center lg:justify-start lg:text-start leading-none lg:my-0
       ${bottom && "items-end"}`}
       data-aos="fade-right"
-      data-aos-delay={200}
+      data-aos-anchor="#arrow"
+      data-aos-delay={400}
     >
       <span className="lg:ml-[1vw] 2xl:ml-4">
         {title.split(" ")[0]}
@@ -169,8 +170,8 @@ function Event(title, bottom) {
       className={`relative w-full h-full lg:grid grid-rows-2 transition duration-1000`}
       data-aos={!bottom ? "slide-up" : "slide-down"}
       data-aos-anchor="#arrow"
-      data-aos-anchor-placement="top-center"
-      data-aos-delay={100}
+      // data-aos-anchor-placement="top-bottmo"
+      data-aos-delay={600}
     >
       <div
         className={`relative w-full h-full ${

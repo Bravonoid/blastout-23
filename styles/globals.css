@@ -5,6 +5,8 @@
 :root {
   --shadow-pink: hsla(346, 68%, 43%, 0.5);
   --shadow-gold: hsla(36, 83%, 43%, 0.4);
+  --gold-blast: #ffbd0c;
+  --purple-blast: #ff0070;
 }
 
 .leaflet-container {
@@ -40,4 +42,29 @@
   .font-outline-1 {
     -webkit-text-stroke: 1px #ffbd0c;
   }
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--purple-blast);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }

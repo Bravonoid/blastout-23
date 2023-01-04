@@ -117,7 +117,7 @@ const Acara = () => {
       <div
         className="flex flex-col items-center justify-center font-bold text-3xl sm:text-5xl w-full text-[#EEEEEE] py-[3vh] sm:py-[7vh]"
         data-aos="fade-down"
-        data-aos-anchor-placement="center-center"
+        // data-aos-anchor-placement="center-bottom"
       >
         <p
           style={{
@@ -139,8 +139,8 @@ const Acara = () => {
       <div
         className="h-[100vh] sm:h-[50vh] flex flex-col sm:flex-row justify-evenly items-center mb-[200px] px-[5vw]"
         data-aos="slide-left"
-        // data-aos-delay={500}
-        data-aos-anchor-placement="bottom-bottom"
+        data-aos-delay={200}
+        // data-aos-anchor-placement="bottom-bottom"
       >
         {rangkaian &&
           rangkaian.map((item, i) => {
