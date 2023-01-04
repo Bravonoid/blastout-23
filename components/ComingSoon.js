@@ -3,7 +3,7 @@ const ComingSoon = ({ title, bgColor }) => {
   return (
     <>
       <div className={`bg-[${bgColor}] py-40`}>
-        <h2 className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl uppercase font-inter flex items-center justify-center">
+        <h2 className="font-bold z-30 relative text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl uppercase font-inter flex items-center justify-center">
           {title}
         </h2>
         <div className={`block lg:hidden`}>

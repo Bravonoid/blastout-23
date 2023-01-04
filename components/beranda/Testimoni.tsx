@@ -96,7 +96,28 @@ function Testimoni() {
   ];
 
   return (
-    <section className="xl:h-screen bg-[#0F0B36] text-white font-inter pt-12 flex items-start xl:items-center">
+    <section className="xl:h-screen relative bg-[#0F0B36] text-white font-inter pt-12 flex items-start xl:items-center">
+      <Image
+        src="/beranda/testimoni/grid.svg"
+        height={475.96}
+        width={2044.89}
+        alt=""
+        data-aos="zoom-in"
+        data-aos-anchor="#testimoni"
+        data-aos-anchor-placement="top-bottom"
+        style={{ scale: "1.1" }}
+        className="absolute -bottom-20 sm:-bottom-44 lg:-bottom-56 xl:-bottom-64"
+      />
+      <Image
+        src="/beranda/testimoni/ornamen.svg"
+        height={475.96}
+        width={2044.89}
+        alt=""
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        style={{ scale: "1.1" }}
+        className="absolute top-16 sm:top-12 xl:top-0"
+      />
       <div className="container xl:max-w-8xl mx-auto xl:h-full flex flex-col items-center">
         <div
           className="flex flex-col justify-center items-center mt-12 mb-12"
