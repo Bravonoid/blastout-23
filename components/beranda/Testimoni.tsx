@@ -175,8 +175,8 @@ function Testimoni() {
         </div>
         <div
           className="relative mx-10 mt-6 xl:hidden mb-12"
-        // data-aos="fade"
-        // data-aos-delay={200}
+          // data-aos="fade"
+          // data-aos-delay={200}
         >
           <Image
             src="/beranda/testimoni/quote.svg"
@@ -234,8 +234,9 @@ const Button = ({ onClick, image, position }: ButtonProps) => {
           width={45}
           height={60}
           onClick={onClick}
-          className={`${position == "left" ? "rotate-180" : ""
-            } scale-150 cursor-pointer`}
+          className={`${
+            position == "left" ? "rotate-180" : ""
+          } scale-150 cursor-pointer`}
         />
       ) : (
         <Image
@@ -244,8 +245,9 @@ const Button = ({ onClick, image, position }: ButtonProps) => {
           width={45}
           height={60}
           onClick={onClick}
-          className={`${position == "left" ? "rotate-180" : ""
-            } h-8 sm:h-full cursor-pointer`}
+          className={`${
+            position == "left" ? "rotate-180" : ""
+          } h-8 sm:h-full cursor-pointer`}
         />
       )}
     </div>
@@ -278,7 +280,7 @@ const CardCarousel = ({
           // data-aos-anchor="#testimoni"
           data-aos-anchor="#arrow"
           data-aos-anchor-placement="top-top"
-        // data-aos-anchor-placement="center-center"
+          // data-aos-anchor-placement="center-center"
         />
         <div
           className="text-center mt-2 xl:mt-4"
@@ -298,14 +300,15 @@ const CardCarousel = ({
         </div>
       </div>
       <div
-        className={`hidden xl:flex justify-center h-full items-center w-7/12 py-12 ${scroll ? "pr-4" : "pr-12"
-          } `}
+        className={`hidden xl:flex justify-center h-full items-center w-7/12 py-12 ${
+          scroll ? "pr-4" : "pr-12"
+        } `}
         data-aos="fade-right"
         data-aos-delay={200}
         // data-aos-anchor="#testimoni"
         data-aos-anchor="#arrow"
         data-aos-anchor-placement="top-top"
-      // data-aos-anchor-placement="center-center"
+        // data-aos-anchor-placement="center-center"
       >
         <div className="relative h-3/4 flex items-center justify-center">
           <div className={`flex justify-center flex-col h-full text-3xl`}>
@@ -316,8 +319,9 @@ const CardCarousel = ({
               alt=""
             />
             <p
-              className={`h-auto ${scroll ? "overflow-y-scroll pr-3" : ""
-                } text-justify`}
+              className={`h-auto ${
+                scroll ? "overflow-y-scroll pr-3" : ""
+              } text-justify`}
             >
               {testimoni}
             </p>
