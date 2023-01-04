@@ -96,11 +96,13 @@ function Testimoni() {
   ];
 
   return (
-    <section className="xl:h-screen bg-[#0F0B36] text-white font-inter pt-12 flex items-start xl:items-center">
+    <section
+      className="xl:h-screen bg-[#0F0B36] text-white font-inter pt-12 flex items-start xl:items-center"
+      id="testimoni"
+    >
       <div className="container xl:max-w-8xl mx-auto xl:h-full flex flex-col items-center">
         <div
           className="flex flex-col justify-center items-center mt-12 mb-12"
-          id="testimoni"
           data-aos="fade-down"
         >
           <h1
