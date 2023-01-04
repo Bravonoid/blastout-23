@@ -149,7 +149,7 @@ function Testimoni() {
         </div>
         <div
           className="relative mx-10 mt-6 xl:hidden mb-12"
-          data-aos="fade"
+          // data-aos="fade"
           // data-aos-delay={200}
         >
           <Image
@@ -196,7 +196,8 @@ const Button = ({ onClick, image, position }: ButtonProps) => {
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
       data-aos={position == "right" ? `fade-right` : `fade-left`}
-      // data-aos-delay={400}
+      data-aos-anchor="#testimoni"
+      data-aos-delay={400}
     >
       {isHover ? (
         <Image
@@ -248,13 +249,14 @@ const CardCarousel = ({
           alt=""
           data-aos="fade-up"
           // data-aos-delay={100}
-          // data-aos-anchor="#testimoni"
+          data-aos-anchor="#testimoni"
           // data-aos-anchor-placement="center-center"
         />
         <div
           className="text-center mt-2 xl:mt-4"
           data-aos="fade-down"
-          // data-aos-delay={200}
+          data-aos-anchor="#testimoni"
+          data-aos-delay={200}
         >
           <h1 className="font-bold text-lg sm:text-2xl xl:text-4xl">{nama}</h1>
           <p className="font-medium text-xs sm:text-lg xl:text-2xl">
@@ -270,8 +272,8 @@ const CardCarousel = ({
           scroll ? "pr-4" : "pr-12"
         } `}
         data-aos="fade-right"
-        // data-aos-delay={300}
-        // data-aos-anchor="#testimoni"
+        data-aos-delay={200}
+        data-aos-anchor="#testimoni"
         // data-aos-anchor-placement="center-center"
       >
         <div className="relative h-3/4 flex items-center justify-center">
