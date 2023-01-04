@@ -107,7 +107,7 @@ function Testimoni() {
         alt=""
         data-aos="zoom-in"
         data-aos-anchor="#arrow"
-        data-aos-anchor-placement="center-bottom"
+        data-aos-anchor-placement="top-top"
         style={{ scale: "1.1" }}
         className="absolute -bottom-20 sm:-bottom-44 lg:-bottom-56 xl:-bottom-64"
       />
@@ -118,7 +118,7 @@ function Testimoni() {
         alt=""
         data-aos="zoom-in"
         data-aos-anchor="#arrow"
-        data-aos-anchor-placement="center-bottom"
+        data-aos-anchor-placement="top-top"
         style={{ scale: "1.1" }}
         className="absolute top-16 sm:top-12 xl:top-0"
       />
@@ -127,7 +127,7 @@ function Testimoni() {
           className="flex flex-col justify-center items-center mt-12 mb-12"
           data-aos="fade-down"
           data-aos-anchor="#arrow"
-          data-aos-anchor-placement="center-bottom"
+          data-aos-anchor-placement="top-top"
         >
           <h1
             style={{
@@ -224,7 +224,7 @@ const Button = ({ onClick, image, position }: ButtonProps) => {
       data-aos={position == "right" ? `fade-right` : `fade-left`}
       // data-aos-anchor="#testimoni"
       data-aos-anchor="#arrow"
-      data-aos-anchor-placement="center-bottom"
+      data-aos-anchor-placement="top-top"
       data-aos-delay={400}
     >
       {isHover ? (
@@ -279,7 +279,7 @@ const CardCarousel = ({
           // data-aos-delay={100}
           // data-aos-anchor="#testimoni"
           data-aos-anchor="#arrow"
-          data-aos-anchor-placement="center-bottom"
+          data-aos-anchor-placement="top-top"
           // data-aos-anchor-placement="center-center"
         />
         <div
@@ -287,7 +287,7 @@ const CardCarousel = ({
           data-aos="fade-down"
           // data-aos-anchor="#testimoni"
           data-aos-anchor="#arrow"
-          data-aos-anchor-placement="center-bottom"
+          data-aos-anchor-placement="top-top"
           data-aos-delay={200}
         >
           <h1 className="font-bold text-lg sm:text-2xl xl:text-4xl">{nama}</h1>
@@ -307,7 +307,7 @@ const CardCarousel = ({
         data-aos-delay={200}
         // data-aos-anchor="#testimoni"
         data-aos-anchor="#arrow"
-        data-aos-anchor-placement="center-bottom"
+        data-aos-anchor-placement="top-top"
         // data-aos-anchor-placement="center-center"
       >
         <div className="relative h-3/4 flex items-center justify-center">
