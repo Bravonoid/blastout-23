@@ -29,17 +29,17 @@ function Hero() {
             <div className="flex flex-col gap-y-3 md:gap-y-4 lg:gap-y-5 xl:gap-y-6 text-blastoutwhite">
               <CountdownTimer targetDate={date} setCount={setCount} />
               <h2
-                data-aos-delay="100"
-                data-aos="fade-up"
-                data-aos-anchor="#timer"
+                // data-aos-delay="100"
+                // data-aos="fade-up"
+                // data-aos-anchor="#timer"
                 className="whitespace-nowrap border-y border-blastoutgold uppercase font-bold text-[32px] sm:text-4xl md:text-5xl 2xl:text-[4rem] text-center leading-none pt-2 lg:pt-3 pb-2 lg:pb-3 text-glow"
               >
                 Acara Utama
               </h2>
               <Image
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-anchor="#timer"
+                // data-aos="fade-up"
+                // data-aos-delay="200"
+                // data-aos-anchor="#timer"
                 src="/mainevent/hero-days.svg"
                 alt="day counter"
                 height={1000}
@@ -50,7 +50,7 @@ function Hero() {
           </div>
           {/* title */}
           <div
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="w-full max-w-xs md:max-w-lg lg:max-w-none mx-auto basis-[60%] flex justify-center items-center mt-28 mb-6"
           >
             <Image
@@ -70,14 +70,14 @@ function Hero() {
             width={1000}
             height={1000}
             alt="bg"
-            data-aos="fade-right"
-            data-aos-duration="1500"
+            // data-aos="fade-right"
+            // data-aos-duration="1500"
             className="w-1/2"
           />
           <div
             className="relative"
-            data-aos="fade-left"
-            data-aos-duration="1500"
+            // data-aos="fade-left"
+            // data-aos-duration="1500"
           >
             {/* bg blastout muter */}
             <Image
@@ -104,7 +104,7 @@ function Hero() {
           height={1000}
           alt="bg"
           priority
-          data-aos="fade-down"
+          // data-aos="fade-down"
           className="absolute top-12 2xl:-top-0 w-[135px] md:w-[250px] lg:w-[300px] 2xl:w-[450px]"
         />
         {/* bg kotak gradasi */}
@@ -114,7 +114,7 @@ function Hero() {
           height={1000}
           alt="bg"
           priority
-          data-aos="fade-right"
+          // data-aos="fade-right"
           className="absolute left-0 top-36 md:top-56 lg:top-[17rem] 2xl:top-[20rem] h-[26px] md:h-[48px] lg:h-[60px] 2xl:h-[80px] w-fit"
         />
         {/* bg kertas atas */}
@@ -124,7 +124,7 @@ function Hero() {
           height={1000}
           priority
           alt="bg"
-          data-aos="fade-up"
+          // data-aos="fade-up"
           style={{ rotate: "-168deg" }}
           className="w-[345px] md:w-[600px] 2xl:w-[900px] absolute top-0 md:-top-20 2xl:-top-[5%] -right-28 lg:-right-[20%]"
         />
