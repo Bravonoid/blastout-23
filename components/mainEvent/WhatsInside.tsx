@@ -24,6 +24,8 @@ function WhatsInside() {
       <div className="font-inter flex flex-col justify-center items-center relative mt-24 md:mt-12">
         <h2
           data-aos="zoom-out"
+          id="whatsinside"
+          data-aos-anchor-placement="top-bottom"
           className="uppercase text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl font-bold mb-12"
         >
           What's Inside
@@ -32,6 +34,7 @@ function WhatsInside() {
           data-aos-anchor-placement="top-bottom"
           data-aos="fade-up"
           data-aos-delay="200"
+          data-aos-anchor="#whatsinside"
           className="z-30 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 xl:gap-12 px-16 lg:px-0"
         >
           {events.map(({ title, desc, img }, i) => (
@@ -66,6 +69,8 @@ function WhatsInside() {
             width={1000}
             height={1000}
             data-aos="fade-right"
+            data-aos-anchor="#whatsinside"
+            data-aos-anchor-placement="bottom-top"
             className="w-32 sm:w-[200px] lg:w-[300px] 2xl:w-[400px] -ml-8"
           />
           {/* bg kanan bawah */}
@@ -75,6 +80,8 @@ function WhatsInside() {
             width={1000}
             height={1000}
             data-aos="fade-left"
+            data-aos-anchor="#whatsinside"
+            data-aos-anchor-placement="bottom-top"
             className="w-40 sm:w-[300px] lg:w-[400px] 2xl:w-[500px]"
           />
         </div>
@@ -86,6 +93,7 @@ function WhatsInside() {
           height={1000}
           data-aos-anchor-placement="top-bottom"
           data-aos="fade-right"
+          data-aos-anchor="#whatsinside"
           className="w-[224px] lg:w-[400px] xl:w-[624px] absolute left-0 top-24"
         />
         {/* blastout kiri bawah */}

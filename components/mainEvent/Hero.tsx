@@ -23,7 +23,7 @@ function Hero() {
   return (
     <>
       <div className="w-screen min-h-screen relative">
-        <div className="flex flex-col-reverse lg:flex-row justify-center lg:justify-between relative overflow-x-hidden min-h-[80vh] xl:min-h-[90vh]">
+        <div className="flex flex-col-reverse lg:flex-row justify-center lg:justify-between relative overflow-hidden min-h-[80vh] xl:min-h-[90vh]">
           {/* countdown, acara utama, day count */}
           <div className="w-full basis-[40%] font-inter flex flex-col justify-end items-center lg:items-start lg:pl-24 z-10">
             <div className="flex flex-col gap-y-3 md:gap-y-4 lg:gap-y-5 xl:gap-y-6 text-blastoutwhite">
