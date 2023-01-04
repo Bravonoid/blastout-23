@@ -7,8 +7,30 @@ import "aos/dist/aos.css";
 const Sekilas1 = () => {
   const [k, setK] = useState(1);
 
-  const anim = [{class: "absolute bottom-0 flex opacity-0 w-[200vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] scale-x-[2] sm:scale-[1] ease-linear"}, {class: "absolute bottom-0 flex w-[200vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] scale-x-[2] sm:scale-[1] ease-linear transition-[transform] duration-[20000ms]"}, {class: "absolute top-0 flex opacity-0 w-[200vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] scale-x-[2] sm:scale-[1] ease-linear"}, {class: "absolute top-0 flex w-[200vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] scale-x-[2] sm:scale-[1] ease-linear transition-[transform] duration-[20000ms]"}];
-  const style = [{transform: "translateX(0)"}, {transform: "translateX(-50%)"}, {transform: "translateX(-50%)"}, {transform: "translateX(0)"}];
+  const anim = [
+    {
+      class:
+        "absolute bottom-0 flex opacity-0 w-[200vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] scale-x-[2] sm:scale-[1] ease-linear",
+    },
+    {
+      class:
+        "absolute bottom-0 flex w-[200vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] scale-x-[2] sm:scale-[1] ease-linear transition-[transform] duration-[20000ms]",
+    },
+    {
+      class:
+        "absolute top-0 flex opacity-0 w-[200vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] scale-x-[2] sm:scale-[1] ease-linear",
+    },
+    {
+      class:
+        "absolute top-0 flex w-[200vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] scale-x-[2] sm:scale-[1] ease-linear transition-[transform] duration-[20000ms]",
+    },
+  ];
+  const style = [
+    { transform: "translateX(0)" },
+    { transform: "translateX(-50%)" },
+    { transform: "translateX(-50%)" },
+    { transform: "translateX(0)" },
+  ];
   const router = useRouter();
 
   const clickHandler = () => {
@@ -27,7 +49,7 @@ const Sekilas1 = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setTm(20000);
-      setK((k+1)%2);
+      setK((k + 1) % 2);
     }, tm);
     return () => clearInterval(interval);
   }, [k, tm]);
@@ -65,15 +87,18 @@ const Sekilas1 = () => {
           <div className="bg-[url('/beranda/redblastout.png')] w-[100vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] sm:scale-[1]"></div>
           <div className="bg-[url('/beranda/redblastout.png')] w-[100vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] sm:scale-[1]"></div>
         </div>
-        <div className={anim[(k+1)%2].class} style={style[(k+1)%2]}>
+        <div className={anim[(k + 1) % 2].class} style={style[(k + 1) % 2]}>
           <div className="bg-[url('/beranda/redblastout.png')] w-[100vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] sm:scale-[1]"></div>
           <div className="bg-[url('/beranda/redblastout.png')] w-[100vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] sm:scale-[1]"></div>
         </div>
-        <div className={anim[k+2].class} style={style[k+2]}>
+        <div className={anim[k + 2].class} style={style[k + 2]}>
           <div className="bg-[url('/beranda/redblastout.png')] w-[100vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] sm:scale-[1]"></div>
           <div className="bg-[url('/beranda/redblastout.png')] w-[100vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] sm:scale-[1]"></div>
         </div>
-        <div className={anim[(k+1)%2 + 2].class} style={style[(k+1)%2 + 2]}>
+        <div
+          className={anim[((k + 1) % 2) + 2].class}
+          style={style[((k + 1) % 2) + 2]}
+        >
           <div className="bg-[url('/beranda/redblastout.png')] w-[100vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] sm:scale-[1]"></div>
           <div className="bg-[url('/beranda/redblastout.png')] w-[100vw] h-[5vw] sm:h-[3vw] bg-contain bg-center bg-no-repeat scale-y-[2] sm:scale-[1]"></div>
         </div>
