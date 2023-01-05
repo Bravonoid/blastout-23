@@ -12,10 +12,19 @@ export default function Lokasi2({ tryout }) {
         <h2
           data-aos="zoom-out"
           data-aos-anchor-placement="top-bottom"
-          className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl mb-8 lg:mb-16 uppercase font-inter"
+          className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl uppercase font-inter"
         >
           Lokasi
         </h2>
+        <div className="w-full m-0 p-0 flex justify-center -mt-[2.5px] mb-8 lg:mb-16">
+          <Image
+            src="/beranda/timeline/underline.svg"
+            alt="underline"
+            width={1000}
+            height={1000}
+            className="scale-x-[.22] scale-y-[.3] sm:scale-x-[.175] sm:scale-y-[.2]"
+          />
+        </div>
         <div
           data-aos="zoom-in"
           data-aos-delay="500"

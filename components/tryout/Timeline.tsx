@@ -157,10 +157,19 @@ function Timeline({ pageNumber }: Timeline) {
               textShadow:
                 "4px 0px 8px rgba(185, 35, 69, 0.5), -4px 0px 8px rgba(199, 126, 19, 0.4)",
             }}
-            className="text-center text-2xl lg:text-4xl xl:text-5xl font-bold mb-10 sm:mb-20"
+            className="text-center text-2xl lg:text-4xl xl:text-5xl font-bold mb-0"
           >
             TIMELINE
           </h1>
+          <div className="w-full m-0 p-0 flex justify-center -mt-[2.5px] mb-10 sm:mb-20">
+            <Image
+              src="/beranda/timeline/underline.svg"
+              alt="underline"
+              width={1000}
+              height={1000}
+              className="scale-x-[.275] scale-y-[.3] sm:scale-x-[.225] sm:scale-y-[.2]"
+            />
+          </div>
           <div
             data-aos="zoom-out"
             data-aos-anchor-placement="top-bottom"
