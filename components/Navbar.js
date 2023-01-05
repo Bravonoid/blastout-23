@@ -8,10 +8,10 @@ const Navbar = () => {
 
   // const konten = ["BERANDA", "TENTANG", "TRYOUT", "MAIN EVENT"];
   const konten = [
-    { title: "BERANDA" },
-    { title: "TENTANG" },
-    { title: "TRYOUT" },
-    { title: "MAIN EVENT" },
+    { title: "BERANDA", link: "/" },
+    { title: "TENTANG", link: "/tentang" },
+    { title: "TRYOUT", link: "/tryout" },
+    { title: "MAIN EVENT", link: "/main-event" },
   ];
 
   const hovering = (e) => {
@@ -21,6 +21,10 @@ const Navbar = () => {
     else if (x === 2) setSt({ transform: "translateX(270%)" });
     else if (x === 3) setSt({ transform: "translateX(400%)" });
     // console.log(x);
+  };
+
+  const mouseOut = () => {
+    setSt({ transform: "translateX(-100%)" });
   };
 
   const clickHandler = () => {
@@ -45,9 +49,10 @@ const Navbar = () => {
                     key={i}
                     className="mx-1 flex justify-center relative group w-[120px]"
                     onMouseOver={hovering}
+                    onMouseOut={mouseOut}
                   >
                     <Link
-                      href="/"
+                      href={item.link}
                       className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
                     >
                       {item.title}

@@ -1,11 +1,31 @@
 import React from "react";
+import Image from "next/image";
 const ComingSoon = ({ title, bgColor }) => {
+  let kelas = "";
+  if (title == "SISTEM") {
+    kelas = "scale-x-[.225] scale-y-[.3] sm:scale-x-[.18] sm:scale-y-[.2]";
+  }
+  if (title == "GUEST STAR") {
+    kelas = "scale-x-[.35] scale-y-[.3] sm:scale-x-[.3] sm:scale-y-[.2]";
+  }
+  if (title == "MEDIA PARTNER | SPONSOR") {
+    kelas = "scale-x-[.78] scale-y-[.3] sm:scale-x-[.68] sm:scale-y-[.2]";
+  }
   return (
     <>
       <div className={`bg-[${bgColor}] py-40`}>
-        <h2 className="font-bold text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl uppercase font-inter flex items-center justify-center">
+        <h2 className="font-bold z-30 relative text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl uppercase font-inter flex items-center justify-center">
           {title}
         </h2>
+        <div className="w-full m-0 p-0 flex justify-center -mt-[2.5px]">
+          <Image
+            src="/beranda/timeline/underline.svg"
+            alt="underline"
+            width={1000}
+            height={1000}
+            className={kelas}
+          />
+        </div>
         <div className={`block lg:hidden`}>
           <div
             className={`w-[100vw] h-[500px] flex justify-center items-center`}

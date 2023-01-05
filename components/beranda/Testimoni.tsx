@@ -96,14 +96,38 @@ function Testimoni() {
   ];
 
   return (
-    <section className="xl:h-screen bg-[#0F0B36] text-white font-inter pt-12 flex items-start xl:items-center">
+    <section
+      id="testimoni"
+      className="xl:h-screen relative bg-[#0F0B36] text-white font-inter pt-12 flex items-start xl:items-center"
+    >
+      <Image
+        src="/beranda/testimoni/grid.svg"
+        height={475.96}
+        width={2044.89}
+        alt=""
+        data-aos="zoom-in"
+        data-aos-anchor="#arrow"
+        data-aos-anchor-placement="top-top"
+        style={{ scale: "1.1" }}
+        className="absolute -bottom-20 sm:-bottom-44 lg:-bottom-56 xl:-bottom-64"
+      />
+      <Image
+        src="/beranda/testimoni/ornamen.svg"
+        height={475.96}
+        width={2044.89}
+        alt=""
+        data-aos="zoom-in"
+        data-aos-anchor="#arrow"
+        data-aos-anchor-placement="top-top"
+        style={{ scale: "1.1" }}
+        className="absolute top-16 sm:top-12 xl:top-0"
+      />
       <div className="container xl:max-w-8xl mx-auto xl:h-full flex flex-col items-center">
         <div
           className="flex flex-col justify-center items-center mt-12 mb-12"
-          id="testimoni"
           data-aos="fade-down"
-          data-aos-anchor="#testimoni"
-          data-aos-anchor-placement="top-center"
+          data-aos-anchor="#arrow"
+          data-aos-anchor-placement="top-top"
         >
           <h1
             style={{
@@ -151,8 +175,8 @@ function Testimoni() {
         </div>
         <div
           className="relative mx-10 mt-6 xl:hidden mb-12"
-          data-aos="fade"
-          data-aos-delay={400}
+          // data-aos="fade"
+          // data-aos-delay={200}
         >
           <Image
             src="/beranda/testimoni/quote.svg"
@@ -198,7 +222,10 @@ const Button = ({ onClick, image, position }: ButtonProps) => {
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
       data-aos={position == "right" ? `fade-right` : `fade-left`}
-      data-aos-delay={1000}
+      // data-aos-anchor="#testimoni"
+      data-aos-anchor="#arrow"
+      data-aos-anchor-placement="top-top"
+      data-aos-delay={400}
     >
       {isHover ? (
         <Image
@@ -245,18 +272,23 @@ const CardCarousel = ({
           src={image}
           width={303}
           height={438}
-          className="aspect-square w-3/5 xl:w-full object-contain"
+          className="aspect-square xl:w-full object-contain"
           quality={100}
           alt=""
           data-aos="fade-up"
-          data-aos-delay={100}
-          data-aos-anchor="#testimoni"
-          data-aos-anchor-placement="center-center"
+          // data-aos-delay={100}
+          // data-aos-anchor="#testimoni"
+          data-aos-anchor="#arrow"
+          data-aos-anchor-placement="top-top"
+          // data-aos-anchor-placement="center-center"
         />
         <div
           className="text-center mt-2 xl:mt-4"
           data-aos="fade-down"
-          data-aos-delay={250}
+          // data-aos-anchor="#testimoni"
+          data-aos-anchor="#arrow"
+          data-aos-anchor-placement="top-top"
+          data-aos-delay={200}
         >
           <h1 className="font-bold text-lg sm:text-2xl xl:text-4xl">{nama}</h1>
           <p className="font-medium text-xs sm:text-lg xl:text-2xl">
@@ -272,7 +304,11 @@ const CardCarousel = ({
           scroll ? "pr-4" : "pr-12"
         } `}
         data-aos="fade-right"
-        data-aos-delay={1500}
+        data-aos-delay={200}
+        // data-aos-anchor="#testimoni"
+        data-aos-anchor="#arrow"
+        data-aos-anchor-placement="top-top"
+        // data-aos-anchor-placement="center-center"
       >
         <div className="relative h-3/4 flex items-center justify-center">
           <div className={`flex justify-center flex-col h-full text-3xl`}>
