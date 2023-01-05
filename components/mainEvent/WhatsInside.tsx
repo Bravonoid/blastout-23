@@ -26,10 +26,19 @@ function WhatsInside() {
           data-aos="zoom-out"
           id="whatsinside"
           data-aos-anchor-placement="top-bottom"
-          className="uppercase text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl font-bold mb-12"
+          className="uppercase text-blastoutwhite text-glow text-2xl lg:text-4xl xl:text-5xl font-bold"
         >
           What's Inside
         </h2>
+        <div className="w-full m-0 p-0 flex justify-center -mt-[2.5px] mb-12">
+          <Image
+            src="/beranda/timeline/underline.svg"
+            alt="underline"
+            width={1000}
+            height={1000}
+            className="scale-x-[.4] scale-y-[.3] sm:scale-x-[.375] sm:scale-y-[.2]"
+          />
+        </div>
         <div
           data-aos-anchor-placement="top-bottom"
           data-aos="fade-up"

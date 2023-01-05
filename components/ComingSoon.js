@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 const ComingSoon = ({ title, bgColor }) => {
-  let kelas  = "";
+  let kelas = "";
   if (title == "SISTEM") {
     kelas = "scale-x-[.225] scale-y-[.3] sm:scale-x-[.18] sm:scale-y-[.2]";
   }
