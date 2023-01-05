@@ -4,14 +4,29 @@ import Link from "next/link";
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
   const [isHover, setIsHover] = useState(0);
+  const [st, setSt] = useState({ transform: "translateX(-100%)" });
+
+  // const konten = ["BERANDA", "TENTANG", "TRYOUT", "MAIN EVENT"];
+  const konten = [
+    { title: "BERANDA" },
+    { title: "TENTANG" },
+    { title: "TRYOUT" },
+    { title: "MAIN EVENT" },
+  ];
+
   const hovering = (e) => {
-    let a = document.createElement("div");
-    a.innerHTML = e.target + "";
-    console.log(a);
+    let x = parseInt(e.target.offsetParent.id);
+    if (x === 0) setSt({ transform: "translateX(12.5%)" });
+    else if (x === 1) setSt({ transform: "translateX(140%)" });
+    else if (x === 2) setSt({ transform: "translateX(270%)" });
+    else if (x === 3) setSt({ transform: "translateX(400%)" });
+    // console.log(x);
   };
+
   const clickHandler = () => {
     setIsActive(!isActive);
   };
+
   return (
     <>
       <div className="hidden lg:block">
@@ -22,51 +37,24 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="py-4 right-4 top-full max-w-full flex mr-[70px] items-center justify-evenly relative">
-            <div
-              key="1"
-              className="mx-1 flex justify-center relative group w-[120px]"
-              onMouseOver={hovering}
-            >
-              <Link
-                href="/"
-                className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
-              >
-                BERANDA
-              </Link>
-            </div>
-            <div
-              className="mx-1 flex justify-center relative group w-[120px]"
-              onMouseOver={hovering}
-            >
-              <Link
-                href="/tentang"
-                className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
-              >
-                TENTANG
-              </Link>
-            </div>
-            <div
-              className="mx-1 flex justify-center relative group w-[120px]"
-              onMouseOver={hovering}
-            >
-              <Link
-                href="/tryout"
-                className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
-              >
-                TRYOUT
-              </Link>
-            </div>
-            <div
-              className="mx-1 flex justify-center relative group w-[120px]"
-              onMouseOver={hovering}
-            >
-              <Link
-                href="/main-event"
-                className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
-              >
-                MAIN EVENT
-              </Link>
-            </div>
+            {konten &&
+              konten.map((item, i) => {
+                return (
+                  <div
+                    id={i + ""}
+                    key={i}
+                    className="mx-1 flex justify-center relative group w-[120px]"
+                    onMouseOver={hovering}
+                  >
+                    <Link
+                      href="/"
+                      className="text-[#FBDF97] text-lg font-inter group-hover:font-bold transition-all duration-200 z-[10]"
+                    >
+                      {item.title}
+                    </Link>
+                  </div>
+                );
+              })}
             <div className="ml-5 mr-1 flex bg-[#FBDF97] px-[10px] py-[3px] rounded-xl hover:bg-[#0A0823] transition-all duration-300 text-[#0A0823] hover:text-[#FBDF97] hover:font-semibold w-[87px]">
               <a
                 target="_blank"
@@ -77,8 +65,11 @@ const Navbar = () => {
                 DAFTAR
               </a>
             </div>
-            <div className="h-[4px] absolute bottom-2 inset-x-0">
-              <div className="bg-[#b5a16d] h-[2px] w-[100px]"></div>
+            <div className="h-[4px] absolute bottom-2 inset-x-0 overflow-hidden">
+              <div
+                className="bg-[#b5a16d] h-[2px] w-[100px] duration-300"
+                style={st}
+              ></div>
             </div>
           </div>
         </div>
