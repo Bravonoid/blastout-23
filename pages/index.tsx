@@ -7,6 +7,7 @@ import Testimoni from "../components/beranda/Testimoni";
 import ComingSoon from "../components/ComingSoon";
 import Footer from "../components/Footer";
 import Timeline from "../components/beranda/Timeline";
+import Medpart from "../components/beranda/Medpart";
 export default function Home() {
   return (
     <>
@@ -32,7 +33,8 @@ export default function Home() {
       <Acara />
       <Timeline />
       <Testimoni />
-      <ComingSoon title={"MEDIA PARTNER | SPONSOR"} bgColor="#0F0B36" />
+      <ComingSoon title={"SPONSOR"} bgColor="#0F0B36" />
+      <Medpart />
       <Footer />
     </>
   );
