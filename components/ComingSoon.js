@@ -11,6 +11,9 @@ const ComingSoon = ({ title, bgColor }) => {
   if (title == "MEDIA PARTNER | SPONSOR") {
     kelas = "scale-x-[.78] scale-y-[.3] sm:scale-x-[.68] sm:scale-y-[.2]";
   }
+  if (title == "SPONSOR") {
+    kelas = "scale-x-[.32] scale-y-[.3] sm:scale-x-[.25] sm:scale-y-[.2]";
+  }
   return (
     <>
       <div className={`bg-[${bgColor}] py-40`}>
