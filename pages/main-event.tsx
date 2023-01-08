@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import TombolDaftar from "../components/mainEvent/TombolDaftar";
 import Footer from "../components/Footer";
 import ComingSoon from "../components/ComingSoon";
+import GuestStar from "../components/mainEvent/GuestStar";
 import Head from "next/head";
 import Timeline from "../components/tryout/Timeline";
 import AOS from "aos";
@@ -49,6 +50,7 @@ function MainEvent() {
         {/* <Timeline /> */}
         <WhatsInside />
         <ComingSoon title={"GUEST STAR"} bgColor="#0F0B36" />
+        {/*<GuestStar />*/}
         <Timeline pageNumber={3} />
         <Lokasi2 tryout={false} />
         <TombolDaftar />
