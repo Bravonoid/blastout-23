@@ -1,18 +1,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blastout.balairungklassugm.com/</loc>
-    <changeFreq>daily</changeFreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://blastout.balairungklassugm.com/tentang</loc>
-    <changeFreq>daily</changeFreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://blastout.balairungklassugm.com/tryout</loc>
-    <changeFreq>daily</changeFreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://blastout.balairungklassugm.com/main-event</loc>
-    <changeFreq>daily</changeFreq>
+    <changefreq>daily</changefreq>
   </url>
 </urlset>
