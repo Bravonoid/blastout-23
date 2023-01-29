@@ -17,10 +17,10 @@ const GuestStar = () => {
             GUEST STARS
           </h2>
           <div className="absolute mt-[470px] w-[280px] z-20">
-            <img src="Frame 6066.png"></img>
+            <img src="Group 6065.png"></img>
           </div>
-          <div className="absolute mt-[900px] w-[280px] z-20">
-            <img src="Frame 6066 (1).png" className="scale-125"></img>
+          <div className="absolute mt-[900px] w-[280px] z-20 scale-90">
+            <img src="Group 6064.png" className="scale-125"></img>
           </div>
           <div className="absolute w-screen -bottom-[30px]">
             <img src="Group 104.png" className="w-screen"></img>
@@ -57,11 +57,11 @@ const GuestStar = () => {
             GUEST STARS
           </div>
           <div className="flex justify-center bottom-[200px] z-20 absolute">
-            <div className="w-[500px] z-20 mx-[100px]">
-              <img src="Frame 6066.png"></img>
+            <div className="w-[500px] scale-110 z-20 mx-[100px]">
+              <img src="Group 6065.png"></img>
             </div>
-            <div className="w-[500px] scale-125 z-20 mx-[100px] mt-[30px]">
-              <img src="Frame 6066 (1).png"></img>
+            <div className="w-[500px] scale-110 z-20 mx-[100px]">
+              <img src="Group 6064.png"></img>
             </div>
           </div>
           <div className="absolute w-screen -bottom-[150px]">
