@@ -49,8 +49,8 @@ function MainEvent() {
         <Hero />
         {/* <Timeline /> */}
         <WhatsInside />
-        <ComingSoon title={"GUEST STAR"} bgColor="#0F0B36" />
-        {/* <GuestStar /> */}
+        {/* <ComingSoon title={"GUEST STAR"} bgColor="#0F0B36" /> */}
+        <GuestStar />
         <Timeline pageNumber={3} />
         <Lokasi2 tryout={false} />
         <TombolDaftar />
