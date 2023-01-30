@@ -4,10 +4,11 @@ import Navbar from "../components/Navbar";
 import Sekilas from "../components/beranda/Sekilas1";
 import Acara from "../components/beranda/Acara";
 import Testimoni from "../components/beranda/Testimoni";
-import ComingSoon from "../components/ComingSoon";
 import Footer from "../components/Footer";
 import Timeline from "../components/beranda/Timeline";
 import Medpart from "../components/beranda/Medpart";
+import Sponsor from "../components/beranda/Sponsor";
+
 export default function Home() {
   return (
     <>
@@ -33,7 +34,7 @@ export default function Home() {
       <Acara />
       <Timeline />
       <Testimoni />
-      <ComingSoon title={"SPONSOR"} bgColor="#0F0B36" />
+      <Sponsor />
       <Medpart />
       <Footer />
     </>
