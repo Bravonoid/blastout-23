@@ -7,16 +7,26 @@ type Data = {
 
 function Sponsor() {
   const data: Data[] = [
-    { nama: "Neutron", src: "/beranda/sponsor/dq_lighting.png" },
-    { nama: "Media Scanter", src: "/beranda/sponsor/klasik_production.png" },
-    { nama: "Neutron", src: "/beranda/sponsor/dq_lighting.png" },
-    { nama: "Media Scanter", src: "/beranda/sponsor/klasik_production.png" },
-    { nama: "Neutron", src: "/beranda/sponsor/dq_lighting.png" },
-    { nama: "Media Scanter", src: "/beranda/sponsor/klasik_production.png" },
-    { nama: "Neutron", src: "/beranda/sponsor/dq_lighting.png" },
-    { nama: "Media Scanter", src: "/beranda/sponsor/klasik_production.png" },
-    { nama: "Neutron", src: "/beranda/sponsor/dq_lighting.png" },
-    { nama: "Media Scanter", src: "/beranda/sponsor/klasik_production.png" },
+    { nama: "DQ Lighting", src: "/beranda/sponsor/dq_lighting.png" },
+    {
+      nama: "Klasik Production",
+      src: "/beranda/sponsor/klasik_production.png",
+    },
+    {
+      nama: "PP Construction and Investment",
+      src: "/beranda/sponsor/pp.png",
+    },
+    { nama: "Raxsa Apparel", src: "/beranda/sponsor/raxsa.png" },
+    { nama: "DQ Lighting", src: "/beranda/sponsor/dq_lighting.png" },
+    {
+      nama: "Klasik Production",
+      src: "/beranda/sponsor/klasik_production.png",
+    },
+    {
+      nama: "PP Construction and Investment",
+      src: "/beranda/sponsor/pp.png",
+    },
+    { nama: "Raxsa Apparel", src: "/beranda/sponsor/raxsa.png" },
   ];
 
   return (
@@ -61,22 +71,6 @@ function Sponsor() {
             alt=""
             className="h-[4.5px] xl:h-2.5"
           />
-          {/* <h1
-            style={{
-              textShadow:
-                "4px 0px 8px rgba(185, 35, 69, 0.5), -4px 0px 8px rgba(199, 126, 19, 0.4)",
-            }}
-            className="text-2xl lg:text-4xl xl:text-5xl font-bold text-center mb-2 sm:px-0 px-12 text-white"
-          >
-            SPONSOR
-          </h1>
-          <Image
-            src="/beranda/sponsor/union.svg"
-            width={1000}
-            height={1000}
-            alt=""
-            className="h-[1px] lg:h-[5px] xl:h-[6px]"
-          /> */}
         </div>
         <div
           style={{
