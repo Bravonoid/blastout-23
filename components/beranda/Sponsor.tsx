@@ -17,6 +17,7 @@ function Sponsor() {
       src: "/beranda/sponsor/pp.png",
     },
     { nama: "Raxsa Apparel", src: "/beranda/sponsor/raxsa.png" },
+    { nama: "Snap Shoes", src: "/beranda/sponsor/snapshoes.png" },
     { nama: "DQ Lighting", src: "/beranda/sponsor/dq_lighting.png" },
     {
       nama: "Klasik Production",
@@ -27,6 +28,7 @@ function Sponsor() {
       src: "/beranda/sponsor/pp.png",
     },
     { nama: "Raxsa Apparel", src: "/beranda/sponsor/raxsa.png" },
+    { nama: "Snap Shoes", src: "/beranda/sponsor/snapshoes.png" },
   ];
 
   return (
