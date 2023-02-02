@@ -9,14 +9,16 @@ function Medpart() {
   const data: Data[] = [
     { nama: "Neutron", src: "/beranda/medpart/neutron.png" },
     { nama: "Media Scanter", src: "/beranda/medpart/ms_trans.png" },
+    { nama: "UNY", src: "/beranda/medpart/uny.png" },
+    { nama: "UNS", src: "/beranda/medpart/uns.png" },
+    { nama: "UNNES", src: "/beranda/medpart/unnes.png" },
+    { nama: "Undip", src: "/beranda/medpart/undip.png" },
     { nama: "Neutron", src: "/beranda/medpart/neutron.png" },
     { nama: "Media Scanter", src: "/beranda/medpart/ms_trans.png" },
-    { nama: "Neutron", src: "/beranda/medpart/neutron.png" },
-    { nama: "Media Scanter", src: "/beranda/medpart/ms_trans.png" },
-    { nama: "Neutron", src: "/beranda/medpart/neutron.png" },
-    { nama: "Media Scanter", src: "/beranda/medpart/ms_trans.png" },
-    { nama: "Neutron", src: "/beranda/medpart/neutron.png" },
-    { nama: "Media Scanter", src: "/beranda/medpart/ms_trans.png" },
+    { nama: "UNY", src: "/beranda/medpart/uny.png" },
+    { nama: "UNS", src: "/beranda/medpart/uns.png" },
+    { nama: "UNNES", src: "/beranda/medpart/unnes.png" },
+    { nama: "Undip", src: "/beranda/medpart/undip.png" },
   ];
 
   return (
